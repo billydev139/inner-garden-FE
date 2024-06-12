@@ -161,3 +161,43 @@ export const videoFeeds = [
         videoLink: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o&t=3s",
     },
 ];
+
+
+export const wellGoCardData = [
+    {
+      img: Images.wellgocardimg,
+      title: "(thankful)Nest",
+      heading: "Reflect on today's masterpiece moments",
+      description:
+        "Spend time in the evening reflecting on the aspects of your day that felt particularly meaningful or fulfilling.",
+      points: "20",
+      number: "2",
+    },
+    {
+        img: Images.wellgocardimg,
+        title: "(thankful)Nest",
+        heading: "Write a thank-you note to yourself",
+        description:
+          "Acknowledge your efforts and accomplishments of the day in a self-directed thank-you note.",
+        points: "20",
+        number: "2",
+      },
+      {
+        img: Images.wellgocardimg,
+        title: "(peace)Petunia",
+        heading: "Contemplate a moment of peace.",
+        description:
+          "Spend time in the evening reflecting on the aspects of your day that felt particularly meaningful or fulfilling.",
+        points: "20",
+        number: "2",
+      },
+      {
+        img: Images.wellgocardimg,
+        title: "(thankful)Nest",
+        heading: "Reflect on today's masterpiece moments",
+        description:
+          "Spend time in the evening reflecting on the aspects of your day that felt particularly meaningful or fulfilling.",
+        points: "20",
+        number: "2",
+      },
+  ];

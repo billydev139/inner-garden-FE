@@ -59,8 +59,8 @@ const Tabs: React.FC = () => {
                                 }}
                                 className={classNames(
                                     tab.name === selectedTab
-                                        ? "text-white text-[14px] bg-purple-light rounded-[20px]"
-                                        : "text-purple-dark text-[14px] hover:text-gray-700",
+                                        ? "text-white font-semibold font-montserrat-alternates text-[18px] bg-purple-light rounded-[20px]"
+                                        : "text-purple-dark font-montserrat-alternates font-semibold text-[18px] hover:text-gray-700",
                                     "whitespace-nowrap py-2 px-[24px] font-medium flex lg:gap-2 items-center"
                                 )}
                                 aria-current={tab.name === selectedTab ? "page" : undefined}

@@ -83,10 +83,20 @@ import coverImageProfile from "./Frame 1000001795.svg";
 import ImageProfile from "./Group 1000001794.svg";
 import CoverImageProfilePage from "./CoverImageProfilePage.svg";
 import wellgo from "./wellgo.png"
-import wellgobg from "./welgobg (1).png"
+import wellgobg from "./abd.png"
+import wellgocardimg from "./wellgocardimg.png"
+import wellgosmall from "./wellgosmall.png" 
+import butterflies from "./butterflies.png"
+import userpic from "./userpic.png"
+import cocoon from "./cocoon-icon.png"
+import snell from "./snell.png"
+import fly from "./fly.png"
 const Images = {
     logo,
     banner1,
+    cocoon,
+    snell,
+    fly,
     banner2,
     banner3,
     icon1,
@@ -170,6 +180,11 @@ const Images = {
     ImageProfile,
     CoverImageProfilePage,
     wellgo,
+    wellgobg,
+    wellgocardimg,
+    wellgosmall,
+    butterflies,
+    userpic
 };
 
 export default Images
