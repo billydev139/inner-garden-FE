@@ -1,4 +1,4 @@
-import Images from "@/assets";
+import Images from "@/assets/images";
 import Button from "@/components/common/Button";
 import CardSection from "@/components/common/CardSection";
 import HeroSection from "@/components/common/HeroSection";

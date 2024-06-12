@@ -82,7 +82,8 @@ import brainn from "./cognition (1).svg";
 import coverImageProfile from "./Frame 1000001795.svg";
 import ImageProfile from "./Group 1000001794.svg";
 import CoverImageProfilePage from "./CoverImageProfilePage.svg";
-
+import wellgo from "./wellgo.png"
+import wellgobg from "./welgobg (1).png"
 const Images = {
     logo,
     banner1,
@@ -167,7 +168,8 @@ const Images = {
     brainn,
     coverImageProfile,
     ImageProfile,
-    CoverImageProfilePage
+    CoverImageProfilePage,
+    wellgo,
 };
 
 export default Images

@@ -1,6 +1,5 @@
-import Images from "@/assets";
-import TestimonialCard1 from "@/components/TestimonialCard1";
-import TestimonialCard2 from "@/components/TestimonialCard2";
+import Images from "@/assets/images";
+import Testimonial from "@/components/Testimonial";
 import VideoSection from "@/components/VideoSection";
 import Button from "@/components/common/Button";
 
@@ -77,9 +76,8 @@ and how it’s transforming human potential and possibilities."
         borderColor="#B76EF9"
         mode="standalone"
       />
-      <div className="container flex flex-col md:flex-row justify-between items-center gap-4 my-8">
-        <TestimonialCard1 />
-        <TestimonialCard2 />
+      <div >
+        <Testimonial />
       </div>
 
       <VideoSection />

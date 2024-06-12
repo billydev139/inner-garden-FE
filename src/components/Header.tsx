@@ -8,7 +8,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { loginLinks, mainCategories } from "@/utils/helpers/headerContent";
-import Images from "@/assets";
+import Images from "@/assets/images";
 import List from "./common/List";
 import Button from "./common/Button";
 
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
                 height={150}
                 className="px-4"
               />
-            </Link>
+            </Link> 
 
             <div className="lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 gap-4 lg:gap-0 hidden">
               <div className="flex items-center bg-white px-2 py-2 rounded-xl lg:order-1">
