@@ -6,12 +6,12 @@ import Button from "./Button";
 interface TagCardProps {
   imageSrc?: string | any;
   userPicSrc?: string | any;
-  title: string;
-  badgeHeading: string;
-  badgeDescription: string;
-  userName: string;
-  points: string;
-  tagName: string;
+  title?: string;
+  badgeHeading?: string;
+  badgeDescription?: string;
+  userName?: string;
+  points?: string;
+  tagName?: string;
   //   borderColor: string;
   className?: string;
   //   badgePosition?: "top" | "center";
@@ -74,8 +74,8 @@ const TagsCard: React.FC<TagCardProps> = ({
                 src={Images.cocoon}
                 alt="Card image cap"
               />
-              <Button btnText={tagName} variant="#564A8D" />
-              <Button btnText={points}  variant="#564A8D" />
+              {/* <Button btnText={tagName} variant="#564A8D" />
+              <Button btnText={points}  variant="#564A8D" /> */}
             </div>
           </div>
         </div>
