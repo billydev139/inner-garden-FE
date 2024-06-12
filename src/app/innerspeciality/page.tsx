@@ -1,4 +1,4 @@
-import Images from "@/assets";
+import Images from "@/assets/images";
 import Button from "@/components/common/Button";
 import Cards from "@/components/common/Cards";
 import CategoriesSlider from "@/components/common/CategoriesSlider";

@@ -17,7 +17,7 @@ const WellgorithmCard: React.FC<WellgorithmCardProps> = ({title, footerText, ima
         className={`${styles.headingH1} text-[#564A8D] text-center py-4`}
       >{title}</h1>
 
-      <div className="bg-[url('../assets/banner9.png')] bg-cover bg-center flex flex-col pt-[20px]">
+      <div className="bg-[url('../assets/images/banner9.png')] bg-cover bg-center flex flex-col pt-[20px]">
         <h1 className={`${styles.subHeading} text-white text-center py-4`}>
           <span className={`${styles.headingH1}`}>20</span>{footerText}
         </h1>

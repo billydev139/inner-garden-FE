@@ -1,11 +1,11 @@
-import Images from "@/assets";
+import Images from "@/assets/images";
 import styles from "@/styles";
 import Image from "next/image";
 import React from "react";
 
 const VideoSection: React.FC = () => {
   return (
-    <div className="container bg-[url('../assets/innerVedio.png')] bg-cover bg-center p-10 w-[60%] h-[400px] mb-8 rounded-lg flex flex-col justify-center items-center">
+    <div className="container bg-[url('../assets/images/innerVedio.png')] bg-cover bg-center p-10 w-[60%] h-[400px] mb-8 rounded-lg flex flex-col justify-center items-center">
       <div className="flex flex-col items-center">
         <Image
           src={Images.play}
