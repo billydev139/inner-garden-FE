@@ -1,5 +1,17 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+   @apply font-montserrat-alternates
+  }
+  
+  @layer base {
+   :root {
+     --color-dark-blue-primary: #564A8D;
+     --color-light-blue-secondary: #B76EF9;
+     --color-text-base: #FFFFFF;
+     --color-bg-primary: #FEFEFF;
+   }
+ }

@@ -1,0 +1,107 @@
+"use client";
+import React from "react";
+import Button from "./Button";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { cardTopBadge } from "@/utils/helpers/dummyContent";
+import styles from "@/styles";
+import Cards from "./Cards";
+
+interface CardSectionProps {
+  bgGradient: string;
+  borderColor: string;
+  secHeading: string;
+  secSubHeading?: string;
+  mode: "standalone" | "slider";
+}
+
+const CardSection: React.FC<CardSectionProps> = ({
+  bgGradient,
+  borderColor,
+  secHeading,
+  secSubHeading,
+  mode = "standalone",
+}) => {
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <button className="slick-prev">Previous</button>,
+    nextArrow: <button className="slick-next">Next</button>,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  return (
+    <div style={{ background: bgGradient }} className="py-[40px]">
+      <div className="container flex flex-col md:flex-row mb-4 justify-between items-center">
+        <div className="my-6">
+          {secHeading && (
+            <h1 className={`${styles.headingH1} text-white`}>{secHeading}</h1>
+          )}
+          {secSubHeading && (
+            <h2 className={`${styles.subHeading} text-white w-[80%] py-4`}>
+              {secSubHeading}
+            </h2>
+          )}
+        </div>
+        <Button btnText="View All" variant="white" />
+      </div>
+
+      {mode === "slider" ? (
+        <div className="container">
+          <Slider {...sliderSettings}>
+            {cardTopBadge.map((content) => (
+              <Cards
+                key={content.id}
+                imageSrc={content.image}
+                badgeText={content.badgeText}
+                title={content.title}
+                borderColor={borderColor}
+                badgePosition="top"
+                className='mx-2 my-4'
+              />
+            ))}
+          </Slider>
+        </div>
+      ) : (
+        <div className="container grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+          {cardTopBadge.slice(0, 3).map((content) => (
+            <Cards
+              key={content.id}
+              imageSrc={content.image}
+              badgeText={content.badgeText}
+              title={content.title}
+              borderColor={borderColor}
+              badgePosition="top"
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default CardSection;

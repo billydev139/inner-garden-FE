@@ -1,16 +1,13 @@
 import Images from "@/assets";
-import TestimonialCard1 from "@/components/TestimonialCard1";
-import TestimonialCard2 from "@/components/TestimonialCard2";
-import VideoSection from "@/components/VideoSection";
 import Button from "@/components/common/Button";
-
 import CardSection from "@/components/common/CardSection";
 import HeroSection from "@/components/common/HeroSection";
 import WellgorithmCard from "@/components/common/WellgorithmCard";
 import styles from "@/styles";
 import { cardTopBadge, wellgorithmContent } from "@/utils/helpers/dummyContent";
+import React from "react";
 
-export default function Home() {
+const Feed = () => {
   return (
     <>
       <HeroSection
@@ -23,11 +20,6 @@ export default function Home() {
         <div className="container flex flex-col md:flex-row mb-4 justify-between items-center">
           <div className="my-6">
             <h1 className={`${styles.headingH1} text-white`}>Wellgorithms</h1>
-
-            <h2 className={`${styles.subHeading} text-white w-[80%] py-4`}>
-              Start your journey with a Wellgorithm — a gamified journaling
-              challenge designed to nurture your (inner)Garden.
-            </h2>
           </div>
           <Button btnText="View All" variant="white" />
         </div>
@@ -46,43 +38,28 @@ export default function Home() {
 
       <CardSection
         secHeading="Cultivational Psychology"
-        secSubHeading="Discover the new field of Cultivational Psychology, 
-and how it’s transforming human potential and possibilities."
-        bgGradient="linear-gradient(to right, rgba(79, 129, 229, 0.3), rgba(79, 129, 229, 1))"
-        borderColor="#B76EF9"
-        mode="standalone"
-      />
-
-      <CardSection
-        secHeading="Cultivational Psychology"
-        secSubHeading="Discover the new field of Cultivational Psychology, 
-and how it’s transforming human potential and possibilities."
         bgGradient="linear-gradient(to right, rgba(86, 74, 141, 1), rgba(86, 74, 141, 1))"
         borderColor="#B76EF9"
-        mode="standalone"
+        mode="slider"
       />
       <CardSection
         secHeading="Cultivational Psychology"
-        secSubHeading="Discover the new field of Cultivational Psychology, 
-and how it’s transforming human potential and possibilities."
         bgGradient="linear-gradient(to right, rgba(183, 110, 249, 0.4), rgba(183, 110, 249, 1))"
         borderColor="#B76EF9"
-        mode="standalone"
+        mode="slider"
       />
       <CardSection
         secHeading="Cultivational Psychology"
-        secSubHeading="Discover the new field of Cultivational Psychology, 
-and how it’s transforming human potential and possibilities."
         bgGradient="linear-gradient(to right, rgba(36, 25, 69, 1), rgba(36, 25, 69, 1))"
         borderColor="#B76EF9"
-        mode="standalone"
+        mode="slider"
       />
-      <div className="container flex flex-col md:flex-row justify-between items-center gap-4 my-8">
-        <TestimonialCard1 />
-        <TestimonialCard2 />
-      </div>
 
-      <VideoSection />
+      <div className="text-center my-8">
+        <Button btnText="load more" variant="white" />
+      </div>
     </>
   );
-}
+};
+
+export default Feed;
