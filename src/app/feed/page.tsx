@@ -7,7 +7,7 @@ import styles from "@/styles";
 import { cardTopBadge, wellgorithmContent } from "@/utils/helpers/dummyContent";
 import React from "react";
 
-const Feed = () => {
+const Feed: React.FC = () => {
   return (
     <>
       <HeroSection

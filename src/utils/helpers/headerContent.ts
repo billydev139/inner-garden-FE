@@ -2,20 +2,20 @@ export const mainCategories = [
   {
     id: 0,
     title: "Gardens",
-    link: "/gardens",
+    link: "/categories/garden",
   },
   {
     id: 1,
     title: "Adversities",
-    link: "/adversities",
+    link: "/categories/adversities",
   },
   {
     id: 2,
     title: "Activities",
-    link: "/activities",
+    link: "/categories/activities",
   },
 ];
-
+ 
 export const loginLinks = [
   {
     id: 0,

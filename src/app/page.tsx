@@ -11,7 +11,7 @@ import { cardTopBadge, wellgorithmContent } from "@/utils/helpers/dummyContent";
 
 export default function Home() {
   return (
-    <>
+    <> 
       <HeroSection
         imageSrc={Images.banner3}
         heroSecHeading="The Big Bloom"

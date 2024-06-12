@@ -1,10 +1,10 @@
-"use client";
+"use client"
 
 import CategoriesPageLayout from "@/components/CategoriesPageLayout";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const Garden: React.FC = () => {
+const Adversities: React.FC = () => {
   const pathname = usePathname();
 
   return (
@@ -18,4 +18,4 @@ const Garden: React.FC = () => {
   );
 };
 
-export default Garden;
+export default Adversities;

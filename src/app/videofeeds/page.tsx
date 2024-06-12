@@ -1,10 +1,10 @@
-import Images from "@/assets";
+import Images from "@/assets/images";
 import Button from "@/components/common/Button";
 import CardSection from "@/components/common/CardSection";
 import HeroSection from "@/components/common/HeroSection";
 import React from "react";
 
-const VideoFeeds = () => {
+const VideoFeeds: React.FC = () => {
   return (
     <>
       <HeroSection

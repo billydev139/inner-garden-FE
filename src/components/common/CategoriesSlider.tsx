@@ -42,7 +42,7 @@ const CategoriesSlider: React.FC = () => {
   };
 
   return (
-    <div className="container my-8">
+    <div className="container py-8">
       <Slider {...settings}>
         {subMenucategories.map((category) => (
           <div key={category.id}>

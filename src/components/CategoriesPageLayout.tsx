@@ -4,21 +4,22 @@ import Cards from "@/components/common/Cards";
 import CategoriesSlider from "@/components/common/CategoriesSlider";
 import HeroSection from "@/components/common/HeroSection";
 import { cardCenterBadge, cardTopBadge } from "@/utils/helpers/dummyContent";
+import { usePathname } from "next/navigation";
 import React from "react";
 
-const InnerSpeciality: React.FC = () => {
+const CategoriesPageLayout = () => {
   return (
-    <>
-      <CategoriesSlider />
-      <div className="mb-[180px]">
+    <section className="bg-primary">
+    <CategoriesSlider />
+      <div className="mb-[140px]">
         <HeroSection
           imageSrc={Images.banner7}
-          heroSecHeading="Specialty"
-          heroSecText="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi sunt explicabo."
+          heroSecHeading="Gardens"
+          heroSecText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         />
       </div>
 
-      <div className="container flex flex-wrap justify-center mt-12 mb-8">
+      <div className="container flex flex-wrap justify-center mt-12 pb-10">
         {cardCenterBadge.map((content) => (
           <div
             key={content.id}
@@ -34,12 +35,8 @@ const InnerSpeciality: React.FC = () => {
           </div>
         ))}
       </div>
-
-      <div className="text-center mb-8">
-        <Button btnText="load more" variant="white" />
-      </div>
-    </>
+    </section>
   );
 };
 
-export default InnerSpeciality;
+export default CategoriesPageLayout;

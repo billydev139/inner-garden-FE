@@ -1,6 +1,7 @@
 import styles from "@/styles";
 import Image from "next/image";
 import React from "react";
+import wellgorithmBg from "../../assets/images/banner9.png";
 
 interface WellgorithmCardProps {
   imageSrc: string | any;
@@ -9,17 +10,31 @@ interface WellgorithmCardProps {
   footerText: string;
 }
 
-const WellgorithmCard: React.FC<WellgorithmCardProps> = ({title, footerText, imageSrc}) => {
+const WellgorithmCard: React.FC<WellgorithmCardProps> = ({
+  title,
+  footerText,
+  imageSrc,
+}) => {
   return (
-    <div className="border-4 border-[#564A8D] bg-white rounded-lg">
+    <div className="border-4 border-tertiary bg-white rounded-lg">
       <Image src={imageSrc} alt="image" />
-      <h1
-        className={`${styles.headingH1} text-[#564A8D] text-center py-4`}
-      >{title}</h1>
+      <h1 className={`${styles.headingH1} text-tertiary text-center py-4`}>
+        {title}
+      </h1>
 
-      <div className="bg-[url('../assets/images/banner9.png')] bg-cover bg-center flex flex-col pt-[20px]">
+      <div
+        style={{
+          backgroundImage: `url(${wellgorithmBg.src})`,
+          height: "100%",
+          width: "100%",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="flex flex-col pt-[20px]"
+      >
         <h1 className={`${styles.subHeading} text-white text-center py-4`}>
-          <span className={`${styles.headingH1}`}>20</span>{footerText}
+          <span className={`${styles.headingH1}`}>20</span>
+          {footerText}
         </h1>
       </div>
     </div>

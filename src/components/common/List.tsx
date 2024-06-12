@@ -5,13 +5,14 @@ interface ListProps {
   toLink: string;
   label: string;
   linkStyle?: string;
+  className?:string;
 }
 
-const List: React.FC<ListProps> = ({ toLink, label }) => {
+const List: React.FC<ListProps> = ({ toLink, label, className }) => {
   return (
     <li>
       <Link href={toLink}>
-        <span className={`text-[#B76EF9] text-[20px] font-medium ${label==="/contact"?"rounded-full bg-white":""}`}>{label}</span>
+        <span className={`${className} text-[20px] font-medium ${label==="/contact"?"rounded-full bg-white":""}`}>{label}</span>
       </Link>
     </li>
   );
