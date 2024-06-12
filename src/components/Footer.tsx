@@ -2,12 +2,12 @@ import React from "react";
 import Button from "./common/Button";
 import Image from "next/image";
 import Link from "next/link";
-import Images from "@/assets";
+import Images from "@/assets/images";
 import styles from "@/styles";
 
 const Footer: React.FC = () => {
   return (
-    <div className="bg-[url('../assets/footer-inner.png')] bg-cover bg-center flex flex-col pt-[20px]" >
+    <div className="bg-[url('../assets/images/footer-inner.png')] bg-cover bg-center flex flex-col pt-[20px]" >
       <h1 className={`${styles.headingH1} text-white text-center`}>subscribe to Wellgorithms Weekly</h1>
       
       <h2 className={`${styles.subHeading} text-white text-center my-2 px-4`}>
