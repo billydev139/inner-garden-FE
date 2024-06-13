@@ -1,11 +1,11 @@
 import React from "react";
-import bgimg from "../../assets/images/abd.png";
+import bgimg from "../assets/images/abd.png";
 import Image from "next/image";
-import Images from "@/assets/images";
+import Images from "../assets/images";
 import {
   AiOutlineQuestionCircle,
   FaBookOpenReader,
-} from "../../assets/Icons/index";
+} from "../assets/Icons/index";
 import Button from "@/components/common/Button";
 import { wellGoCardData } from "@/utils/helpers/dummyContent";
 const Wellgorithm: React.FC = () => {

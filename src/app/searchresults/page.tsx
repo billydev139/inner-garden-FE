@@ -93,6 +93,7 @@ const SearchResults = () => {
         <div className="mt-10">
         {searchResultData?.map((content) => (
           <TagsCard
+            key={content.id}
             imageSrc={content.image}
             title={content.title}
             badgeHeading={content.badgeHeading}

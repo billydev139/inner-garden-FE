@@ -84,8 +84,8 @@ import brainn from "./cognition (1).svg";
 import coverImageProfile from "./Frame 1000001795.svg";
 import ImageProfile from "./Group 1000001794.svg";
 import CoverImageProfilePage from "./CoverImageProfilePage.svg";
-import wellgo from "./wellgo.png"
-import wellgobg from "./abd.png"
+import wellgo from "./wellgo.png";
+import wellgobg from "./abd.png";
 import wellgocardimg from "./wellgocardimg.png"
 import wellgosmall from "./wellgosmall.png" 
 import butterflies from "./butterflies.png"
