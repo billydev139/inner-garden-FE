@@ -7,7 +7,7 @@ import videoImage from "../assets/images/innerVedio.png";
 const VideoSection: React.FC = () => {
   return (
     <div
-      className="container p-10 pb-8 rounded-lg flex flex-col justify-center items-center"
+      className="container p-10 py-[160px] pb-8 rounded-lg flex flex-col justify-center items-center"
       style={{
         backgroundImage: `url(${videoImage.src})`,
         height: "100%",
