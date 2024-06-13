@@ -31,7 +31,7 @@ const TagsCard: React.FC<TagCardProps> = ({
   return (
     <>
       <div className="">
-        <div className="border-[2px] border-white bg-white rounded-2xl mb-8">
+        <div className="border-[2px] border-white bg-white pb-6 rounded-2xl mb-8">
           <h2 className="bg-purple-dark text-white text-center font-black lg:text-[44px] rounded-2xl py-5 rounded-b-none">
             {title}
           </h2>
