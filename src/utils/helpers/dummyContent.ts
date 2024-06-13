@@ -327,5 +327,172 @@ export const searchResultData = [
       tagName: "Tag Name 2",
     },
   ];
+ export const innerTrailFeed = [
+    {
+      title: "Journey to the (peace)Garden",
+      CardsData: [
+        {
+          id: "0",
+          badgeText: "peace",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.innertraidfeed,
+        },
+        {
+          id: "1",
+          badgeText: "peace",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.innerfeedimg2,
+        },
+        {
+          id: "3",
+          badgeText: "peace",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "4",
+          badgeText: "peace",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+      ],
+    },
+    {
+      title: "Journey to the (peace)Garden",
+      CardsData: [
+        {
+          id: "0",
+          badgeText: "peace",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "1",
+          badgeText: "peace",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "3",
+          badgeText: "peace",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "4",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+      ],
+    },
+    {
+      title: "Journey to the (love)Garden",
+      CardsData: [
+        {
+          id: "0",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "1",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "3",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "4",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+      ],
+    },
+    {
+      title: "Journey to the (joy)Garden",
+      CardsData: [
+        {
+          id: "0",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "1",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "3",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "4",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+      ],
+    },
+    {
+      title: "Journey to the (hope)Garden",
+      CardsData: [
+        {
+          id: "0",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "1",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "3",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+        {
+          id: "4",
+          badgeText: "(serenity)Sunflowers",
+          title:
+            "(serenitty)Sunflowers",
+          image: Images.banner1,
+        },
+      ],
+    },
+  ];
 
 

@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Images from "@/assets/images";
 
-import { cardTopBadge } from "@/utils/helpers/dummyContent";
+import { cardTopBadge, innerTrailFeed } from "@/utils/helpers/dummyContent";
 import Cards from "@/components/common/Cards";
 
 const Paths = () => {
@@ -40,179 +40,13 @@ const Paths = () => {
     ],
   };
 
-  const innerTrailFeed = [
-    {
-      title: "Journey to the (peace)Garden",
-      CardsData: [
-        {
-          id: "0",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "1",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "3",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "4",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-      ],
-    },
-    {
-      title: "Journey to the (peace)Garden",
-      CardsData: [
-        {
-          id: "0",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "1",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "3",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "4",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-      ],
-    },
-    {
-      title: "Journey to the (love)Garden",
-      CardsData: [
-        {
-          id: "0",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "1",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "3",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "4",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-      ],
-    },
-    {
-      title: "Journey to the (joy)Garden",
-      CardsData: [
-        {
-          id: "0",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "1",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "3",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "4",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-      ],
-    },
-    {
-      title: "Journey to the (hope)Garden",
-      CardsData: [
-        {
-          id: "0",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "1",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "3",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "4",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-      ],
-    },
-  ];
+  
 
   return (
     <>
       {innerTrailFeed?.map((item, index) => (
         <div key={index} className="bg-white rounded-[30px] p-10 mt-10">
-          <h2 className="rounded-[55px] py-3 text-white text-center font-black text-[32px] bg-secondary">
+          <h2 className="rounded-[55px] py-3 text-white text-center font-black text-[32px] bg-tertiary">
             {item.title}
           </h2>
           <div className="container mt-5">
