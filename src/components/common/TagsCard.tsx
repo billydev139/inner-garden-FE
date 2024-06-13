@@ -32,7 +32,7 @@ const TagsCard: React.FC<TagCardProps> = ({
     <>
       <div className="">
         <div className="border-[2px] border-white bg-white pb-6 rounded-2xl mb-8">
-          <h2 className="bg-purple-dark text-white text-center font-black lg:text-[44px] rounded-2xl py-5 rounded-b-none">
+          <h2 className="bg-secondary text-white text-center font-black lg:text-[44px] rounded-2xl py-5 rounded-b-none">
             {title}
           </h2>
           
@@ -45,7 +45,7 @@ const TagsCard: React.FC<TagCardProps> = ({
           )}
 
           <div className="lg:px-14 px-2 mt-8">
-            <h2 className="lg:text-[32px] text-[20px] font-black text-purple-dark">
+            <h2 className="lg:text-[32px] text-[20px] font-black text-secondary">
               {badgeHeading}
             </h2>
             <p className="font-montserrat lg:text-[20px] text-base  font-medium">
@@ -76,10 +76,10 @@ const TagsCard: React.FC<TagCardProps> = ({
                   src={Images.cocoon}
                   alt="Card image cap"
                 />
-                <h2 className="font-semibold text-base font-montserrat-alternates text-white rounded-[18px] px-3 py-2 bg-blue-dark">
+                <h2 className="font-semibold text-base font-montserrat-alternates text-white rounded-[18px] px-3 py-2 bg-primary">
                 {tagName}
                 </h2>
-                <h2 className="font-semibold text-base font-montserrat-alternates text-white rounded-[18px] px-3 py-2 bg-purple-dark">
+                <h2 className="font-semibold text-base font-montserrat-alternates text-white rounded-[18px] px-3 py-2 bg-secondary">
                 {points}
                 </h2>
                 {/* <Button btnText={tagName} variant="#564A8D" />
