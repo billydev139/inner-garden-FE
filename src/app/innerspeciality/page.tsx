@@ -35,7 +35,7 @@ const InnerSpeciality: React.FC = () => {
         ))}
       </div>
 
-      <div className="text-center mb-8">
+      <div className="text-center pb-8">
         <Button btnText="load more" variant="white" />
       </div>
     </>

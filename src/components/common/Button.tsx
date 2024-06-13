@@ -4,7 +4,7 @@ import React from "react";
 interface ButtonProps {
   btnType?: "button" | "submit" | "reset";
   btnText: string;
-  variant?: "gradient" | "white";
+  variant?: "gradient" | "white" | "#564A8D";
   href?: string;
   className?: string;
 }
@@ -20,14 +20,16 @@ const Button: React.FC<ButtonProps> = ({
 
   const variantClasses =
     variant === "gradient"
-      ? `rounded-full bg-gradient-to-r from-secondary to-secondary text-white border border-3 border-secondary whitespace-nowrap`
-      : `bg-white rounded-xl text-[#564A8D] font-semibold border border-gray-300 rounded-full hover:bg-gray-100 hover:border-gray-400 transition duration-300 whitespace-nowrap`;
+      ? `rounded-full bg-gradient-to-r from-secondary to-tertiary text-white border border-3 border-secondary`
+      : variant === "white"
+      ? `bg-white rounded-xl text-[#564A8D] font-semibold border border-gray-300 rounded-full hover:bg-gray-100 hover:border-gray-400 transition duration-300`
+      : variant === "#564A8D"
+      ? `bg-[#564A8D] text-[#c4caf0] rounded-[20px] text-[16px] font-semibold border border-[#564A8D] hover:bg-[#463573] transition duration-300`
+      : "";
 
   return href ? (
     <Link href={href} passHref>
-      <span className={`${baseClasses} ${variantClasses} ${className} whitespace-nowrap `}>
-        {btnText}
-      </span>
+      <span className={`${baseClasses} ${variantClasses}`}>{btnText}</span>
     </Link>
   ) : (
     <button type={btnType} className={`${baseClasses} ${variantClasses} ${className} whitespace-nowrap `}>

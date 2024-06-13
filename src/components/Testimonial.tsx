@@ -35,12 +35,12 @@ const Testimonial: React.FC = () => {
             width: "100%",
             backgroundSize: "cover",
             backgroundPosition: "center",
-          }} className="lg:w-[50%] p-6 lg:p-10 lg:my-4 rounded-lg lg:h-[350px] h-[350px] my-4">
+          }} className="lg:w-[50%] p-6 lg:p-10 lg:my-4 rounded-lg lg:h-[350px] leading-10 my-4">
           <span 
          
           className="text-3xl text-white font-black">&quot;</span>
 
-          <h1 className={`${styles.headingH1} text-white py-6`}>
+          <h1 className={`${styles.headingH1} text-white`}>
             AI will help us build all kinds of cathedrals of the mind, many of
             which we could not have built before.
           </h1>

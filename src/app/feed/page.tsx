@@ -18,7 +18,7 @@ const Feed: React.FC = () => {
 
       <div className="bg-[#4F81E5] py-12">
         <div className="container flex flex-col md:flex-row mb-4 justify-between items-center">
-          <div className="my-6">
+          <div className="py-6">
             <h1 className={`${styles.headingH1} text-white`}>Wellgorithms</h1>
           </div>
           <Button btnText="View All" variant="white" />
@@ -55,7 +55,7 @@ const Feed: React.FC = () => {
         mode="slider"
       />
 
-      <div className="text-center my-8">
+      <div className="text-center py-8">
         <Button btnText="load more" variant="white" />
       </div>
     </>

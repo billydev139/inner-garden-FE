@@ -10,14 +10,14 @@ body {
 
 @layer base {
   :root {
-    --color-primary: #c4cac0;
+    --color-primary: #C4CAEF;
     --color-secondary: #b76ef9;
     --color-tertiary: #4e3d82;
   }
 }
 
 .theme-blue {
-  --color-primary: #c4cac0;
+  --color-primary: #C4CAEF;
   --color-secondary: #b76ef9;
   --color-tertiary: #564A8D;
 } 

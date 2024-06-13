@@ -13,13 +13,17 @@ const Footer: React.FC = () => {
   const pathname = usePathname(); 
 
   let themeClass = ""; 
+  let logoImage = Images.inner;
   
   if (pathname.includes("/garden")) {
     themeClass = "theme-blue";
+    logoImage = Images.inner;
   } else if (pathname.includes("/adversities")) {
     themeClass = "theme-brown";
+    logoImage = Images.innerBrown;
   } else if (pathname.includes("/activities")) {
     themeClass = "theme-green";
+    logoImage = Images.innerGreen;
   }
   return (
     <div
@@ -62,7 +66,7 @@ const Footer: React.FC = () => {
         </div>
 
         <Image
-          src={Images.inner}
+          src={logoImage}
           alt="logo"
           width={300}
           height={300}
@@ -72,7 +76,7 @@ const Footer: React.FC = () => {
       </div> 
 
       <div className="flex flex-wrap justify-center items-center">
-        <div className="lg:bg-tertiary rounded-full flex flex-col md:flex-row flex-wrap justify-around items-center md:w-[40%] p-2 my-4">
+        <div className="lg:bg-tertiary rounded-full flex flex-col md:flex-row flex-wrap justify-around items-center md:w-[40%] my-4">
           <Link href="" className="text-white">
             writers in residence
           </Link>
@@ -94,7 +98,7 @@ const Footer: React.FC = () => {
         </Link>
       </div>
 
-      <h2 className="text-center text-white">
+      <h2 className="text-center text-white pb-4">
         © copyright 2024 by (inner). All rights reserved
       </h2>
     </div>

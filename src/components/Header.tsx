@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {HiUsers} from '@/assets/Icons'
+import { HiUsers } from "@/assets/Icons";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { BsThreeDots } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
@@ -13,6 +13,7 @@ import List from "./common/List";
 import Button from "./common/Button";
 import { usePathname } from "next/navigation";
 
+
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname(); // Get the current pathname
@@ -21,15 +22,18 @@ const Header: React.FC = () => {
     setMenuOpen(!menuOpen);
   };
 
-  let themeClass = ""; // Initialize an empty string for the theme class
+  let themeClass = ""; 
+  let logoImage = Images.inner;
 
-  // Set the theme class based on the current pathname
   if (pathname.includes("/garden")) {
     themeClass = "theme-blue";
+    logoImage = Images.inner;
   } else if (pathname.includes("/adversities")) {
     themeClass = "theme-brown";
+    logoImage = Images.innerBrown;
   } else if (pathname.includes("/activities")) {
     themeClass = "theme-green";
+    logoImage = Images.innerGreen;
   }
 
   return (
@@ -39,24 +43,28 @@ const Header: React.FC = () => {
           <div className="flex items-center justify-between w-full lg:w-auto">
             <Link href="/">
               <Image
-                src={Images.inner}
+                src={logoImage}
                 alt="logo"
                 width={150}
                 height={150}
                 className="px-4"
               />
-            </Link> 
+            </Link>
 
             <div className="lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 gap-4 lg:gap-0 hidden">
               <div className="flex items-center bg-white px-2 py-2 rounded-xl lg:order-1">
-                <HiUsers className="text-xl text-tertiary"  />
+                <HiUsers className="text-xl text-tertiary" />
                 <IoMdArrowDropdown className="text-xl text-tertiary" />
               </div>
 
-              <div className="flex flex-col lg:flex-row items-center gap-4 bg-white px-2 py-2 rounded-xl lg:order-2">
+              <div className="flex flex-col lg:flex-row items-center gap-4 bg-white px-2 py-2 rounded-full lg:order-2">
                 {mainCategories.map((link, index) => (
                   <Link key={index} href={link.link}>
-                    <span className="text-tertiary font-medium">
+                    <span
+                      className={`text-tertiary font-medium ${
+                        pathname === link.link ? "bg-secondary text-white px-2 py-2 rounded-full" : ""
+                      }`}
+                    >
                       {link.title}
                     </span>
                   </Link>
@@ -67,7 +75,6 @@ const Header: React.FC = () => {
                 <BsThreeDots className="text-xl text-tertiary" />
               </div>
             </div>
-            {/* // use button component// */}
             <button
               className="text-white text-2xl lg:hidden"
               onClick={toggleMenu}
@@ -89,8 +96,12 @@ const Header: React.FC = () => {
 
               <div className="flex flex-col lg:flex-row items-center gap-4 bg-white px-2 py-2 rounded-xl lg:order-2">
                 {mainCategories.map((link, index) => (
-                  <Link key={link.id} href={link.link}>
-                    <span className="text-tertiary font-medium">
+                  <Link key={index} href={link.link}>
+                    <span
+                      className={`text-tertiary font-medium ${
+                        pathname === link.link ? "bg-blue-500 text-white" : ""
+                      }`}
+                    >
                       {link.title}
                     </span>
                   </Link>
@@ -98,7 +109,7 @@ const Header: React.FC = () => {
               </div>
 
               <div className="flex items-center bg-white px-2 py-2 rounded-xl lg:order-3">
-                <BsThreeDots className="text-xl text-primary"  />
+                <BsThreeDots className="text-xl text-primary" />
               </div>
             </div>
 
@@ -117,7 +128,11 @@ const Header: React.FC = () => {
               ))}
 
               <li>
-                <Button btnText="join us" variant="white" className="text-tertiary"  />
+                <Button
+                  btnText="join us"
+                  variant="white"
+                  className="text-tertiary"
+                />
               </li>
             </ul>
           </div>

@@ -14,7 +14,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   heroSecText,
 }) => {
   return (
-    <div className="container pt-4 lg:mb-[120px] xl:mb-[140px]">
+    <div className="container py-4 lg:mb-[120px] xl:mb-[140px]">
       <Image
         src={imageSrc}
         alt="banner image"

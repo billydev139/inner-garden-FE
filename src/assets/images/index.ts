@@ -25,6 +25,8 @@ import upload from "./upload.svg";
 import img3 from "./img3.svg";
 import footer1 from "./footer1.svg";
 import inner from "./inner.svg";
+import innerBrown from "./inner-brown.png";
+import innerGreen from "./inner-green.png";
 import play from "./play.png";
 import home_banner_1 from "./home_banner_1.jpg";
 import home_banner_2 from "./home_banner_2.jpg";
@@ -82,10 +84,21 @@ import brainn from "./cognition (1).svg";
 import coverImageProfile from "./Frame 1000001795.svg";
 import ImageProfile from "./Group 1000001794.svg";
 import CoverImageProfilePage from "./CoverImageProfilePage.svg";
-
+import wellgo from "./wellgo.png"
+import wellgobg from "./abd.png"
+import wellgocardimg from "./wellgocardimg.png"
+import wellgosmall from "./wellgosmall.png" 
+import butterflies from "./butterflies.png"
+import userpic from "./userpic.png"
+import cocoon from "./cocoon-icon.png"
+import snell from "./snell.png"
+import fly from "./fly.png"
 const Images = {
     logo,
     banner1,
+    cocoon,
+    snell,
+    fly,
     banner2,
     banner3,
     icon1,
@@ -111,6 +124,8 @@ const Images = {
     img3,
     footer1,
     inner,
+    innerBrown,
+    innerGreen,
     play,
     home_banner_1,
     home_banner_2,
@@ -167,7 +182,13 @@ const Images = {
     brainn,
     coverImageProfile,
     ImageProfile,
-    CoverImageProfilePage
+    CoverImageProfilePage,
+    wellgo,
+    wellgobg,
+    wellgocardimg,
+    wellgosmall,
+    butterflies,
+    userpic
 };
 
 export default Images
