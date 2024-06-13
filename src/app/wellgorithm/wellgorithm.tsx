@@ -27,10 +27,10 @@ const Wellgorithm: React.FC = () => {
           size={22}
           className="absolute right-3 top-2"
         />
-        <div className="flex items-center gap-8 mt-6">
-          <Button btnText="intention" variant="#564A8D" />
-          <Button btnText="action" variant="#564A8D" />
-          <Button btnText="reflection" variant="#564A8D" />
+        <div className="flex flex-wrap items-center gap-8 mt-6">
+          <Button btnText="intention" variant="purple" />
+          <Button btnText="action" variant="purple" />
+          <Button btnText="reflection" variant="purple" />
         </div>
       </div>
       {wellGoCardData?.map((item: any, index: React.Key | null | undefined) => (
@@ -48,10 +48,10 @@ const Wellgorithm: React.FC = () => {
             <h2 className="border-[3px] text-white text-2xl -mt-7 z-10 font-semibold font-montserrat-alternates border-white bg-purple-light rounded-[30px] px-8 py-1">
               {item.title}
             </h2>
-            <h2 className="font-black text-purple-dark text-[40px] leading-[48px] pt-3 text-center px-24 font-montserrat-alternates">
+            <h2 className="font-black text-purple-dark lg:text-[40px] text-[20px] lg:leading-[48px] pt-3 text-center lg:px-24 font-montserrat-alternates">
               {item.heading}
             </h2>
-            <p className="text-black text-xl font-semibold font-montserrat-alternates text-center px-20 py-6">
+            <p className="text-black lg:text-xl text-base font-semibold font-montserrat-alternates text-center lg:px-20 px-8 py-6">
               {item.description}
             </p>
             <div
@@ -61,9 +61,9 @@ const Wellgorithm: React.FC = () => {
               }}
             >
               <div></div>
-              <h2 className="flex items-center font-black text-[32px] ml-16 text-center text-white font-montserrat-alternates">
+              <h2 className="flex items-center font-black lg:text-[32px] text-[22px] ml-16 text-center text-white font-montserrat-alternates">
                 {item.points}
-                <span className="text-white font-medium text-[22px]">
+                <span className="text-white font-medium lg:text-[22px] text-base">
                   (entirety)Points
                 </span>
               </h2>

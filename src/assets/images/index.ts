@@ -91,10 +91,12 @@ import userpic from "./userpic.png"
 import cocoon from "./cocoon-icon.png"
 import snell from "./snell.png"
 import fly from "./fly.png"
+import searchbackground from ".//searchresultbg.png"
 const Images = {
     logo,
     banner1,
     cocoon,
+    searchbackground,
     snell,
     fly,
     banner2,
