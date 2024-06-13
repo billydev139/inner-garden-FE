@@ -79,7 +79,7 @@ const Header: React.FC = () => {
           <div
             className={`${
               menuOpen ? "block" : "hidden"
-            } w-full lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0`}
+            } w-full lg:flex lg:items-center lg:w-auto pt-4 lg:mt-0`}
           >
             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6 gap-4 lg:gap-0 lg:hidden">
               <div className="flex items-center bg-white px-2 py-2 rounded-xl lg:order-1">
