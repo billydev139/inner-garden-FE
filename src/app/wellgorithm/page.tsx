@@ -1,10 +1,7 @@
 "use client";
-
-import Images from "@/assets/images";
+import Tabs from "@/components/Tabs";
 import CategoriesSlider from "@/components/common/CategoriesSlider";
-import Image from "next/image";
 import React from "react";
-import Tabs from "./Tabs";
 
 const Wellgorithm: React.FC = () => {
   return (

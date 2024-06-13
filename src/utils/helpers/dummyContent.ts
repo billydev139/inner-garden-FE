@@ -252,6 +252,7 @@ export const wellGoCardData = [
 
 export const tagCardData = [
   {
+    id:0,
     // image: Images.banner1,
     title: "(serenitty)Sunflowers",
     badgeHeading: "Peace is middle of stroms",
@@ -263,6 +264,7 @@ export const tagCardData = [
     tagName: "Tag Name 2",
   },
   {
+    id:1,
     image: Images.banner1,
     title: "(serenitty)Sunflowers",
     badgeHeading: "Peace is middle of stroms",
@@ -274,6 +276,7 @@ export const tagCardData = [
     tagName: "Tag Name 2",
   },
   {
+    id:2,
     image: Images.banner1,
     title: "(serenitty)Sunflowers",
     badgeHeading: "Peace is middle of stroms",
@@ -288,6 +291,7 @@ export const tagCardData = [
 
 export const searchResultData = [
     {
+      id:0,
       image: Images.banner1,
       title: "(serenitty)Sunflowers",
       badgeHeading: "Peace is middle of stroms",
@@ -299,6 +303,7 @@ export const searchResultData = [
       tagName: "Tag Name 2",
     },
     {
+      id:1,
       image: Images.banner1,
       title: "(serenitty)Sunflowers",
       badgeHeading: "Peace is middle of stroms",
@@ -310,6 +315,7 @@ export const searchResultData = [
       tagName: "Tag Name 2",
     },
     {
+      id:2,
       image: Images.banner1,
       title: "(serenitty)Sunflowers",
       badgeHeading: "Peace is middle of stroms",

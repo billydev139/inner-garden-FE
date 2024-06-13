@@ -1,7 +1,5 @@
 import React from "react";
-import Images from "@/assets/images";
-import Image from "next/image";
-import bgimg from "../../assets/images/butterflies.png";
+import bgimg from "@/assets/images/butterflies.png";
 import TagsCard from "@/components/common/TagsCard";
 import { tagCardData } from "@/utils/helpers/dummyContent";
 import Button from "@/components/common/Button";
@@ -23,6 +21,7 @@ const Journals = () => {
         <div className="-mt-20 relative z-10">
         {tagCardData?.map((content) => (
           <TagsCard
+          key={content.id}
             imageSrc={content.image}
             title={content.title}
             badgeHeading={content.badgeHeading}

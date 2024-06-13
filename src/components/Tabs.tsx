@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import Journals from "./journals";
-import Paths from "./paths";
-import Wellgorithm from "./wellgorithm";
+import Journals from "./Jornals";
+import Paths from "./Paths";
+import Wellgorithm from "./Wellgorithm";
+
 
 type Tab = {
     name: string;
