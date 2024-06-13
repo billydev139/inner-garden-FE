@@ -66,7 +66,7 @@ const Cards: React.FC<CardProps> = ({
           </video>
         )}
         {badgePosition === "top" ? (
-          <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary border-2 border-white text-white text-xs px-2 py-1 rounded-full z-30 text-[32px] font-black">
+          <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary border-2 border-white text-white text-xs px-5 py-2 rounded-full z-30 text-[32px] font-black">
             {badgeText}
           </span>
         ) : (

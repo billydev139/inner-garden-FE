@@ -321,3 +321,5 @@ export const searchResultData = [
       tagName: "Tag Name 2",
     },
   ];
+
+
