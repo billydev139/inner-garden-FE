@@ -1,10 +1,16 @@
-import Images from "@/assets";
+import Images from "@/assets/images";
 import Button from "@/components/common/Button";
 import CardSection from "@/components/common/CardSection";
 import HeroSection from "@/components/common/HeroSection";
+import WellgorithmCard from "@/components/common/WellgorithmCard";
+import styles from "@/styles";
+import {
+  cardSectionContent,
+  wellgorithmContent,
+} from "@/utils/helpers/dummyContent";
 import React from "react";
 
-const VideoFeeds = () => {
+const VideoFeeds: React.FC = () => {
   return (
     <>
       <HeroSection
@@ -12,41 +18,39 @@ const VideoFeeds = () => {
         heroSecHeading="Videos"
         heroSecText="See how AI is transforming our understanding of mind and emotions, and making the once impossible, possible."
       />
-      <CardSection
-        secHeading="Wellgorithms"
-        secSubHeading="Start your journey with a Wellgorithm — 
-a gamified challenge designed to nurture your (inner)Garden."
-        bgGradient="linear-gradient(to right, rgba(79, 129, 229, 0.3), rgba(79, 129, 229, 1))"
-        borderColor="#B76EF9"
-        mode="slider"
-      />
 
-      <CardSection
-        secHeading="Cultivational Psychology"
-        secSubHeading="Start your journey with a Wellgorithm — 
-a gamified challenge designed to nurture your (inner)Garden."
-        bgGradient="linear-gradient(to right, rgba(86, 74, 141, 1), rgba(86, 74, 141, 1))"
-        borderColor="#B76EF9"
-        mode="slider"
-      />
-      <CardSection
-        secHeading="Cultivational Psychology"
-        secSubHeading="Start your journey with a Wellgorithm — 
-a gamified challenge designed to nurture your (inner)Garden."
-        bgGradient="linear-gradient(to right, rgba(183, 110, 249, 0.4), rgba(183, 110, 249, 1))"
-        borderColor="#B76EF9"
-        mode="slider"
-      />
-      <CardSection
-        secHeading="Cultivational Psychology"
-        secSubHeading="Start your journey with a Wellgorithm — 
-a gamified challenge designed to nurture your (inner)Garden."
-        bgGradient="linear-gradient(to right, rgba(36, 25, 69, 1), rgba(36, 25, 69, 1))"
-        borderColor="#B76EF9"
-        mode="slider"
-      />
+      <div className="bg-[#4F81E5] py-12">
+        <div className="container flex flex-col md:flex-row mb-4 justify-between items-center">
+          <div className="py-6">
+            <h1 className={`${styles.headingH1} text-white`}>Wellgorithms</h1>
+          </div>
+          <Button btnText="View All" variant="white" />
+        </div>
+        <div className="container flex justify-between items-center gap-4">
+          {wellgorithmContent.slice(0, 3).map((content) => (
+            <WellgorithmCard
+              key={content.id}
+              imageSrc={content.image}
+              title={content.title}
+              text={content.text}
+              footerText={content.footerText}
+            />
+          ))}
+        </div>
+      </div>
 
-      <div className="text-center my-8">
+      {cardSectionContent.map((secContent) => (
+        <CardSection
+          key={secContent.id} 
+          secHeading={secContent.heading}
+          secSubHeading={secContent.subHeading}
+          bgGradient={secContent.bgGradient}
+          borderColor={secContent.borderColor}
+          mode="standalone"
+        />
+      ))}
+
+      <div className="text-center py-8">
         <Button btnText="load more" variant="white" />
       </div>
     </>

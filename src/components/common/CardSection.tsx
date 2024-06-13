@@ -56,13 +56,13 @@ const CardSection: React.FC<CardSectionProps> = ({
 
   return (
     <div style={{ background: bgGradient }} className="py-[40px]">
-      <div className="container flex flex-col md:flex-row mb-4 justify-between items-center">
+      <div className="container flex flex-col xl:flex-row mb-8 justify-between items-center">
         <div className="my-6">
           {secHeading && (
             <h1 className={`${styles.headingH1} text-white`}>{secHeading}</h1>
           )}
           {secSubHeading && (
-            <h2 className={`${styles.subHeading} text-white w-[80%] py-4`}>
+            <h2 className={`${styles.subHeading} text-white lg:w-[80%] py-4`}>
               {secSubHeading}
             </h2>
           )}

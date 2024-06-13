@@ -90,6 +90,37 @@ export const wellgorithmContent = [
   },
 ];
 
+export const cardSectionContent = [
+  {
+    id: 0,
+    heading: "Cultivational Psychology",
+    subHeading:
+      "Discover the new field of Cultivational Psychology, and how it’s transforming human potential and possibilities.",
+    bgGradient:
+      "linear-gradient(to right, rgba(79, 129, 229, 0.4), rgba(79, 129, 229, 1))",
+    borderColor: "#B76EF9",
+  },
+  {
+    id: 1,
+    heading: "Expanded Behavioral Therapy  ",
+    subHeading:
+      "Explore the new frontier of virtual reality and mental health with Expanded Behavioral Therapy.",
+    bgGradient:
+      "linear-gradient(to right, rgba(183, 110, 249, 0.4), rgba(183, 110, 249, 1))",
+    borderColor: "#B76EF9",
+  },
+  {
+    id: 2,
+    heading: "Become an (inner)Billionaire",
+    subHeading:
+      "Get rich in what matters most: peace, kindness, gratitude, wonder, love and hope.",
+    bgGradient:
+    "linear-gradient(to right, rgba(86, 74, 141, 1), rgba(86, 74, 141, 1))",
+      
+    borderColor: "#B76EF9",
+  },
+];
+
 export const cardCenterBadge = [
   {
     id: "0",

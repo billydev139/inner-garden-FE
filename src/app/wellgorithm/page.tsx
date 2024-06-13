@@ -6,7 +6,7 @@ import Image from "next/image";
 import React from "react";
 import Tabs from "./Tabs";
 
-const Wellgorithm = () => {
+const Wellgorithm: React.FC = () => {
   return (
     <>
       <CategoriesSlider />

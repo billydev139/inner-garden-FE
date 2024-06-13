@@ -25,6 +25,8 @@ import upload from "./upload.svg";
 import img3 from "./img3.svg";
 import footer1 from "./footer1.svg";
 import inner from "./inner.svg";
+import innerBrown from "./inner-brown.png";
+import innerGreen from "./inner-green.png";
 import play from "./play.png";
 import home_banner_1 from "./home_banner_1.jpg";
 import home_banner_2 from "./home_banner_2.jpg";
@@ -124,6 +126,8 @@ const Images = {
     img3,
     footer1,
     inner,
+    innerBrown,
+    innerGreen,
     play,
     home_banner_1,
     home_banner_2,

@@ -7,7 +7,7 @@ import CardSection from "@/components/common/CardSection";
 import HeroSection from "@/components/common/HeroSection";
 import WellgorithmCard from "@/components/common/WellgorithmCard";
 import styles from "@/styles";
-import { cardTopBadge, wellgorithmContent } from "@/utils/helpers/dummyContent";
+import { cardSectionContent, cardTopBadge, wellgorithmContent } from "@/utils/helpers/dummyContent";
 
 export default function Home() {
   return (
@@ -23,64 +23,52 @@ export default function Home() {
           <div className="my-6">
             <h1 className={`${styles.headingH1} text-white`}>Wellgorithms</h1>
 
-            <h2 className={`${styles.subHeading} text-white w-[80%] py-4`}>
+            <h2 className={`${styles.subHeading} text-white lg:w-[60%] py-4`}>
               Start your journey with a Wellgorithm — a gamified journaling
               challenge designed to nurture your (inner)Garden.
             </h2>
           </div>
-          <Button btnText="View All" variant="white" />
+          <Button
+            btnText="View All"
+            variant="white"
+            className="whitespace-normal"
+          />
         </div>
-        <div className="container flex justify-between items-center gap-4">
+        <div className="container flex flex-wrap justify-center mt-12 mb-8">
           {wellgorithmContent.slice(0, 3).map((content) => (
-            <WellgorithmCard
+            <div
               key={content.id}
-              imageSrc={content.image}
-              title={content.title}
-              text={content.text}
-              footerText={content.footerText}
-            />
+              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 p-2 box-border"
+            >
+              <WellgorithmCard
+                imageSrc={content.image}
+                title={content.title}
+                text={content.text}
+                footerText={content.footerText}
+              />
+            </div>
           ))}
         </div>
       </div>
 
-      <CardSection
-        secHeading="Cultivational Psychology"
-        secSubHeading="Discover the new field of Cultivational Psychology, 
-and how it’s transforming human potential and possibilities."
-        bgGradient="linear-gradient(to right, rgba(79, 129, 229, 0.3), rgba(79, 129, 229, 1))"
-        borderColor="#B76EF9"
-        mode="standalone"
-      />
-
-      <CardSection
-        secHeading="Cultivational Psychology"
-        secSubHeading="Discover the new field of Cultivational Psychology, 
-and how it’s transforming human potential and possibilities."
-        bgGradient="linear-gradient(to right, rgba(86, 74, 141, 1), rgba(86, 74, 141, 1))"
-        borderColor="#B76EF9"
-        mode="standalone"
-      />
-      <CardSection
-        secHeading="Cultivational Psychology"
-        secSubHeading="Discover the new field of Cultivational Psychology, 
-and how it’s transforming human potential and possibilities."
-        bgGradient="linear-gradient(to right, rgba(183, 110, 249, 0.4), rgba(183, 110, 249, 1))"
-        borderColor="#B76EF9"
-        mode="standalone"
-      />
-      <CardSection
-        secHeading="Cultivational Psychology"
-        secSubHeading="Discover the new field of Cultivational Psychology, 
-and how it’s transforming human potential and possibilities."
-        bgGradient="linear-gradient(to right, rgba(36, 25, 69, 1), rgba(36, 25, 69, 1))"
-        borderColor="#B76EF9"
-        mode="standalone"
-      />
-      <div >
+      {cardSectionContent.map((secContent) => (
+        <CardSection
+          key={secContent.id} 
+          secHeading={secContent.heading}
+          secSubHeading={secContent.subHeading}
+          bgGradient={secContent.bgGradient}
+          borderColor={secContent.borderColor}
+          mode="standalone"
+        />
+      ))}
+      
+      <div>
         <Testimonial />
       </div>
 
-      <VideoSection />
+      <div className="w-[60%] mx-auto pb-8">
+        <VideoSection />
+      </div>
     </>
   );
 }

@@ -1,17 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-   @apply font-montserrat-alternates
+  @apply font-montserrat-alternates;
+}
+
+@layer base {
+  :root {
+    --color-primary: #C4CAEF;
+    --color-secondary: #b76ef9;
+    --color-tertiary: #4e3d82;
   }
-  
-  @layer base {
-   :root {
-     --color-dark-blue-primary: #564A8D;
-     --color-light-blue-secondary: #B76EF9;
-     --color-text-base: #FFFFFF;
-     --color-bg-primary: #FEFEFF;
-   }
- }
+}
+
+.theme-blue {
+  --color-primary: #C4CAEF;
+  --color-secondary: #b76ef9;
+  --color-tertiary: #564A8D;
+} 
+
+.theme-brown {
+  --color-primary: #ae9f8c;
+  --color-secondary: #9D6C32;
+  --color-tertiary: #9D6C32;
+}
+
+.theme-green {
+  --color-primary: #bdc093;
+  --color-secondary: #FFAC01;
+  --color-tertiary: #7B952A;
+}

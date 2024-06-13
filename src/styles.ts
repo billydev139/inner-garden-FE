@@ -15,8 +15,8 @@ interface Styles {
 }
 
 const styles: Styles = {
-  headingH1: "text-xl md:text-2xl lg:text-4xl font-black leading-10 ",
-  subHeading: "text-lg lg:text-2xl font-bold",
+  headingH1: "text-xl md:text-2xl lg:text-[32px] font-black leading-10",
+  subHeading: "text-lg lg:text-[22px] font-bold",
   paragraph: "font-semibold	",
 
   flexCenter: "flex justify-center items-center",
