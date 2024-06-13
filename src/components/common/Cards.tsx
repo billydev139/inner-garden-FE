@@ -7,7 +7,7 @@ interface CardProps {
   videoSrc?: string | any;
   title: string;
   badgeText: string;
-  borderColor: string;
+  borderColor?: string;
   className?: string;
   badgePosition?: "top" | "center";
 }

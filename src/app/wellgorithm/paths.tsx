@@ -223,7 +223,7 @@ const Paths = () => {
                   imageSrc={subitem.image}
                   badgeText={subitem.badgeText}
                   title={subitem.title}
-                  borderColor={subitem.borderColor}
+                  // borderColor={subitem.borderColor}
                   badgePosition="top"
                   className="mx-2 my-4"
                 />
