@@ -13,5 +13,5 @@ const Activities: React.FC = () => {
       </div>
   )
 } 
-
+ 
 export default Activities

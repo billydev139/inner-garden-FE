@@ -10,7 +10,7 @@ const InnerSpeciality: React.FC = () => {
   return (
     <>
       <CategoriesSlider />
-      <div className="mb-[180px]">
+      <div>
         <HeroSection
           imageSrc={Images.banner7}
           heroSecHeading="Specialty"

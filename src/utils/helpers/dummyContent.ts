@@ -346,6 +346,32 @@ export const tagCardData = [
     points: "20 pts",
     tagName: "Tag Name 2",
   },
+
+  {
+    id:3,
+    image: Images.banner1,
+    title: "(serenitty)Sunflowers",
+    badgeHeading: "Peace is middle of stroms",
+    badgeDescription:
+      "The 'Big Bloom' takes the aspirational spirit of exploration that propelled humanity to the moon and turns it inward, setting us on a course to explore our (inner)Cosmos. It's an invitation to become not just astronauts but intronauts, embarking on a journey through the vast Cosmos within each of us. This (inner) Cosmos is far from a vacuous void; it's a vibrant expanse teeming with life, waiting to be nurtured, explored, and expanded. Read more",
+    userimage: Images.userpic,
+    userName: "Kathleen Velasco",
+    points: "20 pts",
+    tagName: "Tag Name 2",
+  },
+
+  {
+    id:4,
+    image: Images.banner1,
+    title: "(serenitty)Sunflowers",
+    badgeHeading: "Peace is middle of stroms",
+    badgeDescription:
+      "The 'Big Bloom' takes the aspirational spirit of exploration that propelled humanity to the moon and turns it inward, setting us on a course to explore our (inner)Cosmos. It's an invitation to become not just astronauts but intronauts, embarking on a journey through the vast Cosmos within each of us. This (inner) Cosmos is far from a vacuous void; it's a vibrant expanse teeming with life, waiting to be nurtured, explored, and expanded. Read more",
+    userimage: Images.userpic,
+    userName: "Kathleen Velasco",
+    points: "20 pts",
+    tagName: "Tag Name 2",
+  },
 ];
 
 export const searchResultData = [
