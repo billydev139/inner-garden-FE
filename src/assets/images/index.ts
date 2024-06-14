@@ -93,7 +93,6 @@ import userpic from "./userpic.png"
 import cocoon from "./cocoon-icon.png"
 import snell from "./snell.png"
 import fly from "./fly.png"
-import searchbackground from ".//searchresultbg.png"
 import innertraidfeed from "./innertraidfeed.png"
 import innerfeedimg2 from "./trailfeedimg2.png"
 import journaltagbg from "./journaltagbg.png"
@@ -104,6 +103,9 @@ import cognitionwhite from "./cognition.png"
 import ladyprofile from "./ladyprofile.png"
 import addcomment from "./addcomment.png"
 import testimonial from "./testimonialpic.png"
+import searchbackground from "./searchresultbg.png"
+import cardImage from "./cardImage.png"
+
 const Images = {
     logo,
     wellgobrain,
@@ -210,7 +212,8 @@ const Images = {
     wellgocardimg,
     wellgosmall,
     butterflies,
-    userpic
+    userpic,
+    cardImage
 };
 
 export default Images

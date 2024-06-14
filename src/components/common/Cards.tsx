@@ -77,7 +77,7 @@ const Cards: React.FC<CardProps> = ({
           </div>
         )}
       </div>
-      <div className="px-6 py-4">
+      <div className="px-6 pb-4">
         <div className="font-bold text-xl mb-2">{title}</div>
       </div>
     </div>
