@@ -93,7 +93,9 @@ import userpic from "./userpic.png"
 import cocoon from "./cocoon-icon.png"
 import snell from "./snell.png"
 import fly from "./fly.png"
-import searchbackground from ".//searchresultbg.png"
+import searchbackground from "./searchresultbg.png"
+import cardImage from "./cardImage.png"
+
 const Images = {
     logo,
     banner1,
@@ -190,7 +192,8 @@ const Images = {
     wellgocardimg,
     wellgosmall,
     butterflies,
-    userpic
+    userpic,
+    cardImage
 };
 
 export default Images

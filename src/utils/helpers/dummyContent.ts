@@ -166,6 +166,65 @@ export const cardCenterBadge = [
   },
 ];
 
+export const subCategories = [
+  {
+    id: "0",
+    badgeText: "Gardens/Peace",
+    title:
+      "(serenitty)Sunflowers Peace if middle of storms",
+    image: Images.cardImage,
+  },
+  {
+    id: "1",
+    badgeText: "Gardens/Peace",
+    title:
+      "(serenitty)Sunflowers Peace if middle of storms",
+    image: Images.cardImage,
+  },
+  {
+    id: "2",
+    badgeText: "Gardens/Peace",
+    title:
+      "(serenitty)Sunflowers Peace if middle of storms",
+    image: Images.cardImage,
+  },
+  {
+    id: "3",
+    badgeText: "Gardens/Peace",
+    title:
+      "(serenitty)Sunflowers Peace if middle of storms",
+    image: Images.cardImage,
+  },
+  {
+    id: "4",
+    badgeText: "Gardens/Peace",
+    title:
+      "(serenitty)Sunflowers Peace if middle of storms",
+    image: Images.cardImage,
+  },
+  {
+    id: "5",
+    badgeText: "Gardens/Peace",
+    title:
+      "(serenitty)Sunflowers Peace if middle of storms",
+    image: Images.cardImage,
+  },
+  {
+    id: "6",
+    badgeText: "Gardens/Peace",
+    title:
+      "(serenitty)Sunflowers Peace if middle of storms",
+    image: Images.cardImage,
+  },
+  {
+    id: "7",
+    badgeText: "Gardens/Peace",
+    title:
+      "(serenitty)Sunflowers Peace if middle of storms",
+    image: Images.cardImage,
+  },
+];
+
 export const videoFeeds = [
   {
     id: "0",

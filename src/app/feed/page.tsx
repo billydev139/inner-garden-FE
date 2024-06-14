@@ -1,4 +1,5 @@
 import Images from "@/assets/images";
+import CTA from "@/components/CTA";
 import Button from "@/components/common/Button";
 import CardSection from "@/components/common/CardSection";
 import HeroSection from "@/components/common/HeroSection";
@@ -58,6 +59,8 @@ const Feed: React.FC = () => {
       <div className="text-center py-8">
         <Button btnText="load more" variant="white" />
       </div>
+
+      <CTA />
     </>
   );
 };
