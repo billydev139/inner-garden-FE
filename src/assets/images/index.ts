@@ -95,13 +95,29 @@ import snell from "./snell.png"
 import fly from "./fly.png"
 import innertraidfeed from "./innertraidfeed.png"
 import innerfeedimg2 from "./trailfeedimg2.png"
+import journaltagbg from "./journaltagbg.png"
+import cloudy1 from "./cloudy 1.png"
+import wellgobrain from "./welgobrain.png"
+import checkstep from "./Step.png"
+import cognitionwhite from "./cognition.png"
+import ladyprofile from "./ladyprofile.png"
+import addcomment from "./addcomment.png"
+import testimonial from "./testimonialpic.png"
 import searchbackground from "./searchresultbg.png"
 import cardImage from "./cardImage.png"
 
 const Images = {
     logo,
+    wellgobrain,
+    addcomment,
+    cloudy1,
+    testimonial,
+    checkstep,
+    cognitionwhite,
+    ladyprofile,
     innertraidfeed,
     banner1,
+    journaltagbg,
     innerfeedimg2,
     cocoon,
     searchbackground,
