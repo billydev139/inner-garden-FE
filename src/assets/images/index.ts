@@ -105,9 +105,11 @@ import addcomment from "./addcomment.png"
 import testimonial from "./testimonialpic.png"
 import searchbackground from "./searchresultbg.png"
 import cardImage from "./cardImage.png"
+import singlefeedimg from "./singlefeedimg.png"
 
 const Images = {
     logo,
+    singlefeedimg,
     wellgobrain,
     addcomment,
     cloudy1,

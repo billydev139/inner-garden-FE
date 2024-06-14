@@ -13,7 +13,7 @@ const SearchResults = () => {
           backgroundImage: `url(${bgimg.src})`,
         }}
       >
-        <div className="bg-white bg-opacity-85 lg:py-7 py-4 lg:px-8 px-5 rounded-[48px] flex items-center gap-4">
+        {/* <div className="bg-white bg-opacity-85 lg:py-7 py-4 lg:px-8 px-5 rounded-[48px] flex items-center gap-4">
           <CiSearch size={25} />
           <input
             type="text"
@@ -21,7 +21,7 @@ const SearchResults = () => {
             className="outline-none bg-transparent bg-opacity-90"
           />
           <Button btnText="search" variant="gradient" />
-        </div>
+        </div> */}
       </div>
       <div className="container mx-auto  mt-10 mb-5">
         <div className="flex lg:flex-row flex-wrap lg:items-center lg:justify-center  gap-5 ">
