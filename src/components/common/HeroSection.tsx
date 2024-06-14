@@ -18,10 +18,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <Image
         src={imageSrc}
         alt="banner image"
-        className="rounded-xl lg:relative"
+        className="rounded-xl "
       />
-      <div className="lg:w-[600px] mx-auto shadow-lg rounded-lg lg:absolute lg:bottom-0 xl:bottom-[20%] lg:left-[30%] xl:left-[35%]">
-        <div className="bg-tertiary rounded-t-lg">
+      <div className="lg:w-[600px] mx-auto shadow-lg relative rounded-lg z-50 -mt-16">
+        <div className="bg-tertiary  rounded-t-lg z-10">
           <h1 className={`${styles.headingH1} text-white text-center py-4`}>
             {heroSecHeading}
           </h1>

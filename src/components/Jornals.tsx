@@ -8,7 +8,7 @@ const Journals = () => {
   return (
     <>
       <div
-        className="flex flex-col -z-10 items-center mt-6 justify-center relative w-full bg-cover h-96 bg-center rounded-lg"
+        className="flex flex-col items-center mt-6 justify-center relative w-full bg-cover h-96 bg-center rounded-lg"
         style={{
           backgroundImage: `url(${bgimg.src})`,
         }}
@@ -17,8 +17,8 @@ const Journals = () => {
           #Tag Name
         </h2>
       </div>
-      <div className="max-w-[700px] mx-auto ">
-        <div className="-mt-20 z-10">
+      <div className="max-w-[750px] mx-auto ">
+        <div className="-mt-20 relative z-10">
         {tagCardData?.map((content) => (
           <TagsCard
           key={content.id}

@@ -45,7 +45,7 @@ const Wellgorithm: React.FC = () => {
               className="rounded-xl lg:relative"
             />
 
-            <h2 className="border-[3px] text-white text-2xl -mt-7 z-10 font-semibold font-montserrat-alternates border-white bg-purple-light rounded-[30px] px-8 py-1">
+            <h2 className="border-[3px] text-white text-2xl -mt-7 z-10 font-semibold font-montserrat-alternates border-white bg-secondary rounded-[30px] px-8 py-1">
               {item.title}
             </h2>
             <h2 className="font-black text-purple-dark lg:text-[40px] text-[20px] lg:leading-[48px] pt-3 text-center lg:px-24 font-montserrat-alternates">

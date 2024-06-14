@@ -93,12 +93,16 @@ import userpic from "./userpic.png"
 import cocoon from "./cocoon-icon.png"
 import snell from "./snell.png"
 import fly from "./fly.png"
+import innertraidfeed from "./innertraidfeed.png"
+import innerfeedimg2 from "./trailfeedimg2.png"
 import searchbackground from "./searchresultbg.png"
 import cardImage from "./cardImage.png"
 
 const Images = {
     logo,
+    innertraidfeed,
     banner1,
+    innerfeedimg2,
     cocoon,
     searchbackground,
     snell,

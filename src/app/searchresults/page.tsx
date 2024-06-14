@@ -89,7 +89,7 @@ const SearchResults = () => {
           Search results <span className="font-bold">6</span>
         </h2>
       </div>
-      <div className="max-w-[700px] mx-auto ">
+      <div className="max-w-[750px] mx-auto ">
         <div className="mt-10">
         {searchResultData?.map((content) => (
           <TagsCard
