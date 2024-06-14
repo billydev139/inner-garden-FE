@@ -13,6 +13,7 @@ body {
     --color-primary: #C4CAEF;
     --color-secondary: #b76ef9;
     --color-tertiary: #4e3d82;
+    --color-tetra: #4F81E5;
   }
 }
 
@@ -20,6 +21,7 @@ body {
   --color-primary: #C4CAEF;
   --color-secondary: #b76ef9;
   --color-tertiary: #564A8D;
+  --color-tetra: #4F81E5;
 } 
 
 .theme-brown {

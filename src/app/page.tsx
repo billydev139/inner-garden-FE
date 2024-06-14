@@ -7,7 +7,7 @@ import CardSection from "@/components/common/CardSection";
 import HeroSection from "@/components/common/HeroSection";
 import WellgorithmCard from "@/components/common/WellgorithmCard";
 import styles from "@/styles";
-import { cardSectionContent, cardTopBadge, wellgorithmContent } from "@/utils/helpers/dummyContent";
+import { cardSectionContent, wellgorithmContent } from "@/utils/helpers/dummyContent";
 
 export default function Home() {
   return (

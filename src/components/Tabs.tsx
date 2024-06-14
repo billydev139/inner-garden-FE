@@ -44,7 +44,7 @@ const Tabs: React.FC = () => {
 
     return (
         <div className="flex justify-center items-center">
-            <div className="my-4 rounded-lg py-4 b-4 w-full">
+            <div className="my-4 rounded-lg pt-2 pb-4 b-4 w-full">
                 <div className="lg:mb-0 md:mb-2 flex items-center gap-2 justify-center">
                     <nav
                         className="-mb-px items-center flex justify-center rounded-[20px] border-[1px] border-purple-light bg-white"

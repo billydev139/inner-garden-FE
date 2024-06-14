@@ -11,7 +11,7 @@ const CategoriesPageLayout = () => {
   return (
     <section className="bg-primary">
     <CategoriesSlider />
-      <div className="mb-[140px]">
+      <div>
         <HeroSection
           imageSrc={Images.banner7}
           heroSecHeading="Gardens"
