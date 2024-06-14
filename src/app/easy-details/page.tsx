@@ -4,7 +4,7 @@ import Images from "@/assets/images";
 import Image from "next/image";
 import { CiCircleInfo, IoMdSend } from "@/assets/Icons";
 import Button from "@/components/common/Button";
-const JournalDummy = () => {
+const EasyDetails = () => {
   const propertiesCard = [
     {
       name: "Envision",
@@ -70,19 +70,19 @@ const JournalDummy = () => {
       img: Images.snell,
     },
     {
-        name: "Doris Edwards",
-        comment:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        profileImg: Images.testimonial,
-        img: Images.snell,
-      },
-      {
-        name: "Doris Edwards",
-        comment:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        profileImg: Images.testimonial,
-        img: Images.snell,
-      },
+      name: "Doris Edwards",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      profileImg: Images.testimonial,
+      img: Images.snell,
+    },
+    {
+      name: "Doris Edwards",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      profileImg: Images.testimonial,
+      img: Images.snell,
+    },
   ];
   return (
     <>
@@ -165,7 +165,7 @@ const JournalDummy = () => {
             </h2>
             <div className="bg-white bg-opacity-80 rounded-2xl rounded-t-none h-auto px-1">
               <p className=" p-6 text-xl font-montserrat font-medium">
-                People are recognizing that they already possess untold riches
+                {` People are recognizing that they already possess untold riches
                 in the form of (inner) peace, joy, and wonder for the world.
                 Amid a planet teeming with life and an era bursting with
                 discoveries, there’s never been a more auspicious time to be
@@ -188,7 +188,7 @@ const JournalDummy = () => {
                 (inner)Garden, we contribute to a billion others, creating a
                 veritable 'Big Bloom' of (inner) universes that together offer
                 unprecedented resources for empathy, creativity, and
-                transformation.
+                transformation.`}
               </p>
               <div className="bg-secondary rounded-[20px] px-10 py-8 mt-4">
                 {sunflowerPoints?.map((item, index) => (
@@ -337,8 +337,8 @@ const JournalDummy = () => {
               anxiety, creativity
             </h2>
             <p className="bg-white text-black p-3 text-sm rounded-2xl rounded-t-none">
-              Our movement isn't merely about individual well-being or societal
-              betterment.
+              {`Our movement isn't merely about individual well-being or societal
+              betterment.`}
             </p>
           </div>
         </div>
@@ -347,4 +347,4 @@ const JournalDummy = () => {
   );
 };
 
-export default JournalDummy;
+export default EasyDetails;

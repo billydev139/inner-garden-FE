@@ -3,6 +3,7 @@ import Image from "next/image";
 import Images from "@/assets/images";
 import Button from "./Button";
 import styles from "@/styles";
+import Link from "next/link";
 
 interface TagCardProps {
   imageSrc?: string | any;
@@ -35,7 +36,7 @@ const TagsCard: React.FC<TagCardProps> = ({
           <h2 className="bg-tertiary text-white text-center font-black lg:text-[44px] rounded-2xl py-5 rounded-b-none">
             {title}
           </h2>
-          
+
           {imageSrc && (
             <Image
               className=" bg-cover p-[1px] rounded-t-lg"
@@ -77,10 +78,10 @@ const TagsCard: React.FC<TagCardProps> = ({
                   alt="Card image cap"
                 />
                 <h2 className="font-semibold text-base font-montserrat-alternates text-white rounded-[18px] px-3 py-2 bg-tetra">
-                {tagName}
+                  <Link href="/easy-details">{tagName}</Link>
                 </h2>
                 <h2 className="font-semibold text-base font-montserrat-alternates text-white rounded-[18px] px-3 py-2 bg-secondary">
-                {points}
+                  {points}
                 </h2>
                 {/* <Button btnText={tagName} variant="#564A8D" />
                 <Button btnText={points} variant="#564A8D" /> */}
