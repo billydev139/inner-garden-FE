@@ -39,9 +39,6 @@ const Paths = () => {
       },
     ],
   };
-
-  
-
   return (
     <>
       {innerTrailFeed?.map((item, index) => (
