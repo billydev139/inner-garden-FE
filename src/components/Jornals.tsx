@@ -73,7 +73,7 @@ const Journals = () => {
       <CTA />
 
       <div className="flex py-10 items-center justify-center">
-        <Button btnText="Load more" variant="white" />
+        <Button btnText="Load more" variant="white" ariaLabel="load more" />
       </div>
 
       {/* <div
