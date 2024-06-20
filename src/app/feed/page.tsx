@@ -50,7 +50,6 @@ const Feed: React.FC = () => {
       <div className="text-center py-8">
         <Button btnText="load more" variant="white" ariaLabel="Load more" />
       </div>
-
       <CTA />
     </>
   );

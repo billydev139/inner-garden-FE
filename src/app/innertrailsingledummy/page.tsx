@@ -4,8 +4,6 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cards from "@/components/common/Cards";
-
-
 interface CardProps {
     imageSrc?: string | any;
     videoSrc?: string | any;
@@ -15,8 +13,6 @@ interface CardProps {
     className?: string;
     badgePosition?: "top" | "center";
   }
-
-
 
 const InnerTrial: React.FC<CardProps> = () => {
   const sliderSettings = {
