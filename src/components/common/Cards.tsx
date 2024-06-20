@@ -36,20 +36,12 @@ const Cards: React.FC<CardProps> = ({
   otheruser,
 }) => {
   return (
-    <div
-      className={`rounded-xl overflow-visible shadow-lg relative bg-white ${className}`}
+    <section
+      className={`rounded-xl overflow-visible shadow-lg relative bg-white border-2 border-solid ${className}`}
       style={{
         borderColor: borderColor,
-        borderWidth: "2px",
-        borderStyle: "solid",
       }}
     >
-      {crossIcon && (
-        <div className="rounded-full bg-white z-10 absolute top-2 right-2 p-2">
-          <RxCross1 color="tertiary" />
-        </div>
-      )}
-
       <div className="relative pb-4">
         {imageSrc && (
           <Image
@@ -123,7 +115,7 @@ const Cards: React.FC<CardProps> = ({
         ))}
       </div>
         )}
-    </div>
+    </section>
   );
 };
 

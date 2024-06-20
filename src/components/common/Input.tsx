@@ -1,15 +1,26 @@
-import React from 'react'
+import React from 'react';
 
 interface InputProps {
-    type: string;
-    placeholder: string;
-    className?:string;
-  }
-
-const Input: React.FC<InputProps> = ({type, placeholder, className}) => {
-  return (
-    <input type={type} placeholder={placeholder} className={className} />
-  )
+  type: string;
+  placeholder?: string;
+  className?: string;
+  ariaLabel?: string;
+  label?: string; 
 }
 
-export default Input
+const Input: React.FC<InputProps> = ({ type, placeholder, className, ariaLabel, label }) => {
+  return (
+    <div className={`flex items-center gap-2 ${type === 'checkbox' ? 'bg-white px-5 py-1 rounded-[10px]' : ''}`}>
+      <input
+        type={type}
+        placeholder={type !== 'checkbox' ? placeholder : ""} 
+        className={className}
+        aria-label={ariaLabel}
+        style={type === 'checkbox' ? { width: '1rem', height: '1rem' } : {}}
+      />
+      {type === 'checkbox' && label && <p className="text-lg font-montserrat font-medium">{label}</p>}
+    </div>
+  );
+}
+
+export default Input;

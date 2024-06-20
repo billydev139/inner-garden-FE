@@ -77,6 +77,7 @@ const Header: React.FC = () => {
             </div>
             <button
               className="text-white text-2xl lg:hidden"
+              aria-label='Toggle menu button'
               onClick={toggleMenu}
             >
               {menuOpen ? <FaTimes /> : <FaBars />}
@@ -130,6 +131,7 @@ const Header: React.FC = () => {
               <li>
                 <Button
                   btnText="join us"
+                  ariaLabel="join us"
                   variant="white"
                   className="text-tertiary"
                 />

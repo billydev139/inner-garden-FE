@@ -10,6 +10,7 @@ import {
   reviewsData,
   sunflowerPoints,
 } from "@/utils/helpers/dummyContent";
+import Input from "@/components/common/Input";
 const EasyDetails = () => {
   return (
     <>
@@ -21,7 +22,7 @@ const EasyDetails = () => {
       >
         <div className="flex justify-between pb-10 items-end">
           <div className="bg-tertiary px-4 py-2 rounded-[45px]">
-            <Image src={Images.cloudy1} alt="cloudy" />
+            <Image src={Images.cloudy1} alt="cloudy" aria-label="Cloudy weather icon" />
           </div>
           <div className="bg-tertiary px-4 py-2 rounded-[45px]">
             <h2 className="font-black text-2xl font-montserrat-alternates text-white">
@@ -34,7 +35,7 @@ const EasyDetails = () => {
         <div>
           <div className="bg-white bg-opacity-50 rounded-2xl py-5 px-3">
             <div className="flex flex-col items-center justify-center">
-              <Image src={Images.wellgobrain} alt="cloudy" />
+              <Image src={Images.wellgobrain} alt="cloudy" aria-label="Cloudy weather icon" />
               <div className="flex items-center gap-2 pt-4 pb-6">
                 <h2 className="text-black font-bold text-xl">Wellgorithms</h2>
                 <CiCircleInfo size={22} />
@@ -45,7 +46,7 @@ const EasyDetails = () => {
                 className="bg-secondary p-4 mb-3 rounded-xl flex items-start gap-3"
                 key={index}
               >
-                <Image src={Images.checkstep} alt="cloudy" />
+                <Image src={Images.checkstep} alt="cloudy" aria-label="Cloudy weather icon" />
                 <div>
                   <h2 className="text-xl capitalize text-white font-bold">
                     {item.name}
@@ -57,21 +58,18 @@ const EasyDetails = () => {
           </div>
           <div className="bg-[#4F81E5] my-4 rounded-2xl p-4">
             <div className="flex items-center gap-3">
-              <Image src={Images.cognitionwhite} alt="congition" />
+              <Image src={Images.cognitionwhite} alt="congition" aria-label="congition icon" />
               <h2 className="text-white font-bold text-base">AI Meter</h2>
             </div>
             <div className="w-full bg-gray-300 mt-5 rounded-full h-6">
               <div className="flex h-full">
                 <div
-                  className="bg-[#D8A03D] h-full  rounded-l-full"
-                  style={{ width: `30%` }}
+                  className="bg-[#D8A03D] h-full  rounded-l-full w-[30%]"
                 ></div>
 
                 <div
-                  className="bg-green-600 h-full rounded-r-full"
-                  style={{ width: `70%` }}
+                  className="bg-green-600 h-full rounded-r-full w-[70%]"
                 >
-                  {/* <span className="text-white ml-2">45% Human</span> */}
                 </div>
               </div>
             </div>
@@ -128,7 +126,7 @@ const EasyDetails = () => {
                 ))}
               </div>
               <div className="mt-14 mx-8  bg-primary rounded-2xl flex items-center">
-                <Image src={Images.ladyprofile} alt="profile" />
+                <Image src={Images.ladyprofile} alt="profile" aria-label="lady profile" />
                 <div className="py-6 px-6">
                   <h2 className="font-montserrat-alternates font-bold text-tertiary text-2xl">
                     Kathleen Velasco
@@ -146,22 +144,24 @@ const EasyDetails = () => {
                   Put in my Nest
                 </h2>
                 <div className="flex items-center gap-2">
-                  <Image src={Images.snell} alt="snel" />
-                  <Image src={Images.fly} alt="snel" />
-                  <Image src={Images.cocoon} alt="snel" />
+                  <Image src={Images.snell} alt="snell" aria-label="snell" />
+                  <Image src={Images.fly} alt="fly" aria-label="fly" />
+                  <Image src={Images.cocoon} alt="cocoon" aria-label="cocoon" />
                 </div>
                 <div className="flex items-center mt-6 gap-4">
-                  <Button variant="purple" btnText="tag name 1" />
-                  <Button variant="purple" btnText="tag name 1" />
+                  {/* /button maps/ */}
+                  <Button variant="purple" btnText="tag name 1" ariaLabel="tag"/>
+                  <Button variant="purple" btnText="tag name 1" ariaLabel="tag"/>
+                  <Button variant="purple" btnText="tag name 1" ariaLabel="tag"/>
 
-                  <Button variant="purple" btnText="tag name 1" />
                 </div>
               </div>
             </div>
           </div>
           <div className="flex items-center justify-between mt-7">
-            <Button variant="white" btnText="Journal title" />
-            <Button variant="white" btnText="Journal title" />
+                 {/* /button maps/ */}
+            <Button variant="white" btnText="Journal title" ariaLabel="Journal title"/>
+            <Button variant="white" btnText="Journal title" ariaLabel="Journal title"/>
           </div>
           <div className="border-b-[2px] pb-2 my-10  border-tertiary">
             <h2 className="text-tertiary font-black text-3xl">
@@ -193,10 +193,10 @@ const EasyDetails = () => {
                   </p>
                 </div>
                 <div className="bg-white flex flex-col items-center justify-center py-4  rounded-[32px] rounded-t-none">
-                  <Image src={Images.wellgosmall} alt="wellgo" />
+                  <Image src={Images.wellgosmall} alt="wellgo" aria-label="wellgorithm" />
                   <div className="flex items-center gap-2 mt-6">
-                    <Button variant="white" btnText={item.points} />
-                    <Button variant="white" btnText="Read" />
+                    <Button variant="white" btnText={item.points} ariaLabel="points" />
+                    <Button variant="white" btnText="Read" ariaLabel="Read" />
                   </div>
                 </div>
               </div>
@@ -206,25 +206,26 @@ const EasyDetails = () => {
             <h2 className=" font-semibold  text-2xl">Reflections 17</h2>
           </div>
           <div className="flex items-center gap-4">
-            <Image src={Images.addcomment} alt="add" />
+            <Image src={Images.addcomment} alt="add" aria-label="add" />
             <p className="font-montserrat-alternates font-medium text-xl ">
               Share your thoughts
             </p>
           </div>
           <div className="flex items-center gap-4 mt-2">
-            <Image src={Images.addcomment} alt="add" />
+            <Image src={Images.addcomment} alt="add" aria-label="add" />
             <p className="font-montserrat-alternates font-medium text-xl ">
               Share your thoughts
             </p>
-            <Button variant="gradient" btnText="sign up" />
+            <Button variant="gradient" btnText="sign up" ariaLabel="sign up" />
             <p className="font-montserrat-alternates text-tertiary font-semibold text-2xl ">
               log(in)
             </p>
           </div>
           <div className="border-b-[2px] border-tertiary mb-8 pb-10">
             <div className="bg-white rounded-2xl p-4 mt-5 flex items-center justify-between">
-              <input
+              <Input
                 type="text"
+                aria-label="your response"
                 placeholder="Write your response here..."
                 className="outline-none bg-transparent"
               />
@@ -235,10 +236,10 @@ const EasyDetails = () => {
             <div key={index} className="bg-white rounded-[20px] mb-4 p-6">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <Image src={item.profileImg} alt="profilepic" />
+                  <Image src={item.profileImg} alt="profilepic" aria-label="profile" />
                   <h2 className="text-base font-bold">{item.name}</h2>
                 </div>
-                <Image src={item.img} alt="snell" />
+                <Image src={item.img} alt="snell" aria-label="snell" />
               </div>
               <p className="text-[20px] font-montserrat font-medium py-3">
                 {item.comment}
@@ -249,12 +250,12 @@ const EasyDetails = () => {
 
         <div>
           <div className="bg-[#4F81E5] rounded-2xl py-6 px-2 flex flex-col gap-3 items-center justify-center">
-            <Image src={Images.profile2} alt="profile" className="w-28" />
+            <Image src={Images.profile2} alt="profile" aria-label="profile" className="w-28" />
             <h2 className="text-white font-black text-[44px]">XBT</h2>
             <h2 className="text-white font-semibold px-10 text-center text-base">
               Expanded Behavioral Therapy
             </h2>
-            <Button btnText="Journal in 3d" variant="white" />
+            <Button btnText="Journal in 3d" variant="white" ariaLabel="Journal in 3d" />
           </div>
           <div className="mt-4 shadow-lg">
             <h2 className="bg-[#4F81E5] text-center rounded-2xl rounded-b-none py-2 text-white text-xl font-medium font-montserrat-alternates">

@@ -1,7 +1,7 @@
 import Images from "@/assets/images";
 import GardenCards from "@/components/common/GardenCards";
 
-export const cardTopBadge = [
+export const cardContent = [
   {
     id: "0",
     badgeText: "(serenity)Sunflowers",
@@ -43,6 +43,51 @@ export const cardTopBadge = [
     title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: Images.banner1,
+  },
+];
+
+export const videoContent = [
+  {
+    id: "0",
+    badgeText: "(serenity)Sunflowers",
+    title:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+  },
+  {
+    id: "1",
+    badgeText: "(serenity)Sunflowers",
+    title:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+  },
+  {
+    id: "2",
+    badgeText: "(serenity)Sunflowers",
+    title:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+  },
+  {
+    id: "3",
+    badgeText: "(serenity)Sunflowers",
+    title:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+  },
+  {
+    id: "4",
+    badgeText: "(serenity)Sunflowers",
+    title:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+  },
+  {
+    id: "5",
+    badgeText: "(serenity)Sunflowers",
+    title:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
   },
 ];
 
@@ -121,6 +166,7 @@ export const cardSectionContent = [
     borderColor: "#B76EF9",
   },
 ];
+
 
 export const cardCenterBadge = [
   {

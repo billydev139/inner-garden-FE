@@ -20,7 +20,6 @@ const SubCategories: React.FC = () => {
                 imageSrc={content.image}
                 badgeText={content.badgeText}
                 title={content.title}
-                borderColor=""
                 badgePosition="center"
               />
             </div>
@@ -39,7 +38,6 @@ const SubCategories: React.FC = () => {
                 imageSrc={content.image}
                 badgeText={content.badgeText}
                 title={content.title}
-                borderColor=""
                 badgePosition="center"
               />
             </div>
@@ -48,7 +46,7 @@ const SubCategories: React.FC = () => {
         <CTA />
 
         <div className="text-center py-12">
-          <Button btnText="load more" variant="white" />
+          <Button btnText="load more" variant="white" ariaLabel='Load More button'/>
         </div>
       </section>
     </>

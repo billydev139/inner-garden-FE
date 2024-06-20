@@ -26,17 +26,13 @@ const Footer: React.FC = () => {
     logoImage = Images.innerGreen;
   }
   return (
-    <div
+    <section
     className={`${themeClass} flex flex-col pt-[20px]`}
       style={{
         backgroundImage: `url(${innerFooter.src})`,
-        height: "100%",
-        width: "100%",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
       }}
     >
-      <h1 className={`${styles.headingH1} text-white text-center`}>
+      <h1 className={`${styles.headingH1} text-white text-center w-full h-full bg-cover bg-center`}>
         subscribe to Wellgorithms Weekly
       </h1>
 
@@ -50,15 +46,16 @@ const Footer: React.FC = () => {
           <Input
             type="email"
             placeholder="Email"
+            ariaLabel="Email"
             className="rounded-full w-full px-5 py-2 text-lg border-none focus:ring-0"
           />
 
-          <Button btnText="Subscribe" btnType="submit" className="py-2" />
+          <Button btnText="Subscribe" btnType="submit" className="py-2" ariaLabel='Subscribe button' />
         </div>
       </form>
       <div className="flex flex-wrap my-4 justify-around items-start">
         <div className="flex flex-col items-center ">
-          <Button btnText="about " btnType="button" />
+          <Button btnText="about " btnType="button" ariaLabel='about button' />
           <p className="text-16 font-semibold text-white text-center w-[280px] pt-2 ">
              (inner) was started by a Bronx teacher and her partner, a software
             architect and graphic designer.
@@ -72,7 +69,7 @@ const Footer: React.FC = () => {
           height={300}
           className="px-4"
         />
-        <Button btnText="donate Now" btnType="button" />
+        <Button btnText="donate Now" btnType="button" ariaLabel="donate now button" />
       </div> 
 
       <div className="flex flex-wrap justify-center items-center">
@@ -101,7 +98,7 @@ const Footer: React.FC = () => {
       <h2 className="text-center text-white pb-4">
         © copyright 2024 by (inner). All rights reserved
       </h2>
-    </div>
+    </section>
   );
 };
 

@@ -11,8 +11,8 @@ import { wellGoCardData } from "@/utils/helpers/dummyContent";
 const Wellgorithm: React.FC = () => {
   return (
     <>
-      <div
-        className="flex flex-col items-center mt-6 justify-center relative w-full bg-cover h-80 bg-center rounded-lg"
+      <section
+        className="container flex flex-col items-center mt-6 justify-center relative w-full bg-cover h-80 bg-center rounded-lg"
         style={{
           backgroundImage: `url(${bgimg.src})`,
         }}
@@ -28,11 +28,11 @@ const Wellgorithm: React.FC = () => {
           className="absolute right-3 top-2"
         />
         <div className="flex flex-wrap items-center gap-8 mt-6">
-          <Button btnText="intention" variant="purple" />
-          <Button btnText="action" variant="purple" />
-          <Button btnText="reflection" variant="purple" />
+          <Button btnText="intention" variant="purple" ariaLabel="intention" />
+          <Button btnText="action" variant="purple" ariaLabel="action" />
+          <Button btnText="reflection" variant="purple" ariaLabel="reflection" />
         </div>
-      </div>
+      </section>
       {wellGoCardData?.map((item: any, index: React.Key | null | undefined) => (
         <div
           key={index}
@@ -83,7 +83,7 @@ const Wellgorithm: React.FC = () => {
         </div>
       ))}
       <div className="flex my-10 items-center justify-center">
-        <Button btnText="Load more" variant="white" />
+        <Button btnText="Load more" variant="white" ariaLabel='Load More' />
       </div>
     </>
   );

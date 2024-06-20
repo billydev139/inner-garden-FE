@@ -1,10 +1,10 @@
 import React from "react";
-import bgimg from "@/assets/images/butterflies.png";
 import TagsCard from "@/components/common/TagsCard";
 import { tagCardData } from "@/utils/helpers/dummyContent";
 import Button from "@/components/common/Button";
 import banner3 from "@/assets/images/banner3.jpg";
 import CTA from "./CTA";
+
 const Journals = () => {
   
   return (

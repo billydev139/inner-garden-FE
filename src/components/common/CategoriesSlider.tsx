@@ -19,8 +19,8 @@ const CategoriesSlider: React.FC = () => {
     speed: 500,
     slidesToShow: 8,
     slidesToScroll: 1,
-    prevArrow: <button className="slick-prev">Previous</button>,
-    nextArrow: <button className="slick-next">Next</button>,
+    prevArrow: <button className="slick-prev" aria-label="volume control">Previous</button>,
+    nextArrow: <button className="slick-next" aria-label="volume control">Next</button>,
     responsive: [
       {
         breakpoint: 1024,
@@ -47,7 +47,7 @@ const CategoriesSlider: React.FC = () => {
   };
 
   return (
-    <div className="container py-8">
+    <section className="container py-8">
       <Slider {...settings}>
         {subMenucategories.map((category) => {
           const isSelected = pathname.includes(category.link); 
@@ -59,7 +59,7 @@ const CategoriesSlider: React.FC = () => {
           );
         })}
       </Slider>
-    </div>
+    </section>
   );
 };
 

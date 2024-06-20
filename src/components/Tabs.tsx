@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Journals from "./Jornals";
+import Journals from "./Journal";
 import Paths from "./Paths";
 import Wellgorithm from "./Wellgorithm";
 import { useParams, usePathname, useRouter } from "next/navigation";
@@ -46,7 +46,6 @@ const Tabs: React.FC = () => {
 
   useEffect(() => {
     if (!details) {
-      // Redirect to the default tab if no details parameter is present
       const defaultUrl = `${pathname}/journals`;
       router.replace(defaultUrl);
       setSelectedTab(tabs[0].name);
@@ -61,7 +60,7 @@ const Tabs: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<string>(details ? tabs.find(tab => tab.href === details)?.name ?? tabs[0].name : tabs[0].name);
 
   return (
-    <div className="flex justify-center items-center">
+    <section className="flex justify-center items-center">
       <div className="my-4 rounded-lg pt-2 pb-4 b-4 w-full">
         <div className="lg:mb-0 md:mb-2 flex items-center gap-2 justify-center">
           <nav
@@ -92,7 +91,7 @@ const Tabs: React.FC = () => {
 
         <div className="tab-content">{renderComponent()}</div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,13 +1,11 @@
 import Images from "@/assets/images";
-import Button from "@/components/common/Button";
 import Cards from "@/components/common/Cards";
 import CategoriesSlider from "@/components/common/CategoriesSlider";
 import HeroSection from "@/components/common/HeroSection";
-import { cardCenterBadge, cardTopBadge } from "@/utils/helpers/dummyContent";
-import { usePathname } from "next/navigation";
+import { cardCenterBadge } from "@/utils/helpers/dummyContent";
 import React from "react";
 
-const CategoriesPageLayout = () => {
+const CategoriesPageLayout: React.FC = () => {
   return (
     <section className="bg-primary">
     <CategoriesSlider />
@@ -29,7 +27,6 @@ const CategoriesPageLayout = () => {
               imageSrc={content.image}
               badgeText={content.badgeText}
               title={content.title}
-              borderColor=""
               badgePosition="center"
             />
           </div>
