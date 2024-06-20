@@ -2,7 +2,6 @@ import Images from "@/assets/images";
 import Testimonial from "@/components/Testimonial";
 import VideoSection from "@/components/VideoSection";
 import Button from "@/components/common/Button";
-
 import CardSection from "@/components/common/CardSection";
 import HeroSection from "@/components/common/HeroSection";
 import WellgorithmCard from "@/components/common/WellgorithmCard";
@@ -17,12 +16,10 @@ export default function Home() {
         heroSecHeading="The Big Bloom"
         heroSecText="Around the world, a new awareness is blooming — that our emotions, like our bodies, are a part of nature, and that we can cultivate them like a garden."
       />
-
       <div className="bg-[#4F81E5] py-12">
         <div className="container flex flex-col md:flex-row mb-4 justify-between items-center">
           <div className="my-6">
             <h1 className={`${styles.headingH1} text-white`}>Wellgorithms</h1>
-
             <h2 className={`${styles.subHeading} text-white lg:w-[60%] py-4`}>
               Start your journey with a Wellgorithm — a gamified journaling
               challenge designed to nurture your (inner)Garden.
@@ -51,7 +48,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-
       {cardSectionContent.map((secContent) => (
         <CardSection
           key={secContent.id} 
@@ -62,11 +58,7 @@ export default function Home() {
           mode="standalone"
         />
       ))}
-      
-      <div>
         <Testimonial />
-      </div>
-
       <div className="w-[60%] mx-auto pb-8">
         <VideoSection />
       </div>

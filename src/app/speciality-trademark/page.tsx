@@ -1,5 +1,4 @@
 "use client";
-
 import CategoriesPageLayout from "@/components/CategoriesPageLayout";
 import Button from "@/components/common/Button";
 import React from "react";
