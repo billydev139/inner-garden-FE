@@ -4,13 +4,14 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Button from "./Button";
 import { subMenucategories } from "@/utils/helpers/headerContent";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 
 const CategoriesSlider: React.FC = () => {
   const pathname = usePathname();
+  const params = useParams();
+  const {categories, subcategories, details} = params;
 
   const settings = {
     dots: false,
@@ -49,12 +50,11 @@ const CategoriesSlider: React.FC = () => {
     <div className="container py-8">
       <Slider {...settings}>
         {subMenucategories.map((category) => {
-          const isSelected = pathname.includes(category.link); // Check if the current pathname includes the category link
+          const isSelected = pathname.includes(category.link); 
           const categoryClass = isSelected ? "bg-secondary text-white" : "bg-white";
-
           return (
             <div className={`${categoryClass} px-4 py-2 rounded-full text-center m-2`} key={category.id}>
-              <Link href={`${pathname}${category.link}`}>{category.title}</Link>
+              <Link href={`/categories/${categories}/${category.link}/${details || 'journal'}`}>{category.title}</Link>
             </div>
           );
         })}
