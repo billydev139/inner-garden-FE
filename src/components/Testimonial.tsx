@@ -8,16 +8,12 @@ import testimonialBg2  from "../assets/images/banner8.png";
 const Testimonial: React.FC = () => {
   return (
     <>
-      <div className="container flex flex-col md:flex-row justify-between items-center gap-4 my-8">
+      <section className="container flex flex-col md:flex-row justify-between items-center gap-4 my-8">
         <div
           style={{
-            backgroundImage: `url(${testimonialBg.src})`,
-            height: "100%",
-            width: "100%",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundImage: `url(${testimonialBg.src})`
           }}
-          className=" lg:w-[50%] p-6 lg:p-12 lg:my-4 rounded-lg lg:h-[350px]"
+          className=" lg:w-[50%] p-6 lg:p-12 lg:my-4 rounded-lg lg:h-[350px] w-full h-full bg-cover bg-center"
         >
           <h1 className={`${styles.headingH1} text-white w-[80%]`}>
             Journal the peace, blossom inside.
@@ -26,16 +22,12 @@ const Testimonial: React.FC = () => {
             Master the new art of “emotional gardening,” and contribute to
             humanity’s Big Bloom.
           </h2>
-          <Button btnText="start journaling" variant="white" />
+          <Button btnText="start journaling" variant="white" ariaLabel="start journaling button" />
         </div>
 
         <div style={{
-            backgroundImage: `url(${testimonialBg2.src})`,
-            height: "100%",
-            width: "100%",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }} className="lg:w-[50%] p-6 lg:p-10 lg:my-4 rounded-lg lg:h-[350px] leading-10 my-4">
+            backgroundImage: `url(${testimonialBg2.src})`
+          }} className="lg:w-[50%] p-6 lg:p-10 lg:my-4 rounded-lg lg:h-[350px] leading-10 my-4 w-full h-full bg-cover bg-center">
           <span 
          
           className="text-3xl text-white font-black">&quot;</span>
@@ -48,7 +40,7 @@ const Testimonial: React.FC = () => {
             — Reid Hoffman
           </h2>
         </div>
-      </div>
+      </section>
     </>
   );
 };

@@ -32,6 +32,7 @@ export default function Home() {
             btnText="View All"
             variant="white"
             className="whitespace-normal"
+            ariaLabel="View All"
           />
         </div>
         <div className="container flex flex-wrap justify-center mt-12 mb-8">

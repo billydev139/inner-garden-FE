@@ -22,12 +22,10 @@ const Cards: React.FC<CardProps> = ({
   videoSrc,
 }) => {
   return (
-    <div
-      className={`rounded-xl overflow-visible shadow-lg relative bg-white ${className}`}
+    <section
+      className={`rounded-xl overflow-visible shadow-lg relative bg-white border-2 border-solid ${className}`}
       style={{
         borderColor: borderColor,
-        borderWidth: "2px",
-        borderStyle: "solid",
       }}
     >
       <div className="relative pb-4">
@@ -80,7 +78,7 @@ const Cards: React.FC<CardProps> = ({
       <div className="px-6 pb-4">
         <div className="font-bold text-xl mb-2">{title}</div>
       </div>
-    </div>
+    </section>
   );
 };
 

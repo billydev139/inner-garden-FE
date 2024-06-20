@@ -1,3 +1,4 @@
+import React from "react";
 import Images from "@/assets/images";
 import CTA from "@/components/CTA";
 import Button from "@/components/common/Button";
@@ -5,8 +6,7 @@ import CardSection from "@/components/common/CardSection";
 import HeroSection from "@/components/common/HeroSection";
 import WellgorithmCard from "@/components/common/WellgorithmCard";
 import styles from "@/styles";
-import { cardTopBadge, wellgorithmContent } from "@/utils/helpers/dummyContent";
-import React from "react";
+import { cardSectionContent, wellgorithmContent } from "@/utils/helpers/dummyContent";
 
 const Feed: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const Feed: React.FC = () => {
           <div className="py-6">
             <h1 className={`${styles.headingH1} text-white`}>Wellgorithms</h1>
           </div>
-          <Button btnText="View All" variant="white" />
+          <Button btnText="View All" variant="white" ariaLabel="View All Button" />
         </div>
         <div className="container flex justify-between items-center gap-4">
           {wellgorithmContent.slice(0, 3).map((content) => (
@@ -37,27 +37,18 @@ const Feed: React.FC = () => {
         </div>
       </div>
 
-      <CardSection
-        secHeading="Cultivational Psychology"
-        bgGradient="linear-gradient(to right, rgba(86, 74, 141, 1), rgba(86, 74, 141, 1))"
-        borderColor="#B76EF9"
-        mode="slider"
-      />
-      <CardSection
-        secHeading="Cultivational Psychology"
-        bgGradient="linear-gradient(to right, rgba(183, 110, 249, 0.4), rgba(183, 110, 249, 1))"
-        borderColor="#B76EF9"
-        mode="slider"
-      />
-      <CardSection
-        secHeading="Cultivational Psychology"
-        bgGradient="linear-gradient(to right, rgba(36, 25, 69, 1), rgba(36, 25, 69, 1))"
-        borderColor="#B76EF9"
-        mode="slider"
-      />
+      {cardSectionContent.map((secContent) => (
+        <CardSection
+          key={secContent.id} 
+          secHeading={secContent.heading}
+          bgGradient={secContent.bgGradient}
+          borderColor={secContent.borderColor}
+          mode="slider"
+        />
+      ))}
 
       <div className="text-center py-8">
-        <Button btnText="load more" variant="white" />
+        <Button btnText="load more" variant="white" ariaLabel="Load more" />
       </div>
 
       <CTA />

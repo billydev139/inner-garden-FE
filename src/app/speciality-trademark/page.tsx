@@ -9,7 +9,7 @@ const SpecialityTradeMark: React.FC = () => {
     <>
       <CategoriesPageLayout />
       <div className="text-center py-8">
-        <Button btnText="load more" variant="white" />
+        <Button btnText="load more" variant="white" ariaLabel='Load More' />
       </div>
     </>
   );

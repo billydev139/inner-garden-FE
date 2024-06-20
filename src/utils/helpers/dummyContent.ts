@@ -121,6 +121,7 @@ export const cardSectionContent = [
   },
 ];
 
+
 export const cardCenterBadge = [
   {
     id: "0",

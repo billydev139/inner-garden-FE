@@ -24,7 +24,7 @@ const VideoFeeds: React.FC = () => {
           <div className="py-6">
             <h1 className={`${styles.headingH1} text-white`}>Wellgorithms</h1>
           </div>
-          <Button btnText="View All" variant="white" />
+          <Button btnText="View All" variant="white" ariaLabel='View All Button' />
         </div>
         <div className="container flex justify-between items-center gap-4">
           {wellgorithmContent.slice(0, 3).map((content) => (
@@ -51,7 +51,7 @@ const VideoFeeds: React.FC = () => {
       ))}
 
       <div className="text-center py-8">
-        <Button btnText="load more" variant="white" />
+        <Button btnText="load more" variant="white" ariaLabel='Load More' />
       </div>
     </>
   );

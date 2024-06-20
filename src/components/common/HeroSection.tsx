@@ -14,7 +14,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   heroSecText,
 }) => {
   return (
-    <div className="container py-4 lg:mb-[60px]">
+    <section className="container py-4 lg:mb-[60px]">
       <Image
         src={imageSrc}
         alt="banner image"
@@ -33,7 +33,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

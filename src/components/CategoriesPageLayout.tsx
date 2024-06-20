@@ -7,7 +7,7 @@ import { cardCenterBadge, cardTopBadge } from "@/utils/helpers/dummyContent";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const CategoriesPageLayout = () => {
+const CategoriesPageLayout: React.FC = () => {
   return (
     <section className="bg-primary">
     <CategoriesSlider />
@@ -29,7 +29,6 @@ const CategoriesPageLayout = () => {
               imageSrc={content.image}
               badgeText={content.badgeText}
               title={content.title}
-              borderColor=""
               badgePosition="center"
             />
           </div>
