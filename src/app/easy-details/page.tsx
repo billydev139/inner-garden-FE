@@ -223,15 +223,17 @@ const EasyDetails: React.FC = () => {
                   <Image src={Images.cocoon} alt="cocoon" aria-label="cocoon" />
                 </div>
                 <div className="flex items-center mt-6 gap-4">
+                  {/* /button maps/ */}
+                  <Button variant="purple" btnText="tag name 1" ariaLabel="tag"/>
                   <Button variant="purple" btnText="tag name 1" ariaLabel="tag"/>
                   <Button variant="purple" btnText="tag name 1" ariaLabel="tag"/>
 
-                  <Button variant="purple" btnText="tag name 1" ariaLabel="tag"/>
                 </div>
               </div>
             </div>
           </div>
           <div className="flex items-center justify-between mt-7">
+                 {/* /button maps/ */}
             <Button variant="white" btnText="Journal title" ariaLabel="Journal title"/>
             <Button variant="white" btnText="Journal title" ariaLabel="Journal title"/>
           </div>
