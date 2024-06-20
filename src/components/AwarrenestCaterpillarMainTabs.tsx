@@ -36,11 +36,12 @@ const AwarrenestCaterpillarMainTabs: React.FC = () => {
 
   return (
     <>
+    <div className=' '>
     <div className='flex items-center justify-center '>
-    <div className="my-4 py-4 b-4 ">
+    <div className="my-4 py-4 b-4 w-full">
       <div className="lg:mb-0 md:mb-2">
         <nav
-          className="-mb-px flex justify-between  items-center gap-3  rounded-[8px] rounded-b-none border-b-2 border-red-700 "
+          className="-mb-px items-center flex justify-center gap-3  rounded-[8px] rounded-b-none border-b-2 border-white "
           aria-label="Tabs"
         >
           {tabs.map((tab, index) => (
@@ -54,7 +55,7 @@ const AwarrenestCaterpillarMainTabs: React.FC = () => {
               className={`whitespace-nowrap py-2 px-[40px] font-medium flex lg:gap-2 items-center ${
                 index === selectedTabIndex
                   ? 'text-[#646464] text-[17px] bg-white rounded-[8px] rounded-b-none'
-                  : 'text-[#888888] text-[17px] hover:text-gray-700  rounded-[8px] rounded-b-none  '
+                  : 'text-[#888888] text-[17px] hover:text-gray-700 bg-[#e2e5f8]  rounded-[8px] rounded-b-none  '
               }`}
               aria-current={index === selectedTabIndex ? 'page' : undefined}
             >
@@ -67,6 +68,8 @@ const AwarrenestCaterpillarMainTabs: React.FC = () => {
       <div className="tab-content">{renderComponent()}</div>
     </div>
     </div>
+    </div>
+    
     
     </>
     

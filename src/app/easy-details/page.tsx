@@ -4,86 +4,13 @@ import Images from "@/assets/images";
 import Image from "next/image";
 import { CiCircleInfo, IoMdSend } from "@/assets/Icons";
 import Button from "@/components/common/Button";
+import {
+  exploredCard,
+  propertiesCard,
+  reviewsData,
+  sunflowerPoints,
+} from "@/utils/helpers/dummyContent";
 const EasyDetails = () => {
-  const propertiesCard = [
-    {
-      name: "Envision",
-      desc: "future blossoms",
-    },
-    {
-      name: "Prepare",
-      desc: "The Soil",
-    },
-    {
-      name: "Plant",
-      desc: "Seeds of Hope",
-    },
-    {
-      name: "Foster",
-      desc: "Resillent Growth",
-    },
-  ];
-
-  const sunflowerPoints = [
-    {
-      title: "Plant Resilience Seeds: ",
-      description:
-        " Start with the intention to grow stranger through adversity.",
-    },
-    {
-      title: "Nourish with Persistence: ",
-      description:
-        "  Feed your resolve with continuous effort and determination.",
-    },
-    {
-      title: "Embrace the Elements:  ",
-      description: "Accept and adapt to the changing circumstances around you.",
-    },
-    {
-      title: "Flourish in Adversity:  ",
-      description:
-        " Thrive and prosper, drawing strength from challenges faced.",
-    },
-  ];
-  const exploredCard = [
-    {
-      badgetext: "(thankful)Nest",
-      posttitle: "Write a thank-you note to yourself",
-      description:
-        "Acknowledge your efforts and accomplishments of the day in a self-directed thank-you note.",
-      points: "20 pts",
-    },
-    {
-      badgetext: "(thankful)Nest",
-      posttitle: "Write a thank-you note to yourself",
-      description:
-        "Acknowledge your efforts and accomplishments of the day in a self-directed thank-you note.",
-      points: "20 pts",
-    },
-  ];
-  const reviewsData = [
-    {
-      name: "Doris Edwards",
-      comment:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      profileImg: Images.testimonial,
-      img: Images.snell,
-    },
-    {
-      name: "Doris Edwards",
-      comment:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      profileImg: Images.testimonial,
-      img: Images.snell,
-    },
-    {
-      name: "Doris Edwards",
-      comment:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      profileImg: Images.testimonial,
-      img: Images.snell,
-    },
-  ];
   return (
     <>
       <div

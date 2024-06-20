@@ -106,12 +106,24 @@ import testimonial from "./testimonialpic.png"
 import searchbackground from "./searchresultbg.png"
 import cardImage from "./cardImage.png"
 import singlefeedimg from "./singlefeedimg.png"
+import Fireflyblackmuscle from "./Fireflyblackmuscle.png"
+import socialprofile from "./socialprofile.png"
+import socialsecond from "./socialprofilesecond.png"
+import socialthird from "./socialprofilethird.png"
+import socialfourth from "./socialprofilefourth.png"
+import socialfifth from "./socialprofilefive.png"
 
 const Images = {
     logo,
+    socialprofile,
+    socialfifth,
+    socialthird,
+    socialfourth,
+    socialsecond,
     singlefeedimg,
     wellgobrain,
     addcomment,
+    Fireflyblackmuscle,
     cloudy1,
     testimonial,
     checkstep,

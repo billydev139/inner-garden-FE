@@ -1,4 +1,5 @@
 import Images from "@/assets/images";
+import GardenCards from "@/components/common/GardenCards";
 
 export const cardTopBadge = [
   {
@@ -115,8 +116,8 @@ export const cardSectionContent = [
     subHeading:
       "Get rich in what matters most: peace, kindness, gratitude, wonder, love and hope.",
     bgGradient:
-    "linear-gradient(to right, rgba(86, 74, 141, 1), rgba(86, 74, 141, 1))",
-      
+      "linear-gradient(to right, rgba(86, 74, 141, 1), rgba(86, 74, 141, 1))",
+
     borderColor: "#B76EF9",
   },
 ];
@@ -170,57 +171,49 @@ export const subCategories = [
   {
     id: "0",
     badgeText: "Gardens/Peace",
-    title:
-      "(serenitty)Sunflowers Peace if middle of storms",
+    title: "(serenitty)Sunflowers Peace if middle of storms",
     image: Images.cardImage,
   },
   {
     id: "1",
     badgeText: "Gardens/Peace",
-    title:
-      "(serenitty)Sunflowers Peace if middle of storms",
+    title: "(serenitty)Sunflowers Peace if middle of storms",
     image: Images.cardImage,
   },
   {
     id: "2",
     badgeText: "Gardens/Peace",
-    title:
-      "(serenitty)Sunflowers Peace if middle of storms",
+    title: "(serenitty)Sunflowers Peace if middle of storms",
     image: Images.cardImage,
   },
   {
     id: "3",
     badgeText: "Gardens/Peace",
-    title:
-      "(serenitty)Sunflowers Peace if middle of storms",
+    title: "(serenitty)Sunflowers Peace if middle of storms",
     image: Images.cardImage,
   },
   {
     id: "4",
     badgeText: "Gardens/Peace",
-    title:
-      "(serenitty)Sunflowers Peace if middle of storms",
+    title: "(serenitty)Sunflowers Peace if middle of storms",
     image: Images.cardImage,
   },
   {
     id: "5",
     badgeText: "Gardens/Peace",
-    title:
-      "(serenitty)Sunflowers Peace if middle of storms",
+    title: "(serenitty)Sunflowers Peace if middle of storms",
     image: Images.cardImage,
   },
   {
     id: "6",
     badgeText: "Gardens/Peace",
-    title:
-      "(serenitty)Sunflowers Peace if middle of storms",
+    title: "(serenitty)Sunflowers Peace if middle of storms",
     image: Images.cardImage,
   },
   {
     id: "7",
     badgeText: "Gardens/Peace",
-    title:
-      "(serenitty)Sunflowers Peace if middle of storms",
+    title: "(serenitty)Sunflowers Peace if middle of storms",
     image: Images.cardImage,
   },
 ];
@@ -311,7 +304,7 @@ export const wellGoCardData = [
 
 export const tagCardData = [
   {
-    id:0,
+    id: 0,
     // image: Images.banner1,
     title: "(serenitty)Sunflowers",
     badgeHeading: "Peace is middle of stroms",
@@ -323,7 +316,7 @@ export const tagCardData = [
     tagName: "Tag Name 2",
   },
   {
-    id:1,
+    id: 1,
     image: Images.banner1,
     title: "(serenitty)Sunflowers",
     badgeHeading: "Peace is middle of stroms",
@@ -335,20 +328,7 @@ export const tagCardData = [
     tagName: "Tag Name 2",
   },
   {
-    id:2,
-    image: Images.banner1,
-    title: "(serenitty)Sunflowers",
-    badgeHeading: "Peace is middle of stroms",
-    badgeDescription:
-      "The 'Big Bloom' takes the aspirational spirit of exploration that propelled humanity to the moon and turns it inward, setting us on a course to explore our (inner)Cosmos. It's an invitation to become not just astronauts but intronauts, embarking on a journey through the vast Cosmos within each of us. This (inner) Cosmos is far from a vacuous void; it's a vibrant expanse teeming with life, waiting to be nurtured, explored, and expanded. Read more",
-    userimage: Images.userpic,
-    userName: "Kathleen Velasco",
-    points: "20 pts",
-    tagName: "Tag Name 2",
-  },
-
-  {
-    id:3,
+    id: 2,
     image: Images.banner1,
     title: "(serenitty)Sunflowers",
     badgeHeading: "Peace is middle of stroms",
@@ -361,7 +341,20 @@ export const tagCardData = [
   },
 
   {
-    id:4,
+    id: 3,
+    image: Images.banner1,
+    title: "(serenitty)Sunflowers",
+    badgeHeading: "Peace is middle of stroms",
+    badgeDescription:
+      "The 'Big Bloom' takes the aspirational spirit of exploration that propelled humanity to the moon and turns it inward, setting us on a course to explore our (inner)Cosmos. It's an invitation to become not just astronauts but intronauts, embarking on a journey through the vast Cosmos within each of us. This (inner) Cosmos is far from a vacuous void; it's a vibrant expanse teeming with life, waiting to be nurtured, explored, and expanded. Read more",
+    userimage: Images.userpic,
+    userName: "Kathleen Velasco",
+    points: "20 pts",
+    tagName: "Tag Name 2",
+  },
+
+  {
+    id: 4,
     image: Images.banner1,
     title: "(serenitty)Sunflowers",
     badgeHeading: "Peace is middle of stroms",
@@ -375,209 +368,768 @@ export const tagCardData = [
 ];
 
 export const searchResultData = [
-    {
-      id:0,
-      image: Images.banner1,
-      title: "(serenitty)Sunflowers",
-      badgeHeading: "Peace is middle of stroms",
-      badgeDescription:
-        "The 'Big Bloom' takes the aspirational spirit of exploration that propelled humanity to the moon and turns it inward, setting us on a course to explore our (inner)Cosmos. It's an invitation to become not just astronauts but intronauts, embarking on a journey through the vast Cosmos within each of us. This (inner) Cosmos is far from a vacuous void; it's a vibrant expanse teeming with life, waiting to be nurtured, explored, and expanded. Read more",
-      userimage: Images.userpic,
-      userName: "Kathleen Velasco",
-      points: "20 pts",
-      tagName: "Tag Name 2",
-    },
-    {
-      id:1,
-      image: Images.banner1,
-      title: "(serenitty)Sunflowers",
-      badgeHeading: "Peace is middle of stroms",
-      badgeDescription:
-        "The 'Big Bloom' takes the aspirational spirit of exploration that propelled humanity to the moon and turns it inward, setting us on a course to explore our (inner)Cosmos. It's an invitation to become not just astronauts but intronauts, embarking on a journey through the vast Cosmos within each of us. This (inner) Cosmos is far from a vacuous void; it's a vibrant expanse teeming with life, waiting to be nurtured, explored, and expanded. Read more",
-      userimage: Images.userpic,
-      userName: "Kathleen Velasco",
-      points: "20 pts",
-      tagName: "Tag Name 2",
-    },
-    {
-      id:2,
-      image: Images.banner1,
-      title: "(serenitty)Sunflowers",
-      badgeHeading: "Peace is middle of stroms",
-      badgeDescription:
-        "The 'Big Bloom' takes the aspirational spirit of exploration that propelled humanity to the moon and turns it inward, setting us on a course to explore our (inner)Cosmos. It's an invitation to become not just astronauts but intronauts, embarking on a journey through the vast Cosmos within each of us. This (inner) Cosmos is far from a vacuous void; it's a vibrant expanse teeming with life, waiting to be nurtured, explored, and expanded. Read more",
-      userimage: Images.userpic,
-      userName: "Kathleen Velasco",
-      points: "20 pts",
-      tagName: "Tag Name 2",
-    },
-  ];
- export const innerTrailFeed = [
-    {
-      title: "Journey to the (peace)Garden",
-      CardsData: [
-        {
-          id: "0",
-          badgeText: "peace",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.innertraidfeed,
-        },
-        {
-          id: "1",
-          badgeText: "peace",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.innerfeedimg2,
-        },
-        {
-          id: "3",
-          badgeText: "peace",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "4",
-          badgeText: "peace",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-      ],
-    },
-    {
-      title: "Journey to the (peace)Garden",
-      CardsData: [
-        {
-          id: "0",
-          badgeText: "peace",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "1",
-          badgeText: "peace",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "3",
-          badgeText: "peace",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "4",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-      ],
-    },
-    {
-      title: "Journey to the (love)Garden",
-      CardsData: [
-        {
-          id: "0",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "1",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "3",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "4",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-      ],
-    },
-    {
-      title: "Journey to the (joy)Garden",
-      CardsData: [
-        {
-          id: "0",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "1",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "3",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "4",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-      ],
-    },
-    {
-      title: "Journey to the (hope)Garden",
-      CardsData: [
-        {
-          id: "0",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "1",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "3",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-        {
-          id: "4",
-          badgeText: "(serenity)Sunflowers",
-          title:
-            "(serenitty)Sunflowers",
-          image: Images.banner1,
-        },
-      ],
-    },
-  ];
+  {
+    id: 0,
+    image: Images.banner1,
+    title: "(serenitty)Sunflowers",
+    badgeHeading: "Peace is middle of stroms",
+    badgeDescription:
+      "The 'Big Bloom' takes the aspirational spirit of exploration that propelled humanity to the moon and turns it inward, setting us on a course to explore our (inner)Cosmos. It's an invitation to become not just astronauts but intronauts, embarking on a journey through the vast Cosmos within each of us. This (inner) Cosmos is far from a vacuous void; it's a vibrant expanse teeming with life, waiting to be nurtured, explored, and expanded. Read more",
+    userimage: Images.userpic,
+    userName: "Kathleen Velasco",
+    points: "20 pts",
+    tagName: "Tag Name 2",
+  },
+  {
+    id: 1,
+    image: Images.banner1,
+    title: "(serenitty)Sunflowers",
+    badgeHeading: "Peace is middle of stroms",
+    badgeDescription:
+      "The 'Big Bloom' takes the aspirational spirit of exploration that propelled humanity to the moon and turns it inward, setting us on a course to explore our (inner)Cosmos. It's an invitation to become not just astronauts but intronauts, embarking on a journey through the vast Cosmos within each of us. This (inner) Cosmos is far from a vacuous void; it's a vibrant expanse teeming with life, waiting to be nurtured, explored, and expanded. Read more",
+    userimage: Images.userpic,
+    userName: "Kathleen Velasco",
+    points: "20 pts",
+    tagName: "Tag Name 2",
+  },
+  {
+    id: 2,
+    image: Images.banner1,
+    title: "(serenitty)Sunflowers",
+    badgeHeading: "Peace is middle of stroms",
+    badgeDescription:
+      "The 'Big Bloom' takes the aspirational spirit of exploration that propelled humanity to the moon and turns it inward, setting us on a course to explore our (inner)Cosmos. It's an invitation to become not just astronauts but intronauts, embarking on a journey through the vast Cosmos within each of us. This (inner) Cosmos is far from a vacuous void; it's a vibrant expanse teeming with life, waiting to be nurtured, explored, and expanded. Read more",
+    userimage: Images.userpic,
+    userName: "Kathleen Velasco",
+    points: "20 pts",
+    tagName: "Tag Name 2",
+  },
+];
+export const innerTrailFeed = [
+  {
+    title: "Journey to the (peace)Garden",
+    CardsData: [
+      {
+        id: "0",
+        badgeText: "peace",
+        title: "(serenitty)Sunflowers",
+        image: Images.innertraidfeed,
+      },
+      {
+        id: "1",
+        badgeText: "peace",
+        title: "(serenitty)Sunflowers",
+        image: Images.innerfeedimg2,
+      },
+      {
+        id: "3",
+        badgeText: "peace",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "4",
+        badgeText: "peace",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+    ],
+  },
+  {
+    title: "Journey to the (peace)Garden",
+    CardsData: [
+      {
+        id: "0",
+        badgeText: "peace",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "1",
+        badgeText: "peace",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "3",
+        badgeText: "peace",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "4",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+    ],
+  },
+  {
+    title: "Journey to the (love)Garden",
+    CardsData: [
+      {
+        id: "0",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "1",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "3",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "4",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+    ],
+  },
+  {
+    title: "Journey to the (joy)Garden",
+    CardsData: [
+      {
+        id: "0",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "1",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "3",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "4",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+    ],
+  },
+  {
+    title: "Journey to the (hope)Garden",
+    CardsData: [
+      {
+        id: "0",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "1",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "3",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+      {
+        id: "4",
+        badgeText: "(serenity)Sunflowers",
+        title: "(serenitty)Sunflowers",
+        image: Images.banner1,
+      },
+    ],
+  },
+];
 
+export const gardenAwarrenestCaterpillar = [
+  {
+    title: "I’m hungry to learn more.",
+    count: "32",
+    backgroundClass: "bg-tetra",
+    sliderCardsData: [
+      {
+        id: "0",
+        title: "(serenitty)Sunflowers",
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        subheading: "Peace if middle of storms",
 
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title: "(serenitty)Sunflowers",
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        subheading: "Peace if middle of storms",
+
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title: "(serenitty)Sunflowers",
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        subheading: "Peace if middle of storms",
+
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "3",
+        title: "(serenitty)Sunflowers",
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        subheading: "Peace if middle of storms",
+
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+    ],
+  },
+  {
+    title: "I’m driven to explore new possibilities.",
+    count: "122",
+    backgroundClass: "bg-tertiary",
+    sliderCardsData: [
+      {
+        id: "0",
+        title: "(serenitty)Sunflowers",
+        subheading: "Peace if middle of storms",
+        text: "Reflect on today's masterpiece moments",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "3",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+    ],
+  },
+  {
+    title: "I’m determined to grow in this area.",
+    count: "22",
+    backgroundClass: "bg-secondary",
+    sliderCardsData: [
+      {
+        id: "0",
+        title: "(serenitty)Sunflowers",
+        subheading: "Peace if middle of storms",
+        text: "Reflect on today's masterpiece moments",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "3",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+    ],
+  },
+  {
+    title: "I’m celebrating the journey.",
+    count: "22",
+    backgroundClass: "bg-penta",
+    sliderCardsData: [
+      {
+        id: "0",
+        title: "(serenitty)Sunflowers",
+        subheading: "Peace if middle of storms",
+        text: "Reflect on today's masterpiece moments",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "3",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+    ],
+  },
+];
+
+export const propertiesCard = [
+  {
+    name: "Envision",
+    desc: "future blossoms",
+  },
+  {
+    name: "Prepare",
+    desc: "The Soil",
+  },
+  {
+    name: "Plant",
+    desc: "Seeds of Hope",
+  },
+  {
+    name: "Foster",
+    desc: "Resillent Growth",
+  },
+];
+
+export const GardenCardsData = [
+  {
+    id: "0",
+    title: "(serenitty)Sunflowers",
+    text: "(serenitty)Sunflowers",
+    footerText: "(entirety)Points",
+    subheading: "Peace if middle of storms",
+
+    image: Images.banner3,
+    badgeText: "Gardens/Peace",
+    username: "Kathleen, Sally",
+    otherusers: "123",
+    profileimg: Images.profile,
+  },
+  {
+    id: "1",
+    title: "(serenitty)Sunflowers",
+    text: "(serenitty)Sunflowers",
+    footerText: "(entirety)Points",
+    image: Images.banner3,
+    subheading: "Peace if middle of storms",
+
+    badgeText: "Gardens/Peace",
+    username: "Kathleen, Sally",
+    otherusers: "123",
+    profileimg: Images.profile,
+  },
+  {
+    id: "2",
+    title: "(serenitty)Sunflowers",
+    text: "(serenitty)Sunflowers",
+    footerText: "(entirety)Points",
+    subheading: "Peace if middle of storms",
+
+    image: Images.banner3,
+    badgeText: "Gardens/Peace",
+    username: "Kathleen, Sally",
+    otherusers: "123",
+    profileimg: Images.profile,
+  },
+  {
+    id: "3",
+    title: "(serenitty)Sunflowers",
+    text: "(serenitty)Sunflowers",
+    footerText: "(entirety)Points",
+    subheading: "Peace if middle of storms",
+
+    image: Images.banner3,
+    badgeText: "Gardens/Peace",
+    username: "Kathleen, Sally",
+    otherusers: "123",
+    profileimg: Images.profile,
+  },
+];
+
+export const sunflowerPoints = [
+  {
+    title: "Plant Resilience Seeds: ",
+    description:
+      " Start with the intention to grow stranger through adversity.",
+  },
+  {
+    title: "Nourish with Persistence: ",
+    description:
+      "  Feed your resolve with continuous effort and determination.",
+  },
+  {
+    title: "Embrace the Elements:  ",
+    description: "Accept and adapt to the changing circumstances around you.",
+  },
+  {
+    title: "Flourish in Adversity:  ",
+    description: " Thrive and prosper, drawing strength from challenges faced.",
+  },
+];
+
+export const exploredCard = [
+  {
+    badgetext: "(thankful)Nest",
+    posttitle: "Write a thank-you note to yourself",
+    description:
+      "Acknowledge your efforts and accomplishments of the day in a self-directed thank-you note.",
+    points: "20 pts",
+  },
+  {
+    badgetext: "(thankful)Nest",
+    posttitle: "Write a thank-you note to yourself",
+    description:
+      "Acknowledge your efforts and accomplishments of the day in a self-directed thank-you note.",
+    points: "20 pts",
+  },
+];
+
+export const reviewsData = [
+  {
+    name: "Doris Edwards",
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    profileImg: Images.testimonial,
+    img: Images.snell,
+  },
+  {
+    name: "Doris Edwards",
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    profileImg: Images.testimonial,
+    img: Images.snell,
+  },
+  {
+    name: "Doris Edwards",
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    profileImg: Images.testimonial,
+    img: Images.snell,
+  },
+];
+
+export const myAwarenestCaterpillar = [
+  {
+    title: "caterpillar",
+    description:
+      "Journals that inspire beginner’s mind, an open heart, a hunger to learn, and the grit to weather adversity.",
+    count: "32",
+    backgroundClass: "bg-tetra",
+    sliderCardsData: [
+      {
+        id: "0",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        subheading: "Peace if middle of storms",
+
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        subheading: "Peace if middle of storms",
+
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        subheading: "Peace if middle of storms",
+
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "3",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        subheading: "Peace if middle of storms",
+
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+    ],
+  },
+  {
+    title: "cocoon",
+    description:
+      "Journals that inspire trust in the process, patience, and the capacity to let go.",
+
+    count: "122",
+    backgroundClass: "bg-tertiary",
+    sliderCardsData: [
+      {
+        id: "0",
+        title: "(serenitty)Sunflowers",
+        subheading: "Peace if middle of storms",
+        text: "Reflect on today's masterpiece moments",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "3",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+    ],
+  },
+  {
+    title: "Butterfly",
+    description:
+      "Journals that inspire presence, the courage to transform, and a profound an appreciation of beauty.",
+
+    count: "22",
+    backgroundClass: "bg-secondary",
+    sliderCardsData: [
+      {
+        id: "0",
+        title: "(serenitty)Sunflowers",
+        subheading: "Peace if middle of storms",
+        text: "Reflect on today's masterpiece moments",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "3",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "Gardens/Peace",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+    ],
+  },
+];
+export const socialImages = [
+  {
+    socialimg: Images.socialprofile,
+  },
+  {
+    socialimg: Images.socialsecond,
+  },
+  {
+    socialimg: Images.socialthird,
+  },
+  {
+    socialimg: Images.socialfourth,
+  },
+  {
+    socialimg: Images.socialfifth,
+  },
+];
