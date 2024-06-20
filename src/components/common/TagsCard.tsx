@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Images from "@/assets/images";
-import Button from "./Button";
-import styles from "@/styles";
 import Link from "next/link";
 
 interface TagCardProps {

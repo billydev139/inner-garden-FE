@@ -36,7 +36,7 @@ const VideoFeeds: React.FC = () => {
               footerText={content.footerText}
             />
           ))}
-        </div>
+        </div> 
       </div>
 
       {cardSectionContent.map((secContent) => (

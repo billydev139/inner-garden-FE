@@ -9,12 +9,6 @@ const Wellgorithm: React.FC = () => {
       <CategoriesSlider />
       <div className="container">
         <Tabs />
-
-        {/* <Image
-          src={Images.banner1}
-          alt="banner image"
-          className="rounded-xl lg:relative"
-        /> */}
       </div>
     </>
   );

@@ -5,7 +5,7 @@ import CardSection from "@/components/common/CardSection";
 import HeroSection from "@/components/common/HeroSection";
 import WellgorithmCard from "@/components/common/WellgorithmCard";
 import styles from "@/styles";
-import { cardTopBadge, wellgorithmContent } from "@/utils/helpers/dummyContent";
+import { cardContent, wellgorithmContent } from "@/utils/helpers/dummyContent";
 import React from "react";
 
 const Feed: React.FC = () => {

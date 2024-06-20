@@ -4,7 +4,7 @@ import Button from "./Button";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { cardTopBadge } from "@/utils/helpers/dummyContent";
+import { cardContent } from "@/utils/helpers/dummyContent";
 import styles from "@/styles";
 import Cards from "./Cards";
 
@@ -73,7 +73,7 @@ const CardSection: React.FC<CardSectionProps> = ({
       {mode === "slider" ? (
         <div className="container">
           <Slider {...sliderSettings}>
-            {cardTopBadge.map((content) => (
+            {cardContent.map((content) => (
               <Cards
                 key={content.id}
                 imageSrc={content.image}
@@ -88,10 +88,10 @@ const CardSection: React.FC<CardSectionProps> = ({
         </div>
       ) : (
         <div className="container grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-          {cardTopBadge.slice(0, 3).map((content) => (
+          {cardContent.slice(0, 3).map((content) => (
             <Cards
               key={content.id}
-              imageSrc={content.image}
+              imageSrc={content.image} 
               badgeText={content.badgeText}
               title={content.title}
               borderColor={borderColor}
