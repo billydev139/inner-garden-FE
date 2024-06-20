@@ -2,14 +2,19 @@
 import React from "react";
 import Tabs from "@/components/Tabs";
 import CategoriesSlider from "@/components/common/CategoriesSlider";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 
-const Journal: React.FC = () => {
+const SubCategory: React.FC = () => {
   const pathname = usePathname();
+  const params = useParams();
 
   return (
     <section className={`bg-primary ${
-      pathname.includes("/adversities") ? "theme-brown" : "theme-blue"
+      pathname.includes("/activities")
+        ? "theme-green"
+        : pathname.includes("/adversities")
+        ? "theme-brown"
+        : "theme-blue"
     }`}>
       <CategoriesSlider />
       <div className="container">
@@ -19,4 +24,4 @@ const Journal: React.FC = () => {
   );
 };
 
-export default Journal;
+export default SubCategory;

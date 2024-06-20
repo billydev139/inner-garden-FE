@@ -31,50 +31,50 @@ export const loginLinks = [
 
 export const subMenucategories = [
   {
-    id: 0,
+    id: 0, 
     title: "peace",
-    link:"/peace/journal",
+    link:"/peace",
   },
   {
     id: 1,
     title: "love",
-    link:"/love/journal",
+    link:"/love",
 
   },
   {
     id: 2,
     title: "kindness",
-    link:"/kindness/journal",
+    link:"/kindness",
 
   },
   {
     id: 3,
     title: "joy",
-    link:"/joy/journal",
+    link:"/joy",
 
   },
   {
     id: 4,
     title: "Hope",
-    link:"/hope/journal",
+    link:"/hope",
 
   },
   {
     id: 5,
     title: "Confidence",
-    link:"/confidence/journal",
+    link:"/confidence",
 
   },
   {
     id: 6,
     title: "awe",
-    link:"/awe/journal",
+    link:"/awe",
 
   },
   {
     id: 7,
     title: "Wonder",
-    link:"/wonder/journal",
+    link:"/wonder",
 
   },
 ];
