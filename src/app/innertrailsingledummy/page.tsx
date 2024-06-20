@@ -1,20 +1,22 @@
 import React from "react";
 import Images from "@/assets/images";
 import Image from "next/image";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cards from "@/components/common/Cards";
-interface CardProps {
-    imageSrc?: string | any;
-    videoSrc?: string | any;
-    title: string;
-    badgeText: string;
-    borderColor?: string;
-    className?: string;
-    badgePosition?: "top" | "center";
-  }
 
-const InnerTrial: React.FC<CardProps> = () => {
+interface CardProps {
+  imageSrc?: string | any;
+  videoSrc?: string | any;
+  title: string;
+  badgeText: string;
+  borderColor?: string;
+  className?: string;
+  badgePosition?: "top" | "center";
+}
+
+const InnerTrial: React.FC = () => {
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -89,15 +91,15 @@ const InnerTrial: React.FC<CardProps> = () => {
               (serenitty)Sunflowers
             </h2>
             <p className="font-montserrat text-[20px] font-medium pt-4">
-              {`The 'Big Bloom' takes the aspirational spirit of exploration that
+              {`  The 'Big Bloom' takes the aspirational spirit of exploration that
               propelled humanity to the moon and turns it inward, setting us on
               a course to explore our (inner)Cosmos. It's an invitation to
-              become not just astronauts but 'intronauts,' embarking on a
+              become not just astronauts but "intronauts," embarking on a
               journey through the vast Cosmos within each of us. Read more`}
             </p>
             <div className="flex items-center gap-4 mt-3">
-              <Image src={Images.userpic} alt="profile" aria-label="User Picture" />
-              <h2 className="text-sm font-montserrat font-semibold">
+            <Image src={Images.userpic} alt="profile" aria-label="User Picture" />
+            <h2 className="text-sm font-montserrat font-semibold">
                 Kathleen Velasco
               </h2>
             </div>
