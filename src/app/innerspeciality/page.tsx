@@ -3,12 +3,12 @@ import Button from "@/components/common/Button";
 import Cards from "@/components/common/Cards";
 import CategoriesSlider from "@/components/common/CategoriesSlider";
 import HeroSection from "@/components/common/HeroSection";
-import { cardCenterBadge, cardContent } from "@/utils/helpers/dummyContent";
+import { cardCenterBadge } from "@/utils/helpers/dummyContent";
 import React from "react";
 
 const InnerSpeciality: React.FC = () => {
   return (
-    <>
+    <React.Fragment>
       <CategoriesSlider />
       <div>
         <HeroSection
@@ -19,7 +19,7 @@ const InnerSpeciality: React.FC = () => {
       </div>
 
       <div className="container flex flex-wrap justify-center mt-12 mb-8">
-        {cardCenterBadge.map((content) => (
+        {cardCenterBadge?.map((content) => (
           <div
             key={content.id}
             className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-2 box-border"
@@ -28,17 +28,15 @@ const InnerSpeciality: React.FC = () => {
               imageSrc={content.image}
               badgeText={content.badgeText}
               title={content.title}
-              borderColor=""
               badgePosition="center"
             />
           </div>
         ))}
       </div>
-
       <div className="text-center pb-8">
-        <Button btnText="load more" variant="white" />
+        <Button btnText="load more" variant="white" ariaLabel="load more" />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

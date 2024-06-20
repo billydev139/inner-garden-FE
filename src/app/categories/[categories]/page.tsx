@@ -1,13 +1,9 @@
 "use client";
-
 import CategoriesPageLayout from "@/components/CategoriesPageLayout";
-import { useParams, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import React from "react";
-
 const Categories: React.FC = () => {
   const pathname = usePathname();
-  const params = useParams();
-
   return (
     <div
       className={`${

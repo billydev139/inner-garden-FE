@@ -3,9 +3,8 @@ import Image from "next/image";
 import Images from "@/assets/images";
 import Link from "next/link";
 
-interface TagCardProps {
+export interface TagCardProps {
   imageSrc?: string | any;
-
   userPicSrc: string | any;
   title: string;
   badgeHeading: string;
@@ -13,7 +12,6 @@ interface TagCardProps {
   userName: string;
   points: string;
   tagName: string;
-  className?: string;
 }
 
 const TagsCard: React.FC<TagCardProps> = ({
@@ -25,11 +23,10 @@ const TagsCard: React.FC<TagCardProps> = ({
   userName,
   points,
   tagName,
-  className,
 }) => {
   return (
     <>
-      <div className="">
+      <section>
         <div className="border-[2px] border-white bg-white pb-6 rounded-2xl mb-8">
           <h2 className="bg-tertiary text-white text-center font-black lg:text-[44px] rounded-2xl py-5 rounded-b-none">
             {title}
@@ -81,13 +78,11 @@ const TagsCard: React.FC<TagCardProps> = ({
                 <h2 className="font-semibold text-base font-montserrat-alternates text-white rounded-[18px] px-3 py-2 bg-secondary">
                   {points}
                 </h2>
-                {/* <Button btnText={tagName} variant="#564A8D" />
-                <Button btnText={points} variant="#564A8D" /> */}
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

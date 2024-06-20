@@ -2,11 +2,10 @@
 import React from "react";
 import Tabs from "@/components/Tabs";
 import CategoriesSlider from "@/components/common/CategoriesSlider";
-import { useParams, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const SubCategory: React.FC = () => {
   const pathname = usePathname();
-  const params = useParams();
 
   return (
     <section className={`bg-primary ${

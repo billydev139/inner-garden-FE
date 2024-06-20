@@ -8,6 +8,7 @@ interface ButtonProps {
   href?: string;
   className?: string;
   onClick?: () => void;
+  ariaLabel: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,7 +17,8 @@ const Button: React.FC<ButtonProps> = ({
   variant = "gradient",
   className,
   href = "/",
-  onClick
+  onClick,
+  ariaLabel,
 }) => {
   const baseClasses = `text-lg font-bold py-2 px-6 w-[200px] text-center`;
 
@@ -31,10 +33,20 @@ const Button: React.FC<ButtonProps> = ({
 
   return href ? (
     <Link href={href} passHref>
-      <span className={`${baseClasses} ${variantClasses}`}>{btnText}</span>
+      <span
+        className={`${baseClasses} ${variantClasses}`}
+        aria-label={ariaLabel}
+      >
+        {btnText}
+      </span>
     </Link>
   ) : (
-    <button type={btnType} className={`${baseClasses} ${variantClasses} ${className} whitespace-nowrap `} onClick={onClick}>
+    <button
+      type={btnType}
+      className={`${baseClasses} ${variantClasses} ${className}`}
+      onClick={onClick}
+      aria-label={ariaLabel}
+    >
       {btnText}
     </button>
   );

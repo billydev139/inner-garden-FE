@@ -16,8 +16,8 @@ const WellgorithmCard: React.FC<WellgorithmCardProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="border-4 border-tertiary bg-white rounded-lg">
-      <Image src={imageSrc} alt="image" />
+    <section className="border-4 border-tertiary bg-white rounded-lg">
+      <Image src={imageSrc} alt="wellgorithm image" aria-label="wellgorithm image" />
       <h1 className={`${styles.headingH1} text-tertiary text-center py-4`}>
         {title}
       </h1>
@@ -25,19 +25,15 @@ const WellgorithmCard: React.FC<WellgorithmCardProps> = ({
       <div
         style={{
           backgroundImage: `url(${wellgorithmBg.src})`,
-          height: "100%",
-          width: "100%",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
-        className="flex flex-col pt-[20px]"
+        className="flex flex-col pt-[20px] w-full h-full bg-cover bg-center"
       >
         <h1 className={`${styles.subHeading} text-white text-center py-4`}>
           <span className={`${styles.headingH1}`}>20</span>
           {footerText}
         </h1>
       </div>
-    </div>
+    </section>
   );
 };
 

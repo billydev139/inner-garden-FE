@@ -5,14 +5,10 @@ import banner11 from "../assets/images/banner11.png";
 
 const CTA: React.FC = () => {
   return (
-    <div
-      className="container py-24 rounded-lg"
+    <section
+      className="container py-24 rounded-lg w-full h-full bg-cover bg-center"
       style={{
-        backgroundImage: `url(${banner11.src})`,
-        height: "100%",
-        width: "100%",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundImage: `url(${banner11.src})`
       }}
     >
       <h1 className={`${styles.headingH1} text-white text-center`}>
@@ -22,9 +18,9 @@ const CTA: React.FC = () => {
         Explore Emotional Watering and Composting
       </h2>
       <div className="text-center">
-        <Button btnText="Visit now" />
+        <Button btnText="Visit now" ariaLabel='Visit now button' />
       </div>
-    </div>
+    </section>
   );
 };
 
