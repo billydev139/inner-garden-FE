@@ -1,10 +1,14 @@
-import React from 'react'
-import TagsCard from './common/TagsCard';
-import { tagCardData } from '@/utils/helpers/dummyContent';
-import CTA from './CTA';
+import React from "react";
+import TagsCard from "./common/TagsCard";
+import { tagCardData } from "@/utils/helpers/dummyContent";
+import CTA from "./CTA";
 
-const TagsSection: React.FC<{ start: number; end: number }> = ({ start, end }) => (
-    <section className="max-w-[750px] mx-auto">
+const TagsSection: React.FC<{ start: number; end: number }> = ({
+  start,
+  end,
+}) => (
+  <section>
+    <div className="max-w-[750px] mx-auto">
       <div className="mt-4">
         {tagCardData.slice(start, end).map((content) => (
           <TagsCard
@@ -16,12 +20,13 @@ const TagsSection: React.FC<{ start: number; end: number }> = ({ start, end }) =
             userPicSrc={content.userimage}
             userName={content.userName}
             points={content.points}
-            tagName={content.tagName} 
+            tagName={content.tagName}
           />
         ))}
       </div>
-      <CTA />
-    </section>
-  );
+    </div>
+    <CTA />
+  </section>
+);
 
-export default TagsSection
+export default TagsSection;

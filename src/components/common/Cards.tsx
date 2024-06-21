@@ -1,6 +1,6 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { StaticImageData } from "next/image";
 import { RxCross1 } from "../../assets/Icons/index";
 interface SocialImage {

@@ -1,13 +1,12 @@
 import React from "react";
 import Images from "@/assets/images";
 import Image from "next/image";
-
 import bgimg from "../../src/assets/images/everyoneawarenestbg.png";
 import AwarrenestCaterpillarSubTabs from "./AwarrenestCaterpillarSubTabs";
 const EveryonesNests: React.FC = () => {
   return (
     <>
-      <div
+      <section
         className="container mx-auto bg-no-repeat h-80 rounded-md mt-6 bg-center bg-black bg-cover  flex flex-col justify-center items-center"
         style={{
           backgroundImage: `url(${bgimg.src})`,
@@ -21,7 +20,7 @@ const EveryonesNests: React.FC = () => {
         <h2 className="text-[44px] font-black font-montserrat-alternates text-white">
           Caterpillar
         </h2>
-      </div>
+      </section>
       <AwarrenestCaterpillarSubTabs />
     </>
   );

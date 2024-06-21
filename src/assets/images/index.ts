@@ -112,9 +112,13 @@ import socialsecond from "./socialprofilesecond.png"
 import socialthird from "./socialprofilethird.png"
 import socialfourth from "./socialprofilefourth.png"
 import socialfifth from "./socialprofilefive.png"
+import checkvector from "./checkvector.png"
+import checkvector2 from "./checkvector2.png"
 
 const Images = {
     logo,
+    checkvector2,
+    checkvector,
     socialprofile,
     socialfifth,
     socialthird,

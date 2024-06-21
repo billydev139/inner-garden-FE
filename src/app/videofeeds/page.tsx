@@ -15,17 +15,6 @@ const VideoFeeds: React.FC = () => {
         heroSecText="See how AI is transforming our understanding of mind and emotions, and making the once impossible, possible."
       />
 
-      {cardSectionContent.slice(0,1).map((secContent) => (
-        <VideoCardSection
-          key={secContent.id} 
-          secHeading={secContent.heading}
-          secSubHeading={secContent.subHeading}
-          bgGradient={secContent.bgGradient}
-          borderColor={secContent.borderColor}
-          mode="standalone"
-        />
-      ))}
-
       {cardSectionContent.map((secContent) => (
         <VideoCardSection
         key={secContent.id} 

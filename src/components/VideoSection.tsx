@@ -1,7 +1,7 @@
+import React from "react";
 import Images from "@/assets/images";
 import styles from "@/styles";
 import Image from "next/image";
-import React from "react";
 import videoImage from "../assets/images/innerVedio.png";
 
 const VideoSection: React.FC = () => {
