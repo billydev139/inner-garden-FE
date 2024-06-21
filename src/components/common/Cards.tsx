@@ -4,7 +4,7 @@ import Link from "next/link";
 import { StaticImageData } from "next/image";
 import { RxCross1 } from "../../assets/Icons/index";
 interface SocialImage {
-  socialimg: StaticImageData; // or whatever the type of Images.socialprofile is
+  socialimg: StaticImageData; 
 }
 interface CardProps {
   imageSrc?: string | any;

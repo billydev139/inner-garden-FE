@@ -3,12 +3,12 @@ import Images from "@/assets/images";
 import Image from "next/image";
 import { gardenAwarrenestCaterpillar } from "@/utils/helpers/dummyContent";
 import bgimg from "../../src/assets/images/everyoneawarenestbg.png";
-import GardenCards from "./common/GardenCards";
+import GardenCards from './common/GardenCards';
 const MyNests: React.FC = () => {
   return (
-    <>
-      <section
-        className="container mx-auto bg-no-repeat h-80 rounded-md mt-6 bg-center bg-black   flex flex-col justify-center items-center"
+   <>
+    <section
+        className="container mx-auto mb-10 bg-no-repeat h-80 rounded-md mt-6 bg-center bg-black   flex flex-col justify-center items-center"
         style={{
           backgroundImage: `url(${bgimg.src})`,
         }}

@@ -1393,3 +1393,253 @@ export const everyoneAwarenestCaterpillar = [
     ],
   },
 ];
+
+export const innerAcademy = [
+  {
+    title: "(inner)Gardening — Personal Track",
+    description:
+      "Navigate the uncharted landscape of your emotions with a fusion of spiritual wisdom and breakthroughs in personal growth technologies.",
+    count: "32",
+    backgroundClass: "bg-tetra",
+    sliderCardsData: [
+      {
+        id: "0",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        badgebgcolor: "bg-secondary",
+
+        subheading: "Peace if middle of storms",
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      
+    ],
+  },
+  {
+    title: "(inner)Gardening — Planetary Track",
+    description:
+      "Join a movement that is redefining humanity’s (inner) landscape, merging deep-rooted wisdom with innovative strategies for planetary well-being.",
+
+    count: "122",
+    backgroundClass: "bg-tertiary",
+    sliderCardsData: [
+      {
+        id: "0",
+        title:
+          "Nurture a new global consciousness and promote “emotional sustainability” with inspirational action.",
+        subheading: "Peace if middle of storms",
+        text: "Reflect on today's masterpiece moments",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgebgcolor: "bg-hexa",
+        badgeText: "(planetary)Seeding",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title:
+          "Nurture a new global consciousness and promote “emotional sustainability” with inspirational action.",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-hexa",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "(planetary)Seeding",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title:
+          "Help us clear the roots of polarization and nurture a more inclusive and empathetic global community.",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-hexa",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "(planetary)Seeding",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+     
+    ],
+  },
+  {
+    title: "(inner)Gardening — Intermediate Track",
+    description:
+      "Go beyond the basics and dive into a world of enhanced emotional cultivation, unlocking deeper layers of self-awareness and mastery.",
+
+    backgroundClass: "bg-secondary",
+    sliderCardsData: [
+      {
+        id: "0",
+        title:
+          "Learn to shift and rotate your emotional perspectives to gain a 360-degree view of your (inner) landscape.",
+        subheading: "Peace if middle of storms",
+        text: "Reflect on today's masterpiece moments",
+        footerText: "(entirety)Points",
+        badgebgcolor: "bg-secondary",
+
+        image: Images.banner3,
+        badgeText: "(inner)Pinching",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title:
+          "Learn to shift and rotate your emotional perspectives to gain a 360-degree view of your (inner) landscape.",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "(inner)Pinching",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title:
+          "Learn to how to dial up or dial down your feelings for a more balanced response to diverse situations and environments.",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "(inner)Pinching",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+     
+    ],
+  },
+  {
+    title: "(inner)Gardening — Expanded Behavioral Therapy Track",
+    description:
+      "Step into a new dimension of emotional mastery with XBT,where you can interact with your psyche in 3D.",
+
+    backgroundClass: "bg-tertiary",
+    sliderCardsData: [
+      {
+        id: "0",
+        title:
+          "Learn to create healthy emotional spaces between yourself and your experiences to gain deeper insight.",
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        badgebgcolor: "bg-secondary",
+
+        subheading: "Peace if middle of storms",
+        image: Images.banner3,
+        badgeText: "(inner)Distancing",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title:
+          "Learn to how to dial up or dial down your feelings for a more balanced response to diverse situations and environments.",
+
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        badgeText: "(inner)Scaling",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title:
+          "Learn to shift and rotate your emotional perspectives to gain a 360-degree view of your (inner) landscape.",
+
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        image: Images.banner3,
+        badgeText: "(inner)Rotating",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+     
+    ],
+  },
+];
+
+export const generalCertifications = [
+  {
+    text: "(inner)Garden Coach ",
+  },
+  {
+    text: "(inner)Garden Ecologist ",
+  },
+  {
+    text: "(inner)Landscape Designer ",
+  },
+];
+export const specialCertifications = [
+  {
+    text: "Master (inner)Gardener ",
+  },
+  {
+    text: "Master (inner)Botanist ",
+  },
+  {
+    text: "Master (inner)Florist ",
+  },
+];
