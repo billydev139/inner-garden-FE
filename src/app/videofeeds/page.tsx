@@ -12,7 +12,7 @@ import React from "react";
 
 const VideoFeeds: React.FC = () => {
   return (
-    <>
+    <section>
       <HeroSection
         imageSrc={Images.banner3}
         heroSecHeading="Videos"
@@ -53,7 +53,7 @@ const VideoFeeds: React.FC = () => {
       <div className="text-center py-8">
         <Button btnText="load more" variant="white" ariaLabel='Load More' />
       </div>
-    </>
+    </section>
   );
 };
 

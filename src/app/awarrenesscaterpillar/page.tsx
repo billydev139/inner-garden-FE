@@ -5,11 +5,9 @@ import React from "react";
 
 const InnerEveryoneAwarrenestCaterpillar: React.FC = () => {
   return (
-    <>
-      <div className="">
-        <AwarrenestCaterpillarMainTabs />
-      </div>
-    </>
+    <section>
+      <AwarrenestCaterpillarMainTabs />
+    </section>
   );
 };
 

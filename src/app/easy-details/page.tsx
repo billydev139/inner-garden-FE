@@ -13,8 +13,8 @@ import {
 import Input from "@/components/common/Input";
 const EasyDetails = () => {
   return (
-    <>
-      <div
+    <React.Fragment>
+      <section
         className="container mx-auto flex flex-col justify-end  relative pt-10 w-full bg-cover h-[550px] bg-center rounded-lg"
         style={{
           backgroundImage: `url(${bgimg.src})`,
@@ -30,8 +30,8 @@ const EasyDetails = () => {
             </h2>
           </div>
         </div>
-      </div>
-      <div className="container mx-auto mt-4 grid lg:grid-cols-[1fr_2fr_1fr] gap-4">
+      </section>
+      <section className="container mx-auto mt-4 grid lg:grid-cols-[1fr_2fr_1fr] gap-4">
         <div>
           <div className="bg-white bg-opacity-50 rounded-2xl py-5 px-3">
             <div className="flex flex-col items-center justify-center">
@@ -149,7 +149,6 @@ const EasyDetails = () => {
                   <Image src={Images.cocoon} alt="cocoon" aria-label="cocoon" />
                 </div>
                 <div className="flex items-center mt-6 gap-4">
-                  {/* /button maps/ */}
                   <Button variant="purple" btnText="tag name 1" ariaLabel="tag"/>
                   <Button variant="purple" btnText="tag name 1" ariaLabel="tag"/>
                   <Button variant="purple" btnText="tag name 1" ariaLabel="tag"/>
@@ -159,7 +158,6 @@ const EasyDetails = () => {
             </div>
           </div>
           <div className="flex items-center justify-between mt-7">
-                 {/* /button maps/ */}
             <Button variant="white" btnText="Journal title" ariaLabel="Journal title"/>
             <Button variant="white" btnText="Journal title" ariaLabel="Journal title"/>
           </div>
@@ -270,8 +268,8 @@ const EasyDetails = () => {
             </p>
           </div>
         </div>
-      </div>
-    </>
+      </section>
+    </React.Fragment>
   );
 };
 

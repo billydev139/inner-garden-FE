@@ -1,9 +1,6 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { RxCross1 } from "../../assets/Icons/index";
-import { socialImages } from "@/utils/helpers/dummyContent";
-
 interface CardProps {
   imageSrc?: string | any;
   videoSrc?: string | any;
@@ -32,7 +29,6 @@ const Cards: React.FC<CardProps> = ({
   className,
   videoSrc,
   username,
-  crossIcon,
   otheruser,
 }) => {
   return (
@@ -110,8 +106,8 @@ const Cards: React.FC<CardProps> = ({
       {/* {social icon} */}
       {socialImages && socialImages.length > 0 && (
       <div className="flex items-center justify-center gap-2 pb-2">
-        {socialImages && socialImages?.map((item) =>(
-          <Image src={item?.socialimg} alt="social" />
+        {socialImages && socialImages?.map((item, index) =>(
+          <Image src={item?.socialimg} alt="social" key={index} />
         ))}
       </div>
         )}

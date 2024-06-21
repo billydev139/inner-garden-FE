@@ -1,6 +1,7 @@
 import React from 'react'
 
-const AwarenestEveryoneNest = () => {
+
+const CaterpillarAdversities: React.FC = () => {
   return (
     <section>
       {/* Not mentioned in the figma */}
@@ -8,4 +9,4 @@ const AwarenestEveryoneNest = () => {
   )
 }
 
-export default AwarenestEveryoneNest
+export default CaterpillarAdversities

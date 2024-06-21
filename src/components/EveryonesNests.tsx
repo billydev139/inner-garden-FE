@@ -1,12 +1,11 @@
 import React from "react";
 import Images from "@/assets/images";
 import Image from "next/image";
-
 import bgimg from "../../src/assets/images/everyoneawarenestbg.png";
 import AwarrenestCaterpillarSubTabs from "./AwarrenestCaterpillarSubTabs";
 const EveryonesNests: React.FC = () => {
   return (
-    <>
+    <React.Fragment>
       <div
         className="container mx-auto bg-no-repeat h-80 rounded-md mt-6 bg-center bg-black bg-cover  flex flex-col justify-center items-center"
         style={{
@@ -23,7 +22,7 @@ const EveryonesNests: React.FC = () => {
         </h2>
       </div>
       <AwarrenestCaterpillarSubTabs />
-    </>
+    </React.Fragment>
   );
 };
 

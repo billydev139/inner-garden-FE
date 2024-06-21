@@ -1,15 +1,13 @@
-import React from 'react'
+import React from "react";
 import Images from "@/assets/images";
 import Image from "next/image";
 import { gardenAwarrenestCaterpillar } from "@/utils/helpers/dummyContent";
-
 import bgimg from "../../src/assets/images/everyoneawarenestbg.png";
-import AwarrenestCaterpillarSubTabs from "./AwarrenestCaterpillarSubTabs";
-import GardenCards from './common/GardenCards';
+import GardenCards from "./common/GardenCards";
 const MyNests: React.FC = () => {
   return (
-   <>
-    <div
+    <React.Fragment>
+      <section
         className="container mx-auto bg-no-repeat h-80 rounded-md mt-6 bg-center bg-black   flex flex-col justify-center items-center"
         style={{
           backgroundImage: `url(${bgimg.src})`,
@@ -23,19 +21,19 @@ const MyNests: React.FC = () => {
         <h2 className="text-[44px] font-black font-montserrat-alternates text-white">
           Caterpillar
         </h2>
-      </div>
-      {/* <AwarrenestCaterpillarSubTabs /> */}
-      
-       {gardenAwarrenestCaterpillar?.map((item) => (
-          <GardenCards
-            backgroundClass={item.backgroundClass}
-            title={item.title}
-            count={item.count}
-            crossicon={true}
-          />
-        ))}
-   </>
-  )
-}
+      </section>
 
-export default MyNests
+      {gardenAwarrenestCaterpillar?.map((item, index) => (
+        <GardenCards
+          key={index}
+          backgroundClass={item.backgroundClass}
+          title={item.title}
+          count={item.count}
+          crossicon={true}
+        />
+      ))}
+    </React.Fragment>
+  );
+};
+
+export default MyNests;

@@ -5,12 +5,12 @@ import React from "react";
 
 const SpecialityTradeMark: React.FC = () => {
   return (
-    <>
+    <section>
       <CategoriesPageLayout />
       <div className="text-center py-8">
         <Button btnText="load more" variant="white" ariaLabel='Load More' />
       </div>
-    </>
+    </section>
   );
 };
 

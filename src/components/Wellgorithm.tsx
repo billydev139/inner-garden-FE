@@ -10,7 +10,7 @@ import Button from "@/components/common/Button";
 import { wellGoCardData } from "@/utils/helpers/dummyContent";
 const Wellgorithm: React.FC = () => {
   return (
-    <>
+    <React.Fragment>
       <section
         className="container flex flex-col items-center mt-6 justify-center relative w-full bg-cover h-80 bg-center rounded-lg"
         style={{
@@ -85,7 +85,7 @@ const Wellgorithm: React.FC = () => {
       <div className="flex my-10 items-center justify-center">
         <Button btnText="Load more" variant="white" ariaLabel='Load More' />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

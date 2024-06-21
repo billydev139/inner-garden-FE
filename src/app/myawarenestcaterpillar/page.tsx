@@ -5,7 +5,7 @@ import bgimg from "../../assets/images/Fireflyblackmuscle.png";
 import MyAwarenestCaterpillarTabs from "@/components/MyAwarenestCaterpillarTabs";
 const MyAwarenestCaterpillar = () => {
   return (
-    <>
+    <React.Fragment>
       <section
         className="h-96 container mx-auto bg-center bg-cover pt-10 flex flex-col justify-center items-center"
         style={{
@@ -16,7 +16,7 @@ const MyAwarenestCaterpillar = () => {
           AwareNest
         </h2>
         <h2 className="text-[32px] font-black font-montserrat-alternates text-white">
-          "Awaken through awareness."
+          {`"Awaken through awareness."`}
         </h2>
         <h2 className="text-[20px] font-semibold font-montserrat-alternates text-white">
           Lao Tzu
@@ -30,7 +30,7 @@ const MyAwarenestCaterpillar = () => {
         </h2>
       </section>
       <MyAwarenestCaterpillarTabs />
-    </>
+    </React.Fragment>
   );
 };
 

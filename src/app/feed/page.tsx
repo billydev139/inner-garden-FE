@@ -10,7 +10,7 @@ import { cardSectionContent, wellgorithmContent } from "@/utils/helpers/dummyCon
 
 const Feed: React.FC = () => {
   return (
-    <>
+    <React.Fragment>
       <HeroSection
         imageSrc={Images.banner3}
         heroSecHeading="The Big Bloom"
@@ -51,7 +51,7 @@ const Feed: React.FC = () => {
         <Button btnText="load more" variant="white" ariaLabel="Load more" />
       </div>
       <CTA />
-    </>
+    </React.Fragment>
   );
 };
 
