@@ -63,31 +63,9 @@ const Cards: React.FC<CardProps> = ({
             height={100}
           />
         )}
-        {videoSrc && (
-          <video
-            id="my-video"
-            className="video-js"
-            controls
-            preload="auto"
-            width="640"
-            height="264"
-            poster="MY_VIDEO_POSTER.jpg"
-            data-setup="{}"
-          >
-            <source src="MY_VIDEO.mp4" type="video/mp4" />
-            <source src="MY_VIDEO.webm" type="video/webm" />
-            <p className="vjs-no-js">
-              To view this video please enable JavaScript, and consider
-              upgrading to a web browser that
-              <Link href={videoSrc} target="_blank">
-                supports HTML5 video
-              </Link>
-            </p>
-          </video>
-        )}
 
         {badgePosition === "top" ? (
-          <span className={`absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${badgeBgColor} border-2 border-white text-white  px-5 py-2 rounded-full z-30 ${textSize}  font-black`}>
+          <span className={`absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${badgeBgColor} border-2 border-white text-white  px-5 py-2 rounded-full z-30 ${textSize} font-black`}>
             {badgeText}
           </span>
         ) : (
