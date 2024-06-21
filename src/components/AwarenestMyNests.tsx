@@ -3,6 +3,7 @@ import Image from "next/image";
 import Images from "@/assets/images";
 import {
   myAwarenestCaterpillar,
+  socialImages,
 } from "@/utils/helpers/dummyContent";
 import Cards from "./common/Cards";
 import Slider from "react-slick";
@@ -40,8 +41,8 @@ const AwarenestMyNests: React.FC = () => {
     ],
   };
   return (
-    <>
-      <div className="flex items-center justify-center gap-2 mt-7">
+    <section>
+      <div className="flex items-center justify-center gap-2 my-7">
         <Image src={Images.snell} alt="snell" />
         <Image src={Images.fly} alt="fly" />
         <Image src={Images.cocoon} alt="snell" />
@@ -67,16 +68,20 @@ const AwarenestMyNests: React.FC = () => {
                   imageSrc={subitem.image}
                   badgeText={subitem.badgeText}
                   title={subitem.title}
+                  badgeBgColor= {subitem.badgebgcolor}
                   crossIcon={true}
+                  textSize="text-lg"
+
                   badgePosition="top"
                   className="mx-2 my-4"
+                  socialImages={socialImages}
                 />
               ))}
             </Slider>
           </div>
         </div>
       ))}
-    </>
+    </section>
   );
 };
 

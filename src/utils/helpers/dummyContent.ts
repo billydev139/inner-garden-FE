@@ -166,7 +166,6 @@ export const cardSectionContent = [
   },
 ];
 
-
 export const cardCenterBadge = [
   {
     id: "0",
@@ -983,8 +982,9 @@ export const myAwarenestCaterpillar = [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
         text: "(serenitty)Sunflowers",
         footerText: "(entirety)Points",
-        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
 
+        subheading: "Peace if middle of storms",
         image: Images.banner3,
         badgeText: "(serenity)Sunflowers",
         username: "Kathleen, Sally",
@@ -1000,6 +1000,7 @@ export const myAwarenestCaterpillar = [
         footerText: "(entirety)Points",
         image: Images.banner3,
         subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
 
         badgeText: "(serenity)Sunflowers",
         username: "Kathleen, Sally",
@@ -1014,6 +1015,7 @@ export const myAwarenestCaterpillar = [
         text: "(serenitty)Sunflowers",
         footerText: "(entirety)Points",
         subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
 
         image: Images.banner3,
         badgeText: "(serenity)Sunflowers",
@@ -1052,6 +1054,8 @@ export const myAwarenestCaterpillar = [
         text: "Reflect on today's masterpiece moments",
         footerText: "(entirety)Points",
         image: Images.banner3,
+        badgebgcolor: "bg-hexa",
+
         badgeText: "Gardens/Peace",
         username: "Kathleen, Sally",
         otherusers: "123",
@@ -1062,6 +1066,7 @@ export const myAwarenestCaterpillar = [
         title: "(serenitty)Sunflowers",
         text: "Reflect on today's masterpiece moments",
         subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-hexa",
 
         footerText: "(entirety)Points",
         image: Images.banner3,
@@ -1075,6 +1080,7 @@ export const myAwarenestCaterpillar = [
         title: "(serenitty)Sunflowers",
         text: "Reflect on today's masterpiece moments",
         subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-hexa",
 
         footerText: "(entirety)Points",
         image: Images.banner3,
@@ -1088,6 +1094,7 @@ export const myAwarenestCaterpillar = [
         title: "(serenitty)Sunflowers",
         text: "Reflect on today's masterpiece moments",
         subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-hexa",
 
         footerText: "(entirety)Points",
         image: Images.banner3,
@@ -1112,6 +1119,8 @@ export const myAwarenestCaterpillar = [
         subheading: "Peace if middle of storms",
         text: "Reflect on today's masterpiece moments",
         footerText: "(entirety)Points",
+        badgebgcolor: "bg-secondary",
+
         image: Images.banner3,
         badgeText: "Gardens/Peace",
         username: "Kathleen, Sally",
@@ -1123,6 +1132,7 @@ export const myAwarenestCaterpillar = [
         title: "(serenitty)Sunflowers",
         text: "Reflect on today's masterpiece moments",
         subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
 
         footerText: "(entirety)Points",
         image: Images.banner3,
@@ -1136,6 +1146,7 @@ export const myAwarenestCaterpillar = [
         title: "(serenitty)Sunflowers",
         text: "Reflect on today's masterpiece moments",
         subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
 
         footerText: "(entirety)Points",
         image: Images.banner3,
@@ -1149,6 +1160,7 @@ export const myAwarenestCaterpillar = [
         title: "(serenitty)Sunflowers",
         text: "Reflect on today's masterpiece moments",
         subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
 
         footerText: "(entirety)Points",
         image: Images.banner3,
@@ -1175,5 +1187,209 @@ export const socialImages = [
   },
   {
     socialimg: Images.socialfifth,
+  },
+];
+export const everyoneAwarenestCaterpillar = [
+  {
+    title: "caterpillar",
+    description:
+      "Journals that inspire beginner’s mind, an open heart, a hunger to learn, and the grit to weather adversity.",
+    count: "32",
+    backgroundClass: "bg-tetra",
+    sliderCardsData: [
+      {
+        id: "0",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        badgebgcolor: "bg-secondary",
+
+        subheading: "Peace if middle of storms",
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "3",
+        title:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+        text: "(serenitty)Sunflowers",
+        footerText: "(entirety)Points",
+        subheading: "Peace if middle of storms",
+
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+    ],
+  },
+  {
+    title: "cocoon",
+    description:
+      "Journals that inspire trust in the process, patience, and the capacity to let go.",
+
+    count: "122",
+    backgroundClass: "bg-tertiary",
+    sliderCardsData: [
+      {
+        id: "0",
+        title: "(serenitty)Sunflowers",
+        subheading: "Peace if middle of storms",
+        text: "Reflect on today's masterpiece moments",
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgebgcolor: "bg-hexa",
+
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-hexa",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-hexa",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "3",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-hexa",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+    ],
+  },
+  {
+    title: "Butterfly",
+    description:
+      "Journals that inspire presence, the courage to transform, and a profound an appreciation of beauty.",
+
+    count: "22",
+    backgroundClass: "bg-secondary",
+    sliderCardsData: [
+      {
+        id: "0",
+        title: "(serenitty)Sunflowers",
+        subheading: "Peace if middle of storms",
+        text: "Reflect on today's masterpiece moments",
+        footerText: "(entirety)Points",
+        badgebgcolor: "bg-secondary",
+
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "1",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "2",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+      {
+        id: "3",
+        title: "(serenitty)Sunflowers",
+        text: "Reflect on today's masterpiece moments",
+        subheading: "Peace if middle of storms",
+        badgebgcolor: "bg-secondary",
+
+        footerText: "(entirety)Points",
+        image: Images.banner3,
+        badgeText: "(serenity)Sunflowers",
+        username: "Kathleen, Sally",
+        otherusers: "123",
+        profileimg: Images.profile,
+      },
+    ],
   },
 ];
