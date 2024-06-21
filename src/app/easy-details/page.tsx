@@ -269,6 +269,7 @@ const EasyDetails = () => {
           </div>
         </div>
       </section>
+      
     </>
   );
 };
