@@ -26,8 +26,9 @@ const MyNests: React.FC = () => {
       </div>
       {/* <AwarrenestCaterpillarSubTabs /> */}
       
-       {gardenAwarrenestCaterpillar?.map((item) => (
+       {gardenAwarrenestCaterpillar?.map((item, index) => (
           <GardenCards
+          key={index}
             backgroundClass={item.backgroundClass}
             title={item.title}
             count={item.count}

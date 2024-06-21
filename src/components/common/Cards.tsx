@@ -122,13 +122,12 @@ const Cards: React.FC<CardProps> = ({
       )}
       {/* {social icon} */}
       {socialImages && socialImages.length > 0 && (
-        <div className="flex items-center justify-center gap-2 pb-2">
-          {socialImages &&
-            socialImages?.map((item) => (
-              <Image src={item?.socialimg} alt="social" />
-            ))}
-        </div>
-      )}
+      <div className="flex items-center justify-center gap-2 pb-2">
+        {socialImages && socialImages?.map((item, index) =>(
+          <Image src={item?.socialimg} alt="social" key={index} />
+        ))}
+      </div>
+        )}
     </section>
   );
 };
