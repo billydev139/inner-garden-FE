@@ -13,7 +13,7 @@ const checkboxes = [
 
 const SearchResults: React.FC = () => {
   return (
-    <React.Fragment>
+    <>
       <section className="container mx-auto pt-10 pb-5">
         <div className="flex lg:flex-row flex-wrap lg:items-center lg:justify-center  gap-5 ">
           <h2 className="font-medium text-lg font-montserrat">
@@ -94,7 +94,7 @@ const SearchResults: React.FC = () => {
           <Button btnText="Load more" variant="white" ariaLabel="Load More" />
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

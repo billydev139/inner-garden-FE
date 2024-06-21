@@ -7,7 +7,7 @@ import CTA from "./CTA";
 import TagsSection from "./TagsSection";
 
 const Journal: React.FC = () => (
-  <React.Fragment>
+  <>
     <div
       className="container flex flex-col items-center justify-center relative w-full h-[60vh] mt-4 bg-cover bg-center rounded-lg"
       style={{
@@ -41,7 +41,7 @@ const Journal: React.FC = () => (
     <div className="flex py-10 items-center justify-center">
       <Button btnText="Load more" variant="white" ariaLabel="Load more" />
     </div>
-  </React.Fragment>
+  </>
 );
 
 export default Journal;

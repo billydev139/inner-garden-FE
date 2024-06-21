@@ -13,7 +13,7 @@ import {
 import Input from "@/components/common/Input";
 const EasyDetails = () => {
   return (
-    <React.Fragment>
+    <>
       <section
         className="container mx-auto flex flex-col justify-end  relative pt-10 w-full bg-cover h-[550px] bg-center rounded-lg"
         style={{
@@ -269,7 +269,7 @@ const EasyDetails = () => {
           </div>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

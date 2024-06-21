@@ -40,7 +40,7 @@ const AwarenestMyNests: React.FC = () => {
     ],
   };
   return (
-    <React.Fragment>
+    <>
       <div className="flex items-center justify-center gap-2 mt-7">
         <Image src={Images.snell} alt="snell" />
         <Image src={Images.fly} alt="fly" />
@@ -76,7 +76,7 @@ const AwarenestMyNests: React.FC = () => {
           </div>
         </div>
       ))}
-    </React.Fragment>
+    </>
   );
 };
 

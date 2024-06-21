@@ -6,7 +6,7 @@ import bgimg from "../../src/assets/images/everyoneawarenestbg.png";
 import GardenCards from "./common/GardenCards";
 const MyNests: React.FC = () => {
   return (
-    <React.Fragment>
+    <>
       <section
         className="container mx-auto bg-no-repeat h-80 rounded-md mt-6 bg-center bg-black   flex flex-col justify-center items-center"
         style={{
@@ -32,7 +32,7 @@ const MyNests: React.FC = () => {
           crossicon={true}
         />
       ))}
-    </React.Fragment>
+    </>
   );
 };
 
