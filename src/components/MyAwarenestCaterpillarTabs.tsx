@@ -31,13 +31,13 @@ const MyAwarenestCaterpillarTabs: React.FC = () => {
   };
 
   return (
-    <>
-      <div className=" ">
+   
+      <section>
         <div className="flex items-center justify-center ">
           <div className="my-4 py-4 b-4 w-full">
             <div className="lg:mb-0 md:mb-2">
               <nav
-                className="-mb-px items-center flex justify-center  rounded-[8px] rounded-b-none  "
+                className="-mb-px items-center flex justify-center  "
                 aria-label="Tabs"
               >
                 {tabs.map((tab, index) => (
@@ -66,8 +66,8 @@ const MyAwarenestCaterpillarTabs: React.FC = () => {
             <div className="tab-content">{renderComponent()}</div>
           </div>
         </div>
-      </div>
-    </>
+      </section>
+    
   );
 };
 
