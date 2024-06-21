@@ -2,20 +2,20 @@ import React from "react";
 import Images from "../../assets/images";
 import HeroSection from "@/components/common/HeroSection";
 import {
-  cardSectionContent
+  cardSectionContent,
 } from "@/utils/helpers/dummyContent";
 import VideoCardSection from "@/components/common/VideoCardSection";
 
 const VideoFeeds: React.FC = () => {
   return (
-    <section>
+    <section className="pb-[40px]">
       <HeroSection
         imageSrc={Images.banner3}
         heroSecHeading="Videos"
         heroSecText="See how AI is transforming our understanding of mind and emotions, and making the once impossible, possible."
       />
 
-      {cardSectionContent.slice(0,1).map((secContent) => (
+      {cardSectionContent.map((secContent) => (
         <VideoCardSection
           key={secContent.id} 
           secHeading={secContent.heading}
@@ -24,17 +24,6 @@ const VideoFeeds: React.FC = () => {
           borderColor={secContent.borderColor}
           mode="standalone"
         />
-      ))}
-
-      {cardSectionContent.map((secContent) => (
-        <VideoCardSection
-        key={secContent.id} 
-        secHeading={secContent.heading}
-        secSubHeading={secContent.subHeading}
-        bgGradient={secContent.bgGradient}
-        borderColor={secContent.borderColor}
-        mode="standalone"
-      />
       ))}
     </section>
   );

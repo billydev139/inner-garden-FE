@@ -49,45 +49,51 @@ export const cardContent = [
 export const videoContent = [
   {
     id: "0",
-    badgeText: "(serenity)Sunflowers",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+      "Reflect on today's masterpiece moments",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o&t=1s",
+    tumbnailImage: Images.banner1,
+    badgeText:"(serenity)Sunflowers"
   },
   {
     id: "1",
     badgeText: "(serenity)Sunflowers",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+      "Reflect on today's masterpiece moments",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o&t=1s",
+    tumbnailImage: Images.banner1
   },
   {
     id: "2",
     badgeText: "(serenity)Sunflowers",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+      "Reflect on today's masterpiece moments",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o&t=1s",
+    tumbnailImage: Images.banner1
   },
   {
     id: "3",
     badgeText: "(serenity)Sunflowers",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+      "Reflect on today's masterpiece moments",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o&t=1s",
+    tumbnailImage: Images.banner1
   },
   {
     id: "4",
     badgeText: "(serenity)Sunflowers",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+      "Reflect on today's masterpiece moments",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o&t=1s",
+    tumbnailImage: Images.banner1
   },
   {
     id: "5",
     badgeText: "(serenity)Sunflowers",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o",
+      "Reflect on today's masterpiece moments",
+    videoSrc: "https://www.youtube.com/watch?v=Mu2C7y5Dv6o&t=1s",
+    tumbnailImage: Images.banner1
   },
 ];
 
