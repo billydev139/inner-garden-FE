@@ -26,7 +26,9 @@ const config: Config = {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         tertiary: "var(--color-tertiary)",
-        tetra: "var(--color-tetra)"
+        tetra: "var(--color-tetra)",
+        penta: "var(--color-penta)",
+        hexa: "var(--color-hexa)"
       },
     }, 
   },

@@ -31,43 +31,39 @@ const MyAwarenestCaterpillarTabs: React.FC = () => {
   };
 
   return (
-    <>
-      <div className=" ">
-        <div className="flex items-center justify-center ">
-          <div className="my-4 py-4 b-4 w-full">
-            <div className="lg:mb-0 md:mb-2">
-              <nav
-                className="-mb-px items-center flex justify-center  rounded-[8px] rounded-b-none  "
-                aria-label="Tabs"
-              >
-                {tabs.map((tab, index) => (
-                  <a
-                    key={tab.name}
-                    href={tab.href}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleTabClick(index);
-                    }}
-                    className={`whitespace-nowrap py-2 px-[40px] rounded-[20px]  font-medium flex lg:gap-2 items-center ${
-                      index === selectedTabIndex
-                        ? "text-white text-[17px] bg-secondary  "
-                        : "text-[#888888] text-[17px] hover:text-gray-700 bg-[#e2e5f8]    "
-                    }`}
-                    aria-current={
-                      index === selectedTabIndex ? "page" : undefined
-                    }
-                  >
-                    <span>{tab.name}</span>
-                  </a>
-                ))}
-              </nav>
-            </div>
-
-            <div className="tab-content">{renderComponent()}</div>
+    <section>
+      <div className="flex items-center justify-center ">
+        <div className="my-4 py-4 b-4 w-full">
+          <div className="lg:mb-0 md:mb-2">
+            <nav
+              className="-mb-px items-center flex justify-center  "
+              aria-label="Tabs"
+            >
+              {tabs.map((tab, index) => (
+                <a
+                  key={tab.name}
+                  href={tab.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleTabClick(index);
+                  }}
+                  className={`whitespace-nowrap py-2 px-[40px] rounded-[20px]  font-medium flex lg:gap-2 items-center ${
+                    index === selectedTabIndex
+                      ? "text-white text-[17px] bg-secondary  "
+                      : "text-[#888888] text-[17px] hover:text-gray-700 bg-[#e2e5f8]    "
+                  }`}
+                  aria-current={index === selectedTabIndex ? "page" : undefined}
+                >
+                  <span>{tab.name}</span>
+                </a>
+              ))}
+            </nav>
           </div>
+
+          <div className="tab-content">{renderComponent()}</div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

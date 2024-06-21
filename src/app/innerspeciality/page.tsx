@@ -8,7 +8,7 @@ import React from "react";
 
 const InnerSpeciality: React.FC = () => {
   return (
-    <React.Fragment>
+    <>
       <CategoriesSlider />
       <div>
         <HeroSection
@@ -36,7 +36,7 @@ const InnerSpeciality: React.FC = () => {
       <div className="text-center pb-8">
         <Button btnText="load more" variant="white" ariaLabel="load more" />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

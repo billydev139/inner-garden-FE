@@ -1,7 +1,6 @@
 import React from "react";
 import Images from "@/assets/images";
 import Image from "next/image";
-
 import bgimg from "../../src/assets/images/everyoneawarenestbg.png";
 import AwarrenestCaterpillarSubTabs from "./AwarrenestCaterpillarSubTabs";
 const EveryonesNests: React.FC = () => {
