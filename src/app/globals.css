@@ -21,7 +21,7 @@ body {
     --color-tertiary: #4e3d82;
     --color-tetra: #4F81E5;
     --color-penta: #241945;
-    --color-hexa: #df731d
+    --color-hexa: #DF731D;
   }
 }
 
@@ -30,6 +30,8 @@ body {
   --color-secondary: #b76ef9;
   --color-tertiary: #564A8D;
   --color-tetra: #4F81E5;
+  --color-hexa: #DF731D;
+
 } 
 
 .theme-brown {
@@ -43,3 +45,13 @@ body {
   --color-secondary: #FFAC01;
   --color-tertiary: #7B952A;
 }
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 31px !important;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

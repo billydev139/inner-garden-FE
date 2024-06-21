@@ -36,7 +36,7 @@ const AwarrenestCaterpillarMainTabs: React.FC = () => {
 
   return (
     <>
-    <div className=' '>
+    <section>
     <div className='flex items-center justify-center '>
     <div className="my-4 py-4 b-4 w-full">
       <div className="lg:mb-0 md:mb-2">
@@ -68,7 +68,7 @@ const AwarrenestCaterpillarMainTabs: React.FC = () => {
       <div className="tab-content">{renderComponent()}</div>
     </div>
     </div>
-    </div>
+    </section>
     
     
     </>

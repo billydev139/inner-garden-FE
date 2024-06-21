@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
   }
   return (
     <section
-    className={`${themeClass} flex flex-col pt-[20px]`}
+    className={`${themeClass} flex flex-col bg-primary pt-[20px]`}
       style={{
         backgroundImage: `url(${innerFooter.src})`,
       }}
@@ -42,12 +42,12 @@ const Footer: React.FC = () => {
       </h2>
 
       <form className="flex justify-center py-5 px-36 mb-[42px]">
-        <div className="flex items-center bg-white rounded-full border-4 border-secondary md:w-[40%] max-w-3xl">
+        <div className="flex items-center justify-between bg-white rounded-full border-4 border-secondary md:w-[40%] max-w-3xl">
           <Input
             type="email"
             placeholder="Email"
             ariaLabel="Email"
-            className="rounded-full w-full px-5 py-2 text-lg border-none focus:ring-0"
+            className="rounded-full w-full outline-none px-5 py-2 text-lg border-none focus:ring-0"
           />
 
           <Button btnText="Subscribe" btnType="submit" className="py-2" ariaLabel='Subscribe button' />

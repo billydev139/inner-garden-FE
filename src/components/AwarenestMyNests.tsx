@@ -2,24 +2,57 @@ import React from "react";
 import Image from "next/image";
 import Images from "@/assets/images";
 import {
-
   myAwarenestCaterpillar,
   socialImages,
 } from "@/utils/helpers/dummyContent";
 import Cards from "./common/Cards";
-import Slider from "react-slick";
+import Slider, { Settings } from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+interface ArrowProps {
+  className?: string;
+  style?: React.CSSProperties;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+}
+
+const CustomPrevArrow: React.FC<ArrowProps> = ({
+  className,
+  style,
+  onClick,
+}) => (
+  <button
+    className={className}
+    style={{ ...style, display: "block", top: "-20px", left: "96%" }}
+    onClick={onClick}
+  >
+    Previous
+  </button>
+);
+
+const CustomNextArrow: React.FC<ArrowProps> = ({
+  className,
+  style,
+  onClick,
+}) => (
+  <button
+    className={className}
+    style={{ ...style, display: "block", right: "-25px", top: "-20px" }}
+    onClick={onClick}
+  >
+    Next
+  </button>
+);
 const AwarenestMyNests: React.FC = () => {
-  const sliderSettings = {
+  const sliderSettings: Settings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: <button className="slick-prev">Previous</button>,
-    nextArrow: <button className="slick-next">Next</button>,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -69,10 +102,9 @@ const AwarenestMyNests: React.FC = () => {
                   imageSrc={subitem.image}
                   badgeText={subitem.badgeText}
                   title={subitem.title}
-                  badgeBgColor= {subitem.badgebgcolor}
+                  badgeBgColor={subitem.badgebgcolor}
                   crossIcon={true}
                   textSize="text-lg"
-
                   badgePosition="top"
                   className="mx-2 my-4"
                   socialImages={socialImages}
