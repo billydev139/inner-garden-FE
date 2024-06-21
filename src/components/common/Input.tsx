@@ -10,7 +10,7 @@ interface InputProps {
 
 const Input: React.FC<InputProps> = ({ type, placeholder, className, ariaLabel, label }) => {
   return (
-    <div className={`flex items-center gap-2 ${type === 'checkbox' ? 'bg-white px-5 py-1 rounded-[10px]' : ''}`}>
+    <section className={`flex items-center gap-2 ${type === 'checkbox' ? 'bg-white px-5 py-1 rounded-[10px]' : ''}`}>
       <input
         type={type}
         placeholder={type !== 'checkbox' ? placeholder : ""} 
@@ -19,7 +19,7 @@ const Input: React.FC<InputProps> = ({ type, placeholder, className, ariaLabel, 
         style={type === 'checkbox' ? { width: '1rem', height: '1rem' } : {}}
       />
       {type === 'checkbox' && label && <p className="text-lg font-montserrat font-medium">{label}</p>}
-    </div>
+    </section>
   );
 }
 

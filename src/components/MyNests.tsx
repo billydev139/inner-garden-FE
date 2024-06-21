@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Images from "@/assets/images";
 import Image from "next/image";
 import { gardenAwarrenestCaterpillar } from "@/utils/helpers/dummyContent";
@@ -22,19 +22,18 @@ const MyNests: React.FC = () => {
           Caterpillar
         </h2>
       </section>
-      {/* <AwarrenestCaterpillarSubTabs /> */}
-      
-       {gardenAwarrenestCaterpillar?.map((item, index) => (
-          <GardenCards
-          key={index}
-            backgroundClass={item.backgroundClass}
-            title={item.title}
-            count={item.count}
-            crossicon={true}
-          />
-        ))}
-   </>
-  )
-}
 
-export default MyNests
+      {gardenAwarrenestCaterpillar?.map((item, index) => (
+        <GardenCards
+          key={index}
+          backgroundClass={item.backgroundClass}
+          title={item.title}
+          count={item.count}
+          crossicon={true}
+        />
+      ))}
+    </>
+  );
+};
+
+export default MyNests;

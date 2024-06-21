@@ -5,7 +5,7 @@ import React from "react";
 const Categories: React.FC = () => {
   const pathname = usePathname();
   return (
-    <div
+    <section
       className={`${
         pathname.includes("/activities")
         ? "theme-green"
@@ -15,7 +15,7 @@ const Categories: React.FC = () => {
       }`}
     >
       <CategoriesPageLayout />
-    </div>
+    </section>
   );
 };
 

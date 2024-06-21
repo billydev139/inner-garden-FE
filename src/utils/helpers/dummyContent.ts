@@ -1,5 +1,4 @@
 import Images from "@/assets/images";
-import GardenCards from "@/components/common/GardenCards";
 
 export const cardContent = [
   {
@@ -350,7 +349,6 @@ export const wellGoCardData = [
 export const tagCardData = [
   {
     id: 0,
-    // image: Images.banner1,
     title: "(serenitty)Sunflowers",
     badgeHeading: "Peace is middle of stroms",
     badgeDescription:

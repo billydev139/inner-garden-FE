@@ -11,7 +11,7 @@ import { useParams, usePathname } from "next/navigation";
 const CategoriesSlider: React.FC = () => {
   const pathname = usePathname();
   const params = useParams();
-  const {categories, subcategories, details} = params;
+  const {categories, details} = params;
 
   const settings = {
     dots: false,

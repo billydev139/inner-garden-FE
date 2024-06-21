@@ -5,12 +5,12 @@ import React from "react";
 
 const Wellgorithm: React.FC = () => {
   return (
-    <>
+    <section>
       <CategoriesSlider />
       <div className="container">
         <Tabs />
       </div>
-    </>
+    </section>
   );
 };
 
