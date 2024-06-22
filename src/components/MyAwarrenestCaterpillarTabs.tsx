@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import AwarenestMyNests from "./AwarenestMyNests";
-import AwarenestEveryoneNest from "./AwarenestEveryoneNest";
+import AwarrenestMyNests from "./AwarrenestMyNests";
+import AwarrenestEveryoneNest from "./AwarrenestEveryoneNest";
 type Tab = {
   name: string;
   href: string;
   component: React.FC;
 };
-const MyAwarenestCaterpillarTabs: React.FC = () => {
+const MyAwarrenestCaterpillarTabs: React.FC = () => {
   const tabs: Tab[] = [
     {
       name: "My Nests",
       href: "MyNests",
-      component: AwarenestMyNests,
+      component: AwarrenestMyNests,
     },
     {
       name: "Everyone's Nests",
       href: "EveryonesNests",
-      component: AwarenestEveryoneNest,
+      component: AwarrenestEveryoneNest,
     },
   ];
   const [selectedTabIndex, setSelectedTabIndex] = useState(0);
@@ -67,4 +67,4 @@ const MyAwarenestCaterpillarTabs: React.FC = () => {
   );
 };
 
-export default MyAwarenestCaterpillarTabs;
+export default MyAwarrenestCaterpillarTabs;
