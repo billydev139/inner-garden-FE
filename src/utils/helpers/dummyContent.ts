@@ -1649,3 +1649,14 @@ export const specialCertifications = [
     text: "Master (inner)Florist ",
   },
 ];
+
+export const footerLinks = [
+  { href: "", text: "writers in residence", className: "text-white" },
+  { href: "", text: "(inner)Academy", className: "text-white my-4" },
+  { href: "", text: "(inner)TV", className: "text-white" },
+];
+
+export const footerContactLinks = [
+  { href: "", text: "policies", className: "text-white" },
+  { href: "", text: "contact", className: "text-white" }
+];

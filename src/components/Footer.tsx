@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Button from "./common/Button";
 import Image from "next/image";
@@ -8,13 +8,14 @@ import styles from "@/styles";
 import Input from "./common/Input";
 import innerFooter from "../assets/images/footer-inner.png";
 import { usePathname } from "next/navigation";
+import { footerLinks, footerContactLinks } from "@/utils/helpers/dummyContent";
 
 const Footer: React.FC = () => {
-  const pathname = usePathname(); 
+  const pathname = usePathname();
 
-  let themeClass = ""; 
+  let themeClass = "";
   let logoImage = Images.inner;
-  
+
   if (pathname.includes("/garden")) {
     themeClass = "theme-blue";
     logoImage = Images.inner;
@@ -27,12 +28,14 @@ const Footer: React.FC = () => {
   }
   return (
     <section
-    className={`${themeClass} flex flex-col bg-primary pt-[20px]`}
+      className={`${themeClass} flex flex-col bg-primary pt-[20px]`}
       style={{
         backgroundImage: `url(${innerFooter.src})`,
       }}
     >
-      <h1 className={`${styles.headingH1} text-white text-center w-full h-full bg-cover bg-center`}>
+      <h1
+        className={`${styles.headingH1} text-white text-center w-full h-full bg-cover bg-center`}
+      >
         subscribe to Wellgorithms Weekly
       </h1>
 
@@ -50,12 +53,17 @@ const Footer: React.FC = () => {
             className="rounded-full w-full outline-none px-5 py-2 text-lg border-none focus:ring-0"
           />
 
-          <Button btnText="Subscribe" btnType="submit" className="py-2" ariaLabel='Subscribe button' />
+          <Button
+            btnText="Subscribe"
+            btnType="submit"
+            className="py-2"
+            ariaLabel="Subscribe button"
+          />
         </div>
       </form>
       <div className="flex flex-wrap my-4 justify-around items-start">
         <div className="flex flex-col items-center ">
-          <Button btnText="about " btnType="button" ariaLabel='about button' />
+          <Button btnText="about " btnType="button" ariaLabel="about button" />
           <p className="text-16 font-semibold text-white text-center w-[280px] pt-2 ">
              (inner) was started by a Bronx teacher and her partner, a software
             architect and graphic designer.
@@ -69,30 +77,29 @@ const Footer: React.FC = () => {
           height={300}
           className="px-4"
         />
-        <Button btnText="donate Now" btnType="button" ariaLabel="donate now button" />
-      </div> 
+        <Button
+          btnText="donate Now"
+          btnType="button"
+          ariaLabel="donate now button"
+        />
+      </div>
 
       <div className="flex flex-wrap justify-center items-center">
         <div className="lg:bg-tertiary rounded-full flex flex-col md:flex-row flex-wrap justify-around items-center md:w-[40%] my-4">
-          <Link href="" className="text-white">
-            writers in residence
-          </Link>
-          <Link href="" className="text-white my-4">
-            (inner)Academy
-          </Link>
-          <Link href="" className="text-white">
-            (inner)TV
-          </Link>
+          {footerLinks.map((link, index) => (
+            <Link key={index} href={link.href} className={link.className}>
+              {link.text}
+            </Link>
+          ))}
         </div>
       </div>
 
       <div className="flex justify-center gap-4 pb-2">
-        <Link href="" className="text-white">
-          policies
-        </Link>
-        <Link href="" className="text-white">
-          contact
-        </Link>
+        {footerContactLinks.map((link, index) => (
+          <Link key={index} href={link.href} className={link.className}>
+            {link.text}
+          </Link>
+        ))}
       </div>
 
       <h2 className="text-center text-white pb-4">
