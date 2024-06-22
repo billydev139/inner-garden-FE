@@ -8,7 +8,7 @@ import WellgorithmCard from "@/components/common/WellgorithmCard";
 import styles from "@/styles";
 import { cardSectionContent, wellgorithmContent } from "@/utils/helpers/dummyContent";
 
-const Feed: React.FC = () => {
+const AllCategories: React.FC = () => {
   return (
     <>
       <HeroSection
@@ -50,9 +50,8 @@ const Feed: React.FC = () => {
       <div className="text-center py-8">
         <Button btnText="load more" variant="white" ariaLabel="Load more" />
       </div>
-      <CTA />
     </>
   );
 };
 
-export default Feed;
+export default AllCategories;
