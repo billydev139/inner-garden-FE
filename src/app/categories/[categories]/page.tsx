@@ -1,7 +1,7 @@
 "use client";
+import React from "react";
 import CategoriesPageLayout from "@/components/CategoriesPageLayout";
 import { usePathname } from "next/navigation";
-import React from "react";
 const Categories: React.FC = () => {
   const pathname = usePathname();
   return (
