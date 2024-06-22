@@ -7,12 +7,10 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { BsThreeDots } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { loginLinks, mainCategories } from "@/utils/helpers/headerContent";
+import { mainCategories } from "@/utils/helpers/headerContent";
 import Images from "@/assets/images";
-import List from "./common/List";
-import Button from "./common/Button";
 import { usePathname } from "next/navigation";
-
+import "../app/globals.css";
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +20,7 @@ const Header: React.FC = () => {
     setMenuOpen(!menuOpen);
   };
 
-  let themeClass = ""; 
+  let themeClass = "";
   let logoImage = Images.inner;
 
   if (pathname.includes("/garden")) {
@@ -37,13 +35,13 @@ const Header: React.FC = () => {
   }
 
   return (
-    <header className={`bg-tertiary py-4 ${themeClass}`}>
+    <header className={`bg-black py-4 ${themeClass}`}>
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between flex-wrap">
           <div className="flex items-center justify-between w-full lg:w-auto">
             <Link href="/">
               <Image
-                src={logoImage}
+                src={Images.newLogo}
                 alt="logo"
                 width={150}
                 height={150}
@@ -51,33 +49,47 @@ const Header: React.FC = () => {
               />
             </Link>
 
-            <div className="lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 gap-4 lg:gap-0 hidden">
-              <div className="flex items-center bg-white px-2 py-2 rounded-xl lg:order-1">
-                <HiUsers className="text-xl text-tertiary" />
-                <IoMdArrowDropdown className="text-xl text-tertiary" />
-              </div>
+            <Image
+              src={Images.userProfileImage}
+              alt="user-profile-image"
+              width={50}
+              height={50}
+              className="pr-4"
+            />
 
-              <div className="flex flex-col lg:flex-row items-center gap-4 bg-white px-2 py-2 rounded-full lg:order-2">
-                {mainCategories.map((link, index) => (
-                  <Link key={index} href={link.link}>
-                    <span
-                      className={`text-tertiary font-medium ${
-                        pathname === link.link ? "bg-secondary text-white px-2 py-2 rounded-full" : ""
-                      }`}
+            <div className="lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 gap-4 lg:gap-0 hidden">
+              <div className="flex flex-col lg:flex-row items-center gap-4 px-2 py-2 rounded-full lg:order-2">
+                {mainCategories.map((link, index) => {
+                  const isActive = pathname === link.link;
+                  return (
+                    <Link
+                      key={index}
+                      href={link.link}
+                      className={isActive ? "custom-button px-4" : "text-white"}
                     >
                       {link.title}
-                    </span>
-                  </Link>
-                ))}
-              </div>
-
-              <div className="flex items-center bg-white px-2 py-2 rounded-xl lg:order-3">
-                <BsThreeDots className="text-xl text-tertiary" />
+                    </Link>
+                  );
+                })}
               </div>
             </div>
+            <BsThreeDots className="text-white" />
+
+            <Image
+              src={Images.wellgorithmsIcon}
+              alt="wellgorithms"
+              width={60}
+              height={60}
+              className="px-4"
+            />
+
+            <Link href="/" className="text-white">
+              wellgorithms
+            </Link>
+
             <button
               className="text-white text-2xl lg:hidden"
-              aria-label='Toggle menu button'
+              aria-label="Toggle menu button"
               onClick={toggleMenu}
             >
               {menuOpen ? <FaTimes /> : <FaBars />}
@@ -87,7 +99,7 @@ const Header: React.FC = () => {
           <div
             className={`${
               menuOpen ? "block" : "hidden"
-            } w-full lg:flex lg:items-center lg:w-auto pt-4 lg:mt-0`}
+            } w-full lg:flex lg:items-center lg:w-auto lg:mt-0`}
           >
             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6 gap-4 lg:gap-0 lg:hidden">
               <div className="flex items-center bg-white px-2 py-2 rounded-xl lg:order-1">
@@ -109,32 +121,24 @@ const Header: React.FC = () => {
                 ))}
               </div>
 
-              <div className="flex items-center bg-white px-2 py-2 rounded-xl lg:order-3">
-                <BsThreeDots className="text-xl text-primary" />
-              </div>
+              <BsThreeDots className="text-white" />
             </div>
 
             <ul className="flex flex-col lg:flex-row justify-center items-center lg:space-x-4 mt-4 lg:mt-0 lg:order-4 ">
               <li>
-                <IoSearch className="text-[20px] text-secondary" />
+                <Image
+                  src={Images.newHeaderButterfly}
+                  alt="butterfly"
+                  aria-label="butterfly"
+                  height={40}
+                  width={40}
+                />
               </li>
-
-              {loginLinks.map((linkContent) => (
-                <List
-                  key={linkContent.id}
-                  toLink={linkContent.link}
-                  label={linkContent.title}
-                  className="text-secondary"
-                />
-              ))}
-
               <li>
-                <Button
-                  btnText="join us"
-                  ariaLabel="join us"
-                  variant="white"
-                  className="text-tertiary"
-                />
+                <IoSearch className="text-[30px] text-secondary" />
+              </li>
+              <li>
+                <button className="custom-button px-6">journal with us</button>
               </li>
             </ul>
           </div>

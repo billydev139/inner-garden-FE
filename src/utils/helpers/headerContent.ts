@@ -1,17 +1,17 @@
 export const mainCategories = [
   {
     id: 0,
-    title: "Gardens",
+    title: "gardens",
     link: "/categories/garden",
   },
   {
     id: 1,
-    title: "Adversities",
+    title: "adversities",
     link: "/categories/adversities",
   },
   {
     id: 2,
-    title: "Activities",
+    title: "activities",
     link: "/categories/activities",
   },
 ];
@@ -19,7 +19,7 @@ export const mainCategories = [
 export const loginLinks = [
   {
     id: 0,
-    title: "About",
+    title: "about",
     link: "/about",
   },
   {
