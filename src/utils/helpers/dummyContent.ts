@@ -974,7 +974,7 @@ export const reviewsData = [
   },
 ];
 
-export const myAwarenestCaterpillar = [
+export const myAwarrenestCaterpillar = [
   {
     title: "caterpillar",
     description:
@@ -1195,7 +1195,7 @@ export const socialImages = [
     socialimg: Images.socialfifth,
   },
 ];
-export const everyoneAwarenestCaterpillar = [
+export const everyoneAwarrenestCaterpillar = [
   {
     title: "caterpillar",
     description:

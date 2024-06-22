@@ -2,8 +2,8 @@
 
 import React from "react";
 import bgimg from "../../assets/images/Fireflyblackmuscle.png";
-import MyAwarenestCaterpillarTabs from "@/components/MyAwarenestCaterpillarTabs";
-const MyAwarenestCaterpillar = () => {
+import MyAwarrenestCaterpillarTabs from "@/components/MyAwarrenestCaterpillarTabs";
+const MyAwarrenestCaterpillar = () => {
   return (
     <>
       <section
@@ -13,7 +13,7 @@ const MyAwarenestCaterpillar = () => {
         }}
       >
         <h2 className="text-[64px] font-black font-montserrat-alternates text-white">
-          AwareNest
+          AwarreNest
         </h2>
         <h2 className="text-[32px] font-black font-montserrat-alternates text-white">
           {`Awaken through awareness.`}
@@ -24,14 +24,14 @@ const MyAwarenestCaterpillar = () => {
       </section>
       <section className="bg-white rounded-[30px] py-12 px-20 max-w-[800px] -mt-12 z-10 relative mx-auto">
         <h2 className="text-center text-[27px] font-semibold text-penta">
-          AwareNest is a new kind of social bookmarking system, offering a
+          AwarreNest is a new kind of social bookmarking system, offering a
           unique way to reflect and share key moments in your personal growth
           journey.
         </h2>
       </section>
-      <MyAwarenestCaterpillarTabs />
+      <MyAwarrenestCaterpillarTabs />
     </>
   );
 };
 
-export default MyAwarenestCaterpillar;
+export default MyAwarrenestCaterpillar;

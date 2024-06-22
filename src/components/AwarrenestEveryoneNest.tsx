@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Images from "@/assets/images";
 import {
-  everyoneAwarenestCaterpillar,
+  everyoneAwarrenestCaterpillar,
   socialImages,
 } from "@/utils/helpers/dummyContent";
 
@@ -44,7 +44,7 @@ const CustomNextArrow: React.FC<ArrowProps> = ({
   </button>
 );
 
-const AwarenestEveryoneNest: React.FC = () => {
+const AwarrenestEveryoneNest: React.FC = () => {
   const sliderSettings: Settings = {
     dots: false,
     infinite: true,
@@ -83,7 +83,7 @@ const AwarenestEveryoneNest: React.FC = () => {
         <Image src={Images.fly} alt="fly" />
         <Image src={Images.cocoon} alt="snell" />
       </div>
-      {everyoneAwarenestCaterpillar?.map((item, index) => (
+      {everyoneAwarrenestCaterpillar?.map((item, index) => (
         <div key={index} className={`${item.backgroundClass} py-14`}>
           <div className="container mx-auto">
             <div className="flex items-center justify-between">
@@ -119,4 +119,4 @@ const AwarenestEveryoneNest: React.FC = () => {
   );
 };
 
-export default AwarenestEveryoneNest;
+export default AwarrenestEveryoneNest;

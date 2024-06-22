@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Images from "@/assets/images";
 import {
-  myAwarenestCaterpillar,
+  myAwarrenestCaterpillar,
   socialImages,
 } from "@/utils/helpers/dummyContent";
 import Cards from "./common/Cards";
@@ -43,7 +43,7 @@ const CustomNextArrow: React.FC<ArrowProps> = ({
     Next
   </button>
 );
-const AwarenestMyNests: React.FC = () => {
+const AwarrenestMyNests: React.FC = () => {
   const sliderSettings: Settings = {
     dots: false,
     infinite: true,
@@ -81,7 +81,7 @@ const AwarenestMyNests: React.FC = () => {
         <Image src={Images.fly} alt="fly" />
         <Image src={Images.cocoon} alt="snell" />
       </div>
-      {myAwarenestCaterpillar?.map((item, index) => (
+      {myAwarrenestCaterpillar?.map((item, index) => (
         <div key={index} className={`${item.backgroundClass} py-14`}>
           <div className="container mx-auto ">
             <div className="flex items-center justify-between">
@@ -118,4 +118,4 @@ const AwarenestMyNests: React.FC = () => {
   );
 };
 
-export default AwarenestMyNests;
+export default AwarrenestMyNests;
