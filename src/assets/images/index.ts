@@ -114,9 +114,14 @@ import socialfourth from "./socialprofilefourth.png"
 import socialfifth from "./socialprofilefive.png"
 import checkvector from "./checkvector.png"
 import checkvector2 from "./checkvector2.png"
+import newHeaderButterfly from "./header-butterfly.svg"
+import newLogo from "./new-logo.svg"
+import userProfileImage from "./user-profile-image.svg"
+import wellgorithmsIcon from "./wellgorithms-icon.svg"
 
 const Images = {
     logo,
+    newLogo,
     checkvector2,
     checkvector,
     socialprofile,
@@ -231,7 +236,10 @@ const Images = {
     wellgosmall,
     butterflies,
     userpic,
-    cardImage
+    cardImage,
+    newHeaderButterfly,
+    userProfileImage,
+    wellgorithmsIcon
 };
 
 export default Images

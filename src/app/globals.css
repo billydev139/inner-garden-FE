@@ -17,7 +17,7 @@ body {
 @layer base {
   :root {
     --color-primary: #C4CAEF;
-    --color-secondary: #b76ef9;
+    --color-secondary: #AA5EA6;
     --color-tertiary: #4e3d82;
     --color-tetra: #4F81E5;
     --color-penta: #241945;
@@ -27,7 +27,7 @@ body {
 
 .theme-blue {
   --color-primary: #C4CAEF;
-  --color-secondary: #b76ef9;
+  --color-secondary: #AA5EA6;
   --color-tertiary: #564A8D;
   --color-tetra: #4F81E5;
   --color-hexa: #DF731D;
@@ -55,3 +55,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.custom-button {
+  @apply bg-secondary text-white py-2 rounded-full border-none cursor-pointer outline-none transition-colors duration-300;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+}
+
+.custom-button:hover {
+  @apply bg-secondary
+}
