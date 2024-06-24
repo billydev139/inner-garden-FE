@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
 
   const variantClasses =
     variant === "gradient"
-      ? `rounded-full bg-gradient-to-r from-secondary to-tertiary text-white border border-3 border-secondary whitespace-nowrap`
+      ? `rounded-full bg-gradient-to-t from-tertiary via-tertiary to-quartary text-white border border-3 border-secondary whitespace-nowrap`
       : variant === "white"
       ? `bg-white rounded-xl text-[#564A8D] font-semibold border border-gray-300 rounded-full hover:bg-gray-100 hover:border-gray-400 transition duration-300 whitespace-nowrap`
       : variant === "purple"

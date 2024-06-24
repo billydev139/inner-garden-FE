@@ -28,7 +28,7 @@ const WellgorithmCard: React.FC<WellgorithmCardProps> = ({
         }}
         className="flex flex-col pt-[20px] w-full h-full bg-cover bg-center"
       >
-        <h1 className={`${styles.subHeading} text-white text-center py-4`}>
+        <h1 className={`${styles.subHeading} text-white text-center py-4 flex justify-center items-center gap-2`}>
           <span className={`${styles.headingH1}`}>20</span>
           {footerText}
         </h1>

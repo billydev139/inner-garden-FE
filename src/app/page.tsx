@@ -16,7 +16,7 @@ export default function Home() {
         heroSecHeading="The Big Bloom"
         heroSecText="Around the world, a new awareness is blooming — that our emotions, like our bodies, are a part of nature, and that we can cultivate them like a garden."
       />
-      <div className="bg-[#4F81E5] py-12">
+      <div className="bg-blue-gradient py-12">
         <div className="container flex flex-col md:flex-row mb-4 justify-between items-center">
           <div className="my-6">
             <h1 className={`${styles.headingH1} text-white`}>Wellgorithms</h1>
