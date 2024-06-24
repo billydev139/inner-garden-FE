@@ -1455,7 +1455,6 @@ export const innerAcademy = [
         otherusers: "123",
         profileimg: Images.profile,
       },
-      
     ],
   },
   {
@@ -1474,7 +1473,7 @@ export const innerAcademy = [
         text: "Reflect on today's masterpiece moments",
         footerText: "(entirety)Points",
         image: Images.banner3,
-        badgebgcolor: "bg-hexa",
+        badgebgcolor: "bg-secondary",
         badgeText: "(planetary)Seeding",
         username: "Kathleen, Sally",
         otherusers: "123",
@@ -1486,7 +1485,7 @@ export const innerAcademy = [
           "Nurture a new global consciousness and promote “emotional sustainability” with inspirational action.",
         text: "Reflect on today's masterpiece moments",
         subheading: "Peace if middle of storms",
-        badgebgcolor: "bg-hexa",
+        badgebgcolor: "bg-secondary",
 
         footerText: "(entirety)Points",
         image: Images.banner3,
@@ -1501,8 +1500,7 @@ export const innerAcademy = [
           "Help us clear the roots of polarization and nurture a more inclusive and empathetic global community.",
         text: "Reflect on today's masterpiece moments",
         subheading: "Peace if middle of storms",
-        badgebgcolor: "bg-hexa",
-
+        badgebgcolor: "bg-secondary",
         footerText: "(entirety)Points",
         image: Images.banner3,
         badgeText: "(planetary)Seeding",
@@ -1528,7 +1526,6 @@ export const innerAcademy = [
         text: "Reflect on today's masterpiece moments",
         footerText: "(entirety)Points",
         badgebgcolor: "bg-secondary",
-
         image: Images.banner3,
         badgeText: "(inner)Pinching",
         username: "Kathleen, Sally",
@@ -1542,7 +1539,6 @@ export const innerAcademy = [
         text: "Reflect on today's masterpiece moments",
         subheading: "Peace if middle of storms",
         badgebgcolor: "bg-secondary",
-
         footerText: "(entirety)Points",
         image: Images.banner3,
         badgeText: "(inner)Pinching",
@@ -1557,7 +1553,6 @@ export const innerAcademy = [
         text: "Reflect on today's masterpiece moments",
         subheading: "Peace if middle of storms",
         badgebgcolor: "bg-secondary",
-
         footerText: "(entirety)Points",
         image: Images.banner3,
         badgeText: "(inner)Pinching",
@@ -1572,7 +1567,6 @@ export const innerAcademy = [
     title: "(inner)Gardening — Expanded Behavioral Therapy Track",
     description:
       "Step into a new dimension of emotional mastery with XBT,where you can interact with your psyche in 3D.",
-
     backgroundClass: "bg-tertiary",
     sliderCardsData: [
       {
@@ -1581,8 +1575,7 @@ export const innerAcademy = [
           "Learn to create healthy emotional spaces between yourself and your experiences to gain deeper insight.",
         text: "(serenitty)Sunflowers",
         footerText: "(entirety)Points",
-        badgebgcolor: "bg-secondary",
-
+        badgebgcolor: "bg-tertiary",
         subheading: "Peace if middle of storms",
         image: Images.banner3,
         badgeText: "(inner)Distancing",
@@ -1594,13 +1587,11 @@ export const innerAcademy = [
         id: "1",
         title:
           "Learn to how to dial up or dial down your feelings for a more balanced response to diverse situations and environments.",
-
         text: "(serenitty)Sunflowers",
         footerText: "(entirety)Points",
         image: Images.banner3,
         subheading: "Peace if middle of storms",
-        badgebgcolor: "bg-secondary",
-
+        badgebgcolor: "bg-tertiary",
         badgeText: "(inner)Scaling",
         username: "Kathleen, Sally",
         otherusers: "123",
@@ -1614,15 +1605,13 @@ export const innerAcademy = [
         text: "(serenitty)Sunflowers",
         footerText: "(entirety)Points",
         subheading: "Peace if middle of storms",
-        badgebgcolor: "bg-secondary",
-
+        badgebgcolor: "bg-tertiary",
         image: Images.banner3,
         badgeText: "(inner)Rotating",
         username: "Kathleen, Sally",
         otherusers: "123",
         profileimg: Images.profile,
       },
-     
     ],
   },
 ];
@@ -1652,8 +1641,8 @@ export const specialCertifications = [
 
 export const footerLinks = [
   { href: "", text: "writers in residence", className: "text-white" },
-  { href: "", text: "(inner)Academy", className: "text-white my-4" },
-  { href: "", text: "(inner)TV", className: "text-white" },
+  { href: "/inner-academy", text: "(inner)Academy", className: "text-white my-4" },
+  { href: "/inner-tv", text: "(inner)TV", className: "text-white" },
 ];
 
 export const footerContactLinks = [
