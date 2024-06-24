@@ -2,43 +2,49 @@ import Images from "@/assets/images";
 
 export const cardContent = [
   {
-    id: "0",
+    id: 0,
     badgeText: "(serenity)Sunflowers",
+    badgeBgColor:"bg-tetra",
     title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: Images.banner1,
   },
   {
-    id: "1",
+    id: 1,
     badgeText: "(serenity)Sunflowers",
+    badgeBgColor:"bg-tetra",
     title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: Images.banner1,
   },
   {
-    id: "2",
+    id: 2,
     badgeText: "(serenity)Sunflowers",
+    badgeBgColor:"bg-tetra",
     title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: Images.banner1,
   },
   {
-    id: "3",
+    id: 3,
     badgeText: "(serenity)Sunflowers",
+    badgeBgColor:"bg-tetra",
     title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: Images.banner1,
   },
   {
-    id: "4",
+    id: 4,
     badgeText: "(serenity)Sunflowers",
+    badgeBgColor:"bg-tetra",
     title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: Images.banner1,
   },
   {
-    id: "5",
+    id: 5,
     badgeText: "(serenity)Sunflowers",
+    badgeBgColor:"bg-tetra",
     title:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: Images.banner1,
@@ -143,12 +149,12 @@ export const wellgorithmContent = [
 
 export const cardSectionContent = [
   {
-    id: 0,
+    id: 0, 
     heading: "Cultivational Psychology",
     subHeading:
       "Discover the new field of Cultivational Psychology, and how it’s transforming human potential and possibilities.",
     bgGradient:
-      "linear-gradient(to right, rgba(79, 129, 229, 0.4), rgba(79, 129, 229, 1))",
+      "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), rgba(86, 74, 141, 1)",
     borderColor: "#B76EF9",
   },
   {
@@ -157,7 +163,7 @@ export const cardSectionContent = [
     subHeading:
       "Explore the new frontier of virtual reality and mental health with Expanded Behavioral Therapy.",
     bgGradient:
-      "linear-gradient(to right, rgba(183, 110, 249, 0.4), rgba(183, 110, 249, 1))",
+      "linear-gradient(to right, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0)), rgba(183, 110, 249, 1)",
     borderColor: "#B76EF9",
   },
   {
@@ -166,8 +172,37 @@ export const cardSectionContent = [
     subHeading:
       "Get rich in what matters most: peace, kindness, gratitude, wonder, love and hope.",
     bgGradient:
-      "linear-gradient(to right, rgba(86, 74, 141, 1), rgba(86, 74, 141, 1))",
+      "linear-gradient(to right, rgba(183, 110, 249, 0.4) 50%, rgba(0, 0, 0, 0)), rgba(36, 25, 69, 1)",
+    borderColor: "#B76EF9",
+  },
+];
 
+export const videoSectionContent = [
+  {
+    id: 0, 
+    heading: "Welcome to (inner)Garden: Your First Steps",
+    subHeading:
+      "Watch your emotions blossom into words, as you master the art of crafting Wellgorithms and sowing the seeds of a meaningful journey.",
+    bgGradient:
+      "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), rgba(79, 129, 229, 1)",
+    borderColor: "#B76EF9",
+  },
+  {
+    id: 1,
+    heading: "Emerging Eden: Expanded Behavioral Therapy",
+    subHeading:
+      "Animate your thoughts in 3D, turning abstract feelings into gorgeous landscapes that you can explore, transform and share.",
+    bgGradient:
+      "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), rgba(86, 74, 141, 1)",
+    borderColor: "#B76EF9",
+  },
+  {
+    id: 2,
+    heading: "Trailblazers' Table: Fireside Chats with Founders",
+    subHeading:
+      "Join us for intimate chats as we share insider tools and techniques for nourishing an awe-inspiring (inner)Garden.",
+    bgGradient:
+      "linear-gradient(to right, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0)), rgba(183, 110, 249, 1)",
     borderColor: "#B76EF9",
   },
 ];

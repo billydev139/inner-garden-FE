@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
       </form>
       <div className="flex flex-wrap my-4 justify-around items-start">
         <div className="flex flex-col items-center ">
-          <Button btnText="about " btnType="button" ariaLabel="about button" />
+          <Button btnText="about" btnType="button" ariaLabel="about button" />
           <p className="text-16 font-semibold text-white text-center w-[280px] pt-2 ">
              (inner) was started by a Bronx teacher and her partner, a software
             architect and graphic designer.
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="flex flex-wrap justify-center items-center">
-        <div className="lg:bg-tertiary rounded-full flex flex-col md:flex-row flex-wrap justify-around items-center md:w-[40%] my-4">
+        <div className="lg:bg-transparentFooterBg border-2 border-secondary rounded-full flex flex-col md:flex-row flex-wrap justify-around items-center md:w-[40%] my-4">
           {footerLinks.map((link, index) => (
             <Link key={index} href={link.href} className={link.className}>
               {link.text}

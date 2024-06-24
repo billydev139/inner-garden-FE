@@ -92,6 +92,7 @@ const CardSection: React.FC<CardSectionProps> = ({
               key={content.id}
               imageSrc={content.image} 
               badgeText={content.badgeText}
+              badgeBgColor= {content.badgeBgColor}
               title={content.title}
               borderColor={borderColor}
               badgePosition="top"

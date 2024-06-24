@@ -26,6 +26,8 @@ const config: Config = {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         tertiary: "var(--color-tertiary)",
+        quartary: "var(--color-quartary)",
+        transparentFooterBg: "var(--color-transparent-footer-bg)",
         tetra: "var(--color-tetra)",
         penta: "var(--color-penta)",
         hexa: "var(--color-hexa)"

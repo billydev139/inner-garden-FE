@@ -21,11 +21,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         className="rounded-xl "
       />
       <div className="lg:w-[600px] mx-auto shadow-lg relative rounded-lg z-50 -mt-16">
-        <div className="bg-tertiary  rounded-t-lg z-10">
+        <div className="bg-gradient-to-t from-tertiary via-tertiary to-quartary rounded-t-lg z-10">
           <h1 className={`${styles.headingH1} text-white text-center py-4`}>
             {heroSecHeading}
           </h1>
-        </div>
+        </div> 
 
         <div className="bg-white py-4 rounded-b-lg">
           <p className="text-16 font-semibold my-4 text-center px-8">

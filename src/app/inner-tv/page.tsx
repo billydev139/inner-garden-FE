@@ -2,7 +2,7 @@ import React from "react";
 import Images from "../../assets/images";
 import HeroSection from "@/components/common/HeroSection";
 import {
-  cardSectionContent,
+  videoSectionContent,
 } from "@/utils/helpers/dummyContent";
 import VideoCardSection from "@/components/common/VideoCardSection";
 
@@ -15,7 +15,7 @@ const VideoFeeds: React.FC = () => {
         heroSecText="See how AI is transforming our understanding of mind and emotions, and making the once impossible, possible."
       />
 
-      {cardSectionContent.map((secContent) => (
+      {videoSectionContent.map((secContent) => (
         <VideoCardSection
           key={secContent.id} 
           secHeading={secContent.heading}

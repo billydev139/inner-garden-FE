@@ -16,7 +16,6 @@ interface CardProps {
   otheruser?: string;
   username?: string;
   subheading?: string;
-  textSize?: string;
   borderColor?: string;
   className?: string;
   crossIcon?: boolean;
@@ -35,8 +34,6 @@ const Cards: React.FC<CardProps> = ({
   socialImages,
   badgePosition = "top",
   className,
-  textSize ="text-xs",
-  videoSrc,
   username,
   crossIcon,
   otheruser,
@@ -65,12 +62,12 @@ const Cards: React.FC<CardProps> = ({
         )}
 
         {badgePosition === "top" ? (
-          <span className={`absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${badgeBgColor} border-2 border-white text-white  px-5 py-2 rounded-full z-30 ${textSize} font-black`}>
+          <span className={`absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${badgeBgColor} border-2 border-white text-white px-5 py-2 rounded-full z-30 text-base font-bold`}>
             {badgeText}
           </span>
         ) : (
           <div className="relative flex justify-center items-center -mt-2 mb-4">
-            <span  className={`${badgeBgColor} border-2 border-white text-white text-xs font-semibold px-2 py-1 rounded-full z-30`}>
+            <span  className={`${badgeBgColor}  border-2 border-white text-white text-[26px] px-4 pb-[2px] font-semibold rounded-full z-30`}>
               {badgeText}
             </span>
           </div>
