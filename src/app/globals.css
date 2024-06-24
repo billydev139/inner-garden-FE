@@ -29,7 +29,7 @@ body {
 
 .theme-blue {
   --color-primary: #C4CAF0;
-  --color-secondary: #B76EF9;
+  --color-secondary: #AA5EA6;
   --color-tertiary: #564A8D;
   --color-quartary: #8054ba;
   --color-transparent-footer-bg: rgba(86, 74, 141, 0.5);
@@ -53,6 +53,19 @@ body {
   --color-quartary: #a5b76e;
   --color-transparent-footer-bg: rgba(123, 149, 42, 0.5);
 }
+
+/* Hexagon button style */
+.custom-button {
+  @apply py-2 rounded-full border-none cursor-pointer outline-none transition-colors duration-300;
+  clip-path: polygon(19% 0, 81% 0, 88% 48%, 81% 100%, 18% 100%, 11% 49%);
+}
+
+/* cutom blue bg gradient for*/
+.bg-blue-gradient {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), rgba(79, 129, 229, 1);
+}
+
+/* Slick slider styling */
 .slick-prev:before, .slick-next:before {
   font-family: 'slick';
   font-size: 31px !important;
@@ -62,19 +75,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* Hexagon button style */
-.custom-button {
-  @apply bg-secondary text-white py-2 rounded-full border-none cursor-pointer outline-none transition-colors duration-300;
-  clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+.slick-slide > div {
+  padding: 0 4px;
 }
 
-.custom-button:hover {
-  @apply bg-secondary
+.slick-list {
+  margin: 0 -4px; 
 }
-
-/* cutom blue bg gradient for*/
-
-.bg-blue-gradient {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), rgba(79, 129, 229, 1);
-}
-

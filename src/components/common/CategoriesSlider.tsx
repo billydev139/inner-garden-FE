@@ -53,11 +53,11 @@ const CategoriesSlider: React.FC = () => {
           const isSelected = pathname.includes(category.link); 
           const categoryClass = isSelected ? "bg-secondary text-white" : "bg-white";
           return (
-            <div className={`${categoryClass} px-4 py-2 rounded-full text-center m-2`} key={category.id}>
+            <div className={`${categoryClass} py-2 text-center m-2 custom-button text-secondary font-black`} key={category.id}>
               <Link href={`/categories/${categories}/${category.link}/${details || 'journal'}`}>{category.title}</Link>
             </div>
           );
-        })}
+        })} 
       </Slider>
     </section>
   );

@@ -12,6 +12,7 @@ interface CardProps {
   profileimg?: string | any;
   title: string;
   badgeText: string;
+  textSize?:string;
   badgeBgColor?: string;
   otheruser?: string;
   username?: string;
@@ -28,6 +29,7 @@ const Cards: React.FC<CardProps> = ({
   title,
   profileimg,
   badgeText,
+  textSize,
   borderColor,
   subheading,
   badgeBgColor = "bg-secondary",
@@ -62,12 +64,12 @@ const Cards: React.FC<CardProps> = ({
         )}
 
         {badgePosition === "top" ? (
-          <span className={`absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${badgeBgColor} border-2 border-white text-white px-5 py-2 rounded-full z-30 text-base font-bold`}>
+          <span className={`absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${badgeBgColor} border-2 border-white text-white ${textSize} rounded-full z-30 text-base font-bold custom-button px-12`}>
             {badgeText}
           </span>
         ) : (
           <div className="relative flex justify-center items-center -mt-2 mb-4">
-            <span  className={`${badgeBgColor}  border-2 border-white text-white text-[26px] px-4 pb-[2px] font-semibold rounded-full z-30`}>
+            <span  className={`custom-button bg-secondary text-white px-6`}>
               {badgeText}
             </span>
           </div>
