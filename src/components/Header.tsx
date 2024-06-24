@@ -65,7 +65,7 @@ const Header: React.FC = () => {
                     <Link
                       key={index}
                       href={link.link}
-                      className={isActive ? "custom-button px-4" : "text-white"}
+                      className={isActive ? "custom-button text-white bg-secondary px-6" : "text-white"}
                     >
                       {link.title}
                     </Link>
@@ -138,7 +138,7 @@ const Header: React.FC = () => {
                 <IoSearch className="text-[30px] text-secondary" />
               </li>
               <li>
-                <button className="custom-button px-6">journal with us</button>
+                <button className="custom-button text-white bg-secondary px-10">journal with us</button>
               </li>
             </ul>
           </div>

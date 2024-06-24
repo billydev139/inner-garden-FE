@@ -55,13 +55,13 @@ export const subMenucategories = [
   },
   {
     id: 4,
-    title: "Hope",
+    title: "hope",
     link:"/hope",
 
   },
   {
     id: 5,
-    title: "Confidence",
+    title: "confidence",
     link:"/confidence",
 
   },
@@ -73,7 +73,7 @@ export const subMenucategories = [
   },
   {
     id: 7,
-    title: "Wonder",
+    title: "wonder",
     link:"/wonder",
 
   },

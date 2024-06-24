@@ -98,7 +98,7 @@ const AwarrenestEveryoneNest: React.FC = () => {
               {item.description}
             </p>
             <Slider {...sliderSettings}>
-              {item?.sliderCardsData?.map((subitem, subindex) => (
+              {item?.sliderCardsData?.map((subitem) => (
                 <Cards
                   key={subitem.id}
                   imageSrc={subitem.image}
