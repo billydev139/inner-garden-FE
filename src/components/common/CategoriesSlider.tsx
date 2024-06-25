@@ -14,7 +14,7 @@ const CategoriesSlider: React.FC = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 8,
+    slidesToShow: 6,
     slidesToScroll: 1,
     prevArrow: <button className="slick-prev" aria-label="volume control">Previous</button>,
     nextArrow: <button className="slick-next" aria-label="volume control">Next</button>,
@@ -50,7 +50,7 @@ const CategoriesSlider: React.FC = () => {
           const isSelected = pathname.includes(category.link); 
           const categoryClass = isSelected ? "bg-secondary text-white" : "bg-white";
           return (
-            <div className={`${categoryClass} py-2 text-center m-2 custom-button text-secondary font-black`} key={category.id}>
+            <div className={`${categoryClass} custom-button text-secondary text-center py-2 m-2 text-[20px] leading-[24px] font-black`} key={category.id}>
               <Link href={`/categories/${categories}/${category.link}/${details || 'journal'}`}>{category.title}</Link>
             </div>
           );

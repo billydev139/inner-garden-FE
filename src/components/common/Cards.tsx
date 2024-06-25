@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import { RxCross1 } from "../../assets/Icons/index";
+import styles from "@/styles";
 interface SocialImage {
   socialimg: StaticImageData; 
 }
@@ -67,16 +68,15 @@ const Cards: React.FC<CardProps> = ({
             {badgeText}
           </span>
         ) : (
-          <div className="relative flex justify-center items-center -mt-2 mb-4">
-            <span  className={`custom-button bg-secondary text-white px-6`}>
+          <div className="relative flex justify-center items-center -mt-6 mb-4">
+            <span  className={`custom-button bg-secondary text-white px-12 text-[32px] font-black leading-[39.01px]`}>
               {badgeText}
             </span>
           </div>
         )}
-       
       </div>
       <div className="px-6 pb-4">
-        <div className="font-bold text-xl mb-2">{title}</div>
+        <p className={`${className}`}>{title}</p>
         <h2 className="font-montserrat-alternates font-semibold text-base pt-5 pb-3">
           {subheading}
         </h2>

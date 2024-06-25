@@ -212,42 +212,42 @@ export const cardCenterBadge = [
     id: "0",
     badgeText: "peace",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     image: Images.banner1,
   },
   {
     id: "1",
     badgeText: "peace",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     image: Images.banner1,
   },
   {
     id: "2",
     badgeText: "peace",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     image: Images.banner1,
   },
   {
     id: "3",
     badgeText: "peace",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     image: Images.banner1,
   },
   {
     id: "4",
     badgeText: "peace",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     image: Images.banner1,
   },
   {
     id: "5",
     badgeText: "peace",
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     image: Images.banner1,
   },
 ];

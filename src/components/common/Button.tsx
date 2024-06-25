@@ -20,15 +20,15 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   ariaLabel,
 }) => {
-  const baseClasses = `text-lg font-bold py-2 px-6 w-[200px] text-center`;
+  const baseClasses = `py-2 px-6 w-[200px] text-center`;
 
   const variantClasses =
     variant === "gradient"
-      ? `rounded-full bg-gradient-to-t from-tertiary via-tertiary to-quartary text-white border border-3 border-secondary whitespace-nowrap`
+      ? `rounded-full bg-gradient-to-t from-tertiary via-tertiary to-quartary text-white border border-3 border-secondary whitespace-nowrap text-[20px] font-black leading-[24.38px]`
       : variant === "white"
-      ? `bg-white rounded-xl text-[#564A8D] font-semibold border border-gray-300 rounded-full hover:bg-gray-100 hover:border-gray-400 transition duration-300 whitespace-nowrap`
+      ? `bg-white rounded-xl text-[#564A8D] text-[16px] font-semibold leading-[26px] rounded-full whitespace-nowrap`
       : variant === "purple"
-      ? `bg-[#564A8D] text-[#c4caf0] rounded-[20px] text-[16px] font-semibold border border-[#564A8D] hover:bg-[#463573] transition duration-300 whitespace-nowrap`
+      ? `bg-[#564A8D] text-[#c4caf0] rounded-[20px] text-[16px] font-semibold border border-[#564A8D] hover:bg-[#463573] transition duration-300 whitespace-nowrap text-lg font-bold`
       : "";
 
   return href ? (

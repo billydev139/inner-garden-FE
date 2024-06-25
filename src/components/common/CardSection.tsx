@@ -95,6 +95,7 @@ const CardSection: React.FC<CardSectionProps> = ({
               title={content.title}
               borderColor={borderColor}
               badgePosition="top"
+              className={`${styles.paragraph} leading-[36px]`}
             />
           ))} 
         </div>
