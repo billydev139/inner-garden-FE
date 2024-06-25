@@ -1,11 +1,10 @@
+import React from "react";
 import Images from "@/assets/images";
 import Button from "@/components/common/Button";
 import Cards from "@/components/common/Cards";
 import CategoriesSlider from "@/components/common/CategoriesSlider";
 import HeroSection from "@/components/common/HeroSection";
 import { cardCenterBadge } from "@/utils/helpers/dummyContent";
-import React from "react";
-
 const InnerSpeciality: React.FC = () => {
   return (
     <>

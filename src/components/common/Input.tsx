@@ -1,5 +1,4 @@
 import React from 'react';
-
 interface InputProps {
   type: string;
   placeholder?: string;
@@ -7,7 +6,6 @@ interface InputProps {
   ariaLabel?: string;
   label?: string; 
 }
-
 const Input: React.FC<InputProps> = ({ type, placeholder, className, ariaLabel, label }) => {
   return (
     <section className={`flex items-center gap-2 ${type === 'checkbox' ? 'bg-white px-5 py-1 rounded-[10px]' : ''}`}>

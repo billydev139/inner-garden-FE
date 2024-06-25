@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -7,12 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 import { subMenucategories } from "@/utils/helpers/headerContent";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-
 const CategoriesSlider: React.FC = () => {
   const pathname = usePathname();
   const params = useParams();
   const {categories, details} = params;
-
   const settings = {
     dots: false,
     infinite: true,

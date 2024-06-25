@@ -7,7 +7,10 @@ import {
   FaBookOpenReader,
 } from "../assets/Icons/index";
 import Button from "@/components/common/Button";
-import { wellGoCardData } from "@/utils/helpers/dummyContent";
+import {
+  wellGoCardData,
+  wellgorithmButtonData,
+} from "@/utils/helpers/dummyContent";
 const Wellgorithm: React.FC = () => {
   return (
     <>
@@ -28,9 +31,14 @@ const Wellgorithm: React.FC = () => {
           className="absolute right-3 top-2"
         />
         <div className="flex flex-wrap items-center gap-8 mt-6">
-          <Button btnText="intention" variant="purple" ariaLabel="intention" />
-          <Button btnText="action" variant="purple" ariaLabel="action" />
-          <Button btnText="reflection" variant="purple" ariaLabel="reflection" />
+          {wellgorithmButtonData.map((button, index) => (
+            <Button
+              key={index}
+              btnText={button.btnText}
+              ariaLabel={button.ariaLabel}
+              variant="purple"
+            />
+          ))}
         </div>
       </section>
       {wellGoCardData?.map((item: any, index: React.Key | null | undefined) => (
@@ -83,7 +91,7 @@ const Wellgorithm: React.FC = () => {
         </div>
       ))}
       <div className="flex my-10 items-center justify-center">
-        <Button btnText="Load more" variant="white" ariaLabel='Load More' />
+        <Button btnText="Load more" variant="white" ariaLabel="Load More" />
       </div>
     </>
   );

@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { cardContent } from "@/utils/helpers/dummyContent";
 import styles from "@/styles";
 import Cards from "./Cards";
-
 interface CardSectionProps {
   bgGradient: string;
   borderColor: string;
