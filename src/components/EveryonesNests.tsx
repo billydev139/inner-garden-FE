@@ -1,8 +1,8 @@
 import React from "react";
-import Images from "@/assets/images";
 import Image from "next/image";
 import bgimg from "../../src/assets/images/everyoneawarrenestbg.png";
 import AwarrenestCaterpillarSubTabs from "./AwarrenestCaterpillarSubTabs";
+import { nestsImageData } from "@/utils/helpers/dummyContent";
 const EveryonesNests: React.FC = () => {
   return (
     <>
@@ -13,9 +13,9 @@ const EveryonesNests: React.FC = () => {
         }}
       >
         <div className="flex items-center gap-3 pt-20">
-          <Image src={Images.snell} alt="snell" />
-          <Image src={Images.fly} alt="snell" />
-          <Image src={Images.cocoon} alt="snell" />
+          {nestsImageData.map((image, index) => (
+            <Image key={index} src={image.src} alt={image.alt} />
+          ))}
         </div>
         <h2 className="text-[44px] font-black font-montserrat-alternates text-white">
           Caterpillar

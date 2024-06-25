@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Images from "@/assets/images";
 import Link from "next/link";
-
+import { nestsImageData } from "@/utils/helpers/dummyContent";
 export interface TagCardProps {
   imageSrc?: string | any;
   userPicSrc: string | any;
@@ -56,21 +56,9 @@ const TagsCard: React.FC<TagCardProps> = ({
               <p className="font-semibold text-sm">{userName}</p>
             </div>
             <div className="flex items-center gap-3">
-              <Image
-                className=" bg-cover rounded-t-lg"
-                src={Images.fly}
-                alt="Card image cap"
-              />
-              <Image
-                className=" bg-cover rounded-t-lg"
-                src={Images.snell}
-                alt="Card image cap"
-              />
-              <Image
-                className=" bg-cover rounded-t-lg"
-                src={Images.cocoon}
-                alt="Card image cap"
-              />
+              {nestsImageData.map((image, index) => (
+                <Image key={index} src={image.src} alt={image.alt} />
+              ))}
               <h2 className="font-semibold text-base font-montserrat-alternates text-white rounded-[18px] px-3 py-2 bg-tetra">
                 <Link href="/easy-details">{tagName}</Link>
               </h2>

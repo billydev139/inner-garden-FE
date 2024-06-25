@@ -11,7 +11,6 @@ import {
 } from "@/utils/helpers/dummyContent";
 import Cards from "../../components/common/Cards";
 import Slider, { Settings } from "react-slick";
-
 import Image from "next/image";
 import Images from "@/assets/images";
 interface ArrowProps {
@@ -175,7 +174,6 @@ const InnerAcademy = () => {
                 className="flex items-center gap-3 py-2 text-white font-bold "
               >
                 <Image src={Images.checkvector2} alt="checkvector" />
-
                 {item.text}
               </li>
             ))}

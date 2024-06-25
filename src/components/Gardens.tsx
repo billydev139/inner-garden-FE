@@ -1,5 +1,4 @@
 import React from "react";
-
 import { gardenAwarrenestCaterpillar } from "@/utils/helpers/dummyContent";
 import GardenCards from "./common/GardenCards";
 const Gardens: React.FC = () => {

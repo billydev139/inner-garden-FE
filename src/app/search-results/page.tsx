@@ -13,8 +13,8 @@ const checkboxes = [
 
 const SearchResults: React.FC = () => {
   return (
-    <>
-      <section className="container mx-auto pt-10 pb-5">
+    <section>
+      <div className="container mx-auto pt-10 pb-5">
         <div className="flex lg:flex-row flex-wrap lg:items-center lg:justify-center  gap-5 ">
           <h2 className="font-medium text-lg font-montserrat">
             Advance Search:
@@ -68,7 +68,7 @@ const SearchResults: React.FC = () => {
             </select>
           </div>
         </div>
-      </section>
+      </div>
       <div className="max-w-[1060px] mx-auto">
         <h2 className="text-[22px] font-medium font-montserrat-alternates">
           Search results <span className="font-bold">6</span>
@@ -90,11 +90,11 @@ const SearchResults: React.FC = () => {
             />
           ))}
         </div>
-        <div className="flex my-10 items-center justify-center">
+        <div className="flex py-10 items-center justify-center">
           <Button btnText="Load more" variant="white" ariaLabel="Load More" />
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

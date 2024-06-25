@@ -1674,6 +1674,24 @@ export const specialCertifications = [
   },
 ];
 
+export const wellgorithmButtonData = [
+  { btnText: "intention", ariaLabel: "intention" },
+  { btnText: "action", ariaLabel: "action" },
+  { btnText: "reflection", ariaLabel: "reflection" }
+];
+
+export const easyDetailsButtonData = [
+  { btnText: 'tag name 1', ariaLabel: 'tag' },
+  { btnText: 'tag name 2', ariaLabel: 'tag' },
+  { btnText: 'tag name 3', ariaLabel: 'tag' }
+];
+
+export const nestsImageData = [
+  { src: Images.snell, alt: "snell" },
+  { src: Images.fly, alt: "fly" },
+  { src: Images.cocoon, alt: "cocoon" } 
+];
+
 export const footerLinks = [
   { href: "", text: "writers in residence", className: "text-white" },
   { href: "/inner-academy", text: "(inner)Academy", className: "text-white my-4" },

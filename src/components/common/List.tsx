@@ -1,13 +1,11 @@
 import Link from "next/link";
 import React from "react";
-
 interface ListProps {
   toLink: string;
   label: string;
   linkStyle?: string;
   className?:string;
 }
-
 const List: React.FC<ListProps> = ({ toLink, label, className }) => {
   return (
     <li>

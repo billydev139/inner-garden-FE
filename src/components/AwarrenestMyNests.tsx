@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Images from "@/assets/images";
 import {
   myAwarrenestCaterpillar,
+  nestsImageData,
   socialImages,
 } from "@/utils/helpers/dummyContent";
 import Cards from "./common/Cards";
@@ -77,9 +77,9 @@ const AwarrenestMyNests: React.FC = () => {
   return (
     <section>
       <div className="flex items-center justify-center gap-2 my-7">
-        <Image src={Images.snell} alt="snell" />
-        <Image src={Images.fly} alt="fly" />
-        <Image src={Images.cocoon} alt="snell" />
+        {nestsImageData.map((image, index) => (
+          <Image key={index} src={image.src} alt={image.alt} />
+        ))}
       </div>
       {myAwarrenestCaterpillar?.map((item, index) => (
         <div key={index} className={`${item.backgroundClass} py-14`}>
