@@ -5,6 +5,7 @@ import Cards from "@/components/common/Cards";
 import CategoriesSlider from "@/components/common/CategoriesSlider";
 import HeroSection from "@/components/common/HeroSection";
 import { cardCenterBadge } from "@/utils/helpers/dummyContent";
+import styles from "@/styles";
 const InnerSpeciality: React.FC = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const InnerSpeciality: React.FC = () => {
       <div>
         <HeroSection
           imageSrc={Images.banner7}
-          heroSecHeading="Specialty"
+          heroSecHeading="Speciality"
           heroSecText="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi sunt explicabo."
         />
       </div>
@@ -21,13 +22,14 @@ const InnerSpeciality: React.FC = () => {
         {cardCenterBadge?.map((content) => (
           <div
             key={content.id}
-            className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-2 box-border"
+            className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 box-border"
           >
             <Cards
               imageSrc={content.image}
               badgeText={content.badgeText}
               title={content.title}
               badgePosition="center"
+              className={`${styles.categoryParagraph} leading-[57.6px] m-[15px]`}
             />
           </div>
         ))}

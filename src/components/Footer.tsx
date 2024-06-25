@@ -52,19 +52,18 @@ const Footer: React.FC = () => {
             ariaLabel="Email"
             className="rounded-full w-full outline-none px-5 py-2 text-lg border-none focus:ring-0"
           />
-
           <Button
-            btnText="Subscribe"
-            btnType="submit"
-            className="py-2"
-            ariaLabel="Subscribe button"
-          />
+          btnText="Subscribe"
+          btnType="button"
+          variant="gradient"
+          ariaLabel="Subscribe button"
+        />
         </div>
       </form>
       <div className="flex flex-wrap my-4 justify-around items-start">
         <div className="flex flex-col items-center ">
           <Button btnText="about" btnType="button" ariaLabel="about button" />
-          <p className="text-16 font-semibold text-white text-center w-[280px] pt-2 ">
+          <p className="text-[16px] font-semibold text-white text-center w-[280px] pt-2 ">
              (inner) was started by a Bronx teacher and her partner, a software
             architect and graphic designer.
           </p>
@@ -80,6 +79,7 @@ const Footer: React.FC = () => {
         <Button
           btnText="donate Now"
           btnType="button"
+          variant="gradient"
           ariaLabel="donate now button"
         />
       </div>

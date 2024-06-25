@@ -2,6 +2,7 @@ import Images from "@/assets/images";
 import Cards from "@/components/common/Cards";
 import CategoriesSlider from "@/components/common/CategoriesSlider";
 import HeroSection from "@/components/common/HeroSection";
+import styles from "@/styles";
 import { cardCenterBadge } from "@/utils/helpers/dummyContent";
 import React from "react";
 
@@ -28,6 +29,7 @@ const CategoriesPageLayout: React.FC = () => {
               badgeText={content.badgeText}
               title={content.title}
               badgePosition="center"
+              className={`${styles.categoryParagraph} leading-[57.6px] m-[15px]`}
             />
           </div>
         ))}

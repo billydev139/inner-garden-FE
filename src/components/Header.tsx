@@ -65,7 +65,7 @@ const Header: React.FC = () => {
                     <Link
                       key={index}
                       href={link.link}
-                      className={isActive ? "custom-button text-white bg-secondary px-6" : "text-white"}
+                      className={isActive ? "custom-button text-white bg-secondary px-8 text-[20px] font-black leading-6" : "text-white text-[20px] font-medium leading-6"}
                     >
                       {link.title}
                     </Link>
@@ -83,7 +83,7 @@ const Header: React.FC = () => {
               className="px-4"
             />
 
-            <Link href="/" className="text-white">
+            <Link href="/" className="text-white text-[20px] font-semibold leading-6">
               wellgorithms
             </Link>
 
@@ -138,7 +138,7 @@ const Header: React.FC = () => {
                 <IoSearch className="text-[30px] text-secondary" />
               </li>
               <li>
-                <button className="custom-button text-white bg-secondary px-10">journal with us</button>
+                <button className="custom-button text-white bg-secondary px-12 text-[20px] font-bold leading-6">journal with us</button>
               </li>
             </ul>
           </div>

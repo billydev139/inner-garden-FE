@@ -1,6 +1,7 @@
 interface Styles {
   headingH1: string;
   subHeading: string;
+  categoryParagraph:string;
   paragraph: string;
 
   flexCenter: string;
@@ -15,9 +16,10 @@ interface Styles {
 }
 
 const styles: Styles = {
-  headingH1: "text-xl md:text-2xl lg:text-[32px] font-black leading-10",
-  subHeading: "text-lg lg:text-[22px] font-bold",
-  paragraph: "font-semibold	",
+  headingH1: "font-montserrat-alternates text-xl md:text-2xl lg:text-[44px] font-black",
+  subHeading: "font-montserrat-alternatestext-lg lg:text-[22px] font-bold",
+  categoryParagraph: "font-montserrat-alternates text-[32px] font-semibold",
+  paragraph: "font-montserrat-alternates text-[20px] font-medium",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
